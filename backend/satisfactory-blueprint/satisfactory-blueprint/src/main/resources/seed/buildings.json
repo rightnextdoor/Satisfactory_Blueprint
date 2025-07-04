@@ -1,0 +1,68 @@
+[
+  {
+    "type": "SMELTER",
+    "sortOrder": 1,
+    "powerUsage": 4.0,
+    "iconKey": ""
+  },
+  {
+    "type": "CONSTRUCTOR",
+    "sortOrder": 3,
+    "powerUsage": 4.0,
+    "iconKey": ""
+  },
+  {
+    "type": "ASSEMBLER",
+    "sortOrder": 4,
+    "powerUsage": 15.0,
+    "iconKey": ""
+  },
+  {
+    "type": "MANUFACTURER",
+    "sortOrder": 5,
+    "powerUsage": 55.0,
+    "iconKey": ""
+  },
+  {
+    "type": "REFINERY",
+    "sortOrder": 6,
+    "powerUsage": 30.0,
+    "iconKey": ""
+  },
+  {
+    "type": "BLENDER",
+    "sortOrder": 7,
+    "powerUsage": 75.0,
+    "iconKey": ""
+  },
+  {
+    "type": "FOUNDRY",
+    "sortOrder": 2,
+    "powerUsage": 16.0,
+    "iconKey": ""
+  },
+  {
+    "type": "PARTICLE_ACCELERATOR",
+    "sortOrder": 9,
+    "powerUsage": 1500.0,
+    "iconKey": ""
+  },
+  {
+    "type": "PACKAGER",
+    "sortOrder": 8,
+    "powerUsage": 10.0,
+    "iconKey": ""
+  },
+  {
+    "type": "CONVERTER",
+    "sortOrder": 10,
+    "powerUsage": 400.0,
+    "iconKey": ""
+  },
+  {
+    "type": "QUANTUM_ENCODER",
+    "sortOrder": 11,
+    "powerUsage": 2000.0,
+    "iconKey": ""
+  }
+]

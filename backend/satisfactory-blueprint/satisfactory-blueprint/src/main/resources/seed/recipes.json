@@ -1,0 +1,7176 @@
+[
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Smelter"
+    },
+    "itemToBuild": {
+      "name": "Iron Ingot",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Smelter"
+    },
+    "itemToBuild": {
+      "name": "Copper Ingot",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Copper Ore",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Smelter"
+    },
+    "itemToBuild": {
+      "name": "Caterium Ingot",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ore",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Smelter"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Ingot",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Scrap",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Iron Ingot",
+      "amount": 75.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 40.0
+      },
+      {
+        "name": "Copper Ore",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Iron Ingot",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 25.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Copper Ingot",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Copper Ore",
+        "amount": 50.0
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Copper Ingot",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Copper Ore",
+        "amount": 25.0
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Ingot",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 45.0
+      },
+      {
+        "name": "Coal",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Ingot",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 40.0
+      },
+      {
+        "name": "Coal",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Ingot",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 75.0
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 75.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Ingot",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 5.0
+      },
+      {
+        "name": "Compacted Coal",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Caterium Ingot",
+      "amount": 22.5
+    },
+    "items": [
+      {
+        "name": "Caterium Ore",
+        "amount": 45.0
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Ingot",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Scrap",
+        "amount": 90.0
+      },
+      {
+        "name": "Silica",
+        "amount": 75.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Iron Plate",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 15.0
+      },
+      {
+        "name": "Steel Ingot",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Beam",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 120.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 80.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Steel Pipe",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 50.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Foundry"
+    },
+    "itemToBuild": {
+      "name": "Quartz Crystal",
+      "amount": 54.0
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 75.0
+      },
+      {
+        "name": "Coal",
+        "amount": 36.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Iron Plate",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Iron Rod",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Iron Rod",
+      "amount": 48.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 12.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Iron Rod",
+      "amount": 52.5
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Screw",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Iron Rod",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Screw",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 12.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Screw",
+      "amount": 260.0
+    },
+    "items": [
+      {
+        "name": "Steel Beam",
+        "amount": 5.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Copper Sheet",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Copper Ingot",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Steel Beam",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Steel Beam",
+      "amount": 22.5
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Steel Pipe",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Steel Pipe",
+      "amount": 25.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Casing",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 90.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Ficsite Trigon",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Ficsite Ingot",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Wire",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Copper Ingot",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Wire",
+      "amount": 22.5
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 12.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Wire",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ingot",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Cable",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Wire",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Quickwire",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ingot",
+        "amount": 12.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Reanimated SAM",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "SAM",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Concrete",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Limestone",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Quartz Crystal",
+      "amount": 22.5
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Silica",
+      "amount": 37.5
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Copper Powder",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Copper Ingot",
+        "amount": 300.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Biomass",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Leaves",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Biomass",
+      "amount": 300.0
+    },
+    "items": [
+      {
+        "name": "Wood",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Biomass",
+      "amount": 150.0
+    },
+    "items": [
+      {
+        "name": "Mycelia",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Biomass",
+      "amount": 1500.0
+    },
+    "items": [
+      {
+        "name": "Alien Protein",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Solid Biofuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Biomass",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Biocoal",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Biomass",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Charcoal",
+      "amount": 150.0
+    },
+    "items": [
+      {
+        "name": "Wood",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Plastic",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Empty Canister",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Steel Ingot",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Empty Fluid Tank",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Hog Protein",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Hog Remains",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Hatcher Protein",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Hatcher Remains",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Stinger Protein",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Stinger Remains",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Spitter Protein",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Plasma Spitter Remains",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Alien DNA Capsule",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Alien Protein",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Power Shard",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Blue Power Slug",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Power Shard",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Yellow Power Slug",
+        "amount": 5.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Power Shard",
+      "amount": 12.5
+    },
+    "items": [
+      {
+        "name": "Purple Power Slug",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Constructor"
+    },
+    "itemToBuild": {
+      "name": "Iron Rebar",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Iron Rod",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Smart Plating",
+      "amount": 2.0
+    },
+    "items": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2.0
+      },
+      {
+        "name": "Rotor",
+        "amount": 2.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Versatile Framework",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Modular Frame",
+        "amount": 2.5
+      },
+      {
+        "name": "Steel Beam",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Automated Wiring",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Stator",
+        "amount": 2.5
+      },
+      {
+        "name": "Cable",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Assembly Director System",
+      "amount": 0.75
+    },
+    "items": [
+      {
+        "name": "Adaptive Control Unit",
+        "amount": 1.5
+      },
+      {
+        "name": "Supercomputer",
+        "amount": 0.75
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Magnetic Field Generator",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Versatile Framework",
+        "amount": 2.5
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 1.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Fireworks",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Ficsmas Tree Branch",
+        "amount": 7.5
+      },
+      {
+        "name": "Actual Snow",
+        "amount": 5.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Fireworks",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Ficsmas Tree Branch",
+        "amount": 10.0
+      },
+      {
+        "name": "Ficsmas Bow",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Fireworks",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Ficsmas Tree Branch",
+        "amount": 15.0
+      },
+      {
+        "name": "Candy Cane",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Iron Plate",
+      "amount": 75.0
+    },
+    "items": [
+      {
+        "name": "Iron Ingot",
+        "amount": 37.5
+      },
+      {
+        "name": "Plastic",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Reinforced Iron Plate",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Iron Plate",
+        "amount": 30.0
+      },
+      {
+        "name": "Screw",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Reinforced Iron Plate",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Iron Plate",
+        "amount": 90.0
+      },
+      {
+        "name": "Screw",
+        "amount": 250.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Reinforced Iron Plate",
+      "amount": 5.625
+    },
+    "items": [
+      {
+        "name": "Iron Plate",
+        "amount": 18.75
+      },
+      {
+        "name": "Wire",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Reinforced Iron Plate",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Iron Plate",
+        "amount": 11.25
+      },
+      {
+        "name": "Rubber",
+        "amount": 3.75
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Modular Frame",
+      "amount": 2.0
+    },
+    "items": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 3.0
+      },
+      {
+        "name": "Iron Rod",
+        "amount": 12.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Modular Frame",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 7.5
+      },
+      {
+        "name": "Screw",
+        "amount": 140.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Modular Frame",
+      "amount": 3.0
+    },
+    "items": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2.0
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Encased Industrial Beam",
+      "amount": 6.0
+    },
+    "items": [
+      {
+        "name": "Steel Beam",
+        "amount": 18.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 36.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Encased Industrial Beam",
+      "amount": 4.0
+    },
+    "items": [
+      {
+        "name": "Steel Pipe",
+        "amount": 24.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Sheet",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 30.0
+      },
+      {
+        "name": "Copper Ingot",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Casing",
+      "amount": 112.5
+    },
+    "items": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 150.0
+      },
+      {
+        "name": "Copper Ingot",
+        "amount": 75.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Wire",
+      "amount": 90.0
+    },
+    "items": [
+      {
+        "name": "Copper Ingot",
+        "amount": 12.0
+      },
+      {
+        "name": "Caterium Ingot",
+        "amount": 3.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Cable",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Wire",
+        "amount": 45.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Cable",
+      "amount": 27.5
+    },
+    "items": [
+      {
+        "name": "Quickwire",
+        "amount": 7.5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Circuit Board",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Copper Sheet",
+        "amount": 15.0
+      },
+      {
+        "name": "Plastic",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Circuit Board",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Rubber",
+        "amount": 20.0
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Circuit Board",
+      "amount": 8.75
+    },
+    "items": [
+      {
+        "name": "Plastic",
+        "amount": 12.5
+      },
+      {
+        "name": "Quickwire",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Circuit Board",
+      "amount": 12.5
+    },
+    "items": [
+      {
+        "name": "Copper Sheet",
+        "amount": 27.5
+      },
+      {
+        "name": "Silica",
+        "amount": 27.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Quickwire",
+      "amount": 90.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ingot",
+        "amount": 7.5
+      },
+      {
+        "name": "Copper Ingot",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "A.I. Limiter",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Copper Sheet",
+        "amount": 25.0
+      },
+      {
+        "name": "Quickwire",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "A.I. Limiter",
+      "amount": 8.0
+    },
+    "items": [
+      {
+        "name": "Quickwire",
+        "amount": 120.0
+      },
+      {
+        "name": "Plastic",
+        "amount": 28.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Computer",
+      "amount": 3.333
+    },
+    "items": [
+      {
+        "name": "Circuit Board",
+        "amount": 5.0
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1.667
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Supercomputer",
+      "amount": 3.0
+    },
+    "items": [
+      {
+        "name": "Radio Control Unit",
+        "amount": 6.0
+      },
+      {
+        "name": "Cooling System",
+        "amount": 6.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Concrete",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Silica",
+        "amount": 15.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Concrete",
+      "amount": 90.0
+    },
+    "items": [
+      {
+        "name": "Limestone",
+        "amount": 100.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Compacted Coal",
+      "amount": 25.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 25.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 25.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Silica",
+      "amount": 52.5
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 22.5
+      },
+      {
+        "name": "Limestone",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Fabric",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Mycelia",
+        "amount": 15.0
+      },
+      {
+        "name": "Biomass",
+        "amount": 75.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Rotor",
+      "amount": 4.0
+    },
+    "items": [
+      {
+        "name": "Iron Rod",
+        "amount": 20.0
+      },
+      {
+        "name": "Screw",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Rotor",
+      "amount": 11.25
+    },
+    "items": [
+      {
+        "name": "Copper Sheet",
+        "amount": 22.5
+      },
+      {
+        "name": "Screw",
+        "amount": 195.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Rotor",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Steel Pipe",
+        "amount": 10.0
+      },
+      {
+        "name": "Wire",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Stator",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Steel Pipe",
+        "amount": 15.0
+      },
+      {
+        "name": "Wire",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Stator",
+      "amount": 8.0
+    },
+    "items": [
+      {
+        "name": "Steel Pipe",
+        "amount": 16.0
+      },
+      {
+        "name": "Quickwire",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Motor",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Rotor",
+        "amount": 10.0
+      },
+      {
+        "name": "Stator",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Motor",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 3.75
+      },
+      {
+        "name": "Rotor",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Heat Sink",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Aluminum Sheet",
+        "amount": 37.5
+      },
+      {
+        "name": "Copper Sheet",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Heat Sink",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Aluminum Casing",
+        "amount": 30.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Iron Plate",
+        "amount": 30.0
+      },
+      {
+        "name": "Copper Sheet",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Pressure Conversion Cube",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Fused Modular Frame",
+        "amount": 1.0
+      },
+      {
+        "name": "Radio Control Unit",
+        "amount": 2.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Electromagnetic Control Rod",
+      "amount": 4.0
+    },
+    "items": [
+      {
+        "name": "Stator",
+        "amount": 6.0
+      },
+      {
+        "name": "A.I. Limiter",
+        "amount": 4.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Electromagnetic Control Rod",
+      "amount": 8.0
+    },
+    "items": [
+      {
+        "name": "Stator",
+        "amount": 8.0
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 4.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Encased Plutonium Cell",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Plutonium Pellet",
+        "amount": 10.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Plutonium Fuel Unit",
+      "amount": 0.5
+    },
+    "items": [
+      {
+        "name": "Encased Plutonium Cell",
+        "amount": 10.0
+      },
+      {
+        "name": "Pressure Conversion Cube",
+        "amount": 0.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Automated Miner",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Steel Pipe",
+        "amount": 4.0
+      },
+      {
+        "name": "Iron Plate",
+        "amount": 4.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Black Powder",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 15.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Black Powder",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Sulfur",
+        "amount": 7.5
+      },
+      {
+        "name": "Compacted Coal",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Stun Rebar",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Iron Rebar",
+        "amount": 10.0
+      },
+      {
+        "name": "Quickwire",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Shatter Rebar",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Iron Rebar",
+        "amount": 10.0
+      },
+      {
+        "name": "Quartz Crystal",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Nobelisk",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Black Powder",
+        "amount": 20.0
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Gas Nobelisk",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Nobelisk",
+        "amount": 5.0
+      },
+      {
+        "name": "Biomass",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Cluster Nobelisk",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Nobelisk",
+        "amount": 7.5
+      },
+      {
+        "name": "Smokeless Powder",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Pulse Nobelisk",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Nobelisk",
+        "amount": 5.0
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Rifle Ammo",
+      "amount": 75.0
+    },
+    "items": [
+      {
+        "name": "Copper Sheet",
+        "amount": 15.0
+      },
+      {
+        "name": "Smokeless Powder",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Assembler"
+    },
+    "itemToBuild": {
+      "name": "Homing Rifle Ammo",
+      "amount": 25.0
+    },
+    "items": [
+      {
+        "name": "Rifle Ammo",
+        "amount": 50.0
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Smart Plating",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2.5
+      },
+      {
+        "name": "Rotor",
+        "amount": 2.5
+      },
+      {
+        "name": "Plastic",
+        "amount": 7.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 3,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Versatile Framework",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Modular Frame",
+        "amount": 3.75
+      },
+      {
+        "name": "Steel Beam",
+        "amount": 22.5
+      },
+      {
+        "name": "Rubber",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Automated Wiring",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Stator",
+        "amount": 3.75
+      },
+      {
+        "name": "Wire",
+        "amount": 75.0
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 1.875
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Modular Engine",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Motor",
+        "amount": 2.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 15.0
+      },
+      {
+        "name": "Smart Plating",
+        "amount": 2.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Adaptive Control Unit",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Automated Wiring",
+        "amount": 5.0
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 5.0
+      },
+      {
+        "name": "Heavy Modular Frame",
+        "amount": 1.0
+      },
+      {
+        "name": "Computer",
+        "amount": 2.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Thermal Propulsion Rocket",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Modular Engine",
+        "amount": 2.5
+      },
+      {
+        "name": "Turbo Motor",
+        "amount": 1.0
+      },
+      {
+        "name": "Cooling System",
+        "amount": 3.0
+      },
+      {
+        "name": "Fused Modular Frame",
+        "amount": 1.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Ballistic Warp Drive",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Thermal Propulsion Rocket",
+        "amount": 1.0
+      },
+      {
+        "name": "Singularity Cell",
+        "amount": 5.0
+      },
+      {
+        "name": "Superposition Oscillator",
+        "amount": 2.0
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Heavy Modular Frame",
+      "amount": 2.0
+    },
+    "items": [
+      {
+        "name": "Modular Frame",
+        "amount": 10.0
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 40.0
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 10.0
+      },
+      {
+        "name": "Screw",
+        "amount": 240.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Heavy Modular Frame",
+      "amount": 2.813
+    },
+    "items": [
+      {
+        "name": "Modular Frame",
+        "amount": 7.5
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 9.375
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 33.75
+      },
+      {
+        "name": "Concrete",
+        "amount": 20.625
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Heavy Modular Frame",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Modular Frame",
+        "amount": 18.75
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 11.25
+      },
+      {
+        "name": "Rubber",
+        "amount": 75.0
+      },
+      {
+        "name": "Screw",
+        "amount": 390.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "High-Speed Connector",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Quickwire",
+        "amount": 210.0
+      },
+      {
+        "name": "Cable",
+        "amount": 37.5
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 3.75
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "High-Speed Connector",
+      "amount": 3.0
+    },
+    "items": [
+      {
+        "name": "Quickwire",
+        "amount": 90.0
+      },
+      {
+        "name": "Silica",
+        "amount": 37.5
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 3.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Singularity Cell",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Nuclear Pasta",
+        "amount": 1.0
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "amount": 20.0
+      },
+      {
+        "name": "Iron Plate",
+        "amount": 100.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "SAM Fluctuator",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 60.0
+      },
+      {
+        "name": "Wire",
+        "amount": 50.0
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 4,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Motor",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Rotor",
+        "amount": 3.75
+      },
+      {
+        "name": "Stator",
+        "amount": 3.75
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1.25
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Turbo Motor",
+      "amount": 1.875
+    },
+    "items": [
+      {
+        "name": "Cooling System",
+        "amount": 7.5
+      },
+      {
+        "name": "Radio Control Unit",
+        "amount": 3.75
+      },
+      {
+        "name": "Motor",
+        "amount": 7.5
+      },
+      {
+        "name": "Rubber",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Turbo Motor",
+      "amount": 2.813
+    },
+    "items": [
+      {
+        "name": "Motor",
+        "amount": 6.563
+      },
+      {
+        "name": "Radio Control Unit",
+        "amount": 8.438
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 4.688
+      },
+      {
+        "name": "Rotor",
+        "amount": 6.563
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Turbo Motor",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Motor",
+        "amount": 7.5
+      },
+      {
+        "name": "Pressure Conversion Cube",
+        "amount": 1.875
+      },
+      {
+        "name": "Packaged Nitrogen Gas",
+        "amount": 45.0
+      },
+      {
+        "name": "Stator",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Battery",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Sulfur",
+        "amount": 45.0
+      },
+      {
+        "name": "Alclad Aluminum Sheet",
+        "amount": 52.5
+      },
+      {
+        "name": "Plastic",
+        "amount": 60.0
+      },
+      {
+        "name": "Wire",
+        "amount": 90.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Computer",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Circuit Board",
+        "amount": 10.0
+      },
+      {
+        "name": "Cable",
+        "amount": 20.0
+      },
+      {
+        "name": "Plastic",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Computer",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Circuit Board",
+        "amount": 15.0
+      },
+      {
+        "name": "Quickwire",
+        "amount": 52.5
+      },
+      {
+        "name": "Rubber",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Supercomputer",
+      "amount": 1.875
+    },
+    "items": [
+      {
+        "name": "Computer",
+        "amount": 7.5
+      },
+      {
+        "name": "A.I. Limiter",
+        "amount": 3.75
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 5.625
+      },
+      {
+        "name": "Plastic",
+        "amount": 52.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Supercomputer",
+      "amount": 2.4
+    },
+    "items": [
+      {
+        "name": "Computer",
+        "amount": 7.2
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 2.4
+      },
+      {
+        "name": "Battery",
+        "amount": 24.0
+      },
+      {
+        "name": "Wire",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Crystal Oscillator",
+      "amount": 1.0
+    },
+    "items": [
+      {
+        "name": "Quartz Crystal",
+        "amount": 18.0
+      },
+      {
+        "name": "Cable",
+        "amount": 14.0
+      },
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Crystal Oscillator",
+      "amount": 1.875
+    },
+    "items": [
+      {
+        "name": "Quartz Crystal",
+        "amount": 18.75
+      },
+      {
+        "name": "Rubber",
+        "amount": 13.125
+      },
+      {
+        "name": "A.I. Limiter",
+        "amount": 1.875
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Radio Control Unit",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Aluminum Casing",
+        "amount": 40.0
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1.25
+      },
+      {
+        "name": "Computer",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Radio Control Unit",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Heat Sink",
+        "amount": 15.0
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 7.5
+      },
+      {
+        "name": "Quartz Crystal",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Radio Control Unit",
+      "amount": 4.5
+    },
+    "items": [
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1.5
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 15.0
+      },
+      {
+        "name": "Aluminum Casing",
+        "amount": 90.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 6,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Gas Filter",
+      "amount": 7.5
+    },
+    "items": [
+      {
+        "name": "Fabric",
+        "amount": 15.0
+      },
+      {
+        "name": "Coal",
+        "amount": 30.0
+      },
+      {
+        "name": "Iron Plate",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Manufacturer"
+    },
+    "itemToBuild": {
+      "name": "Iodine Infused Filter",
+      "amount": 3.75
+    },
+    "items": [
+      {
+        "name": "Quickwire",
+        "amount": 30.0
+      },
+      {
+        "name": "Aluminum Casing",
+        "amount": 3.75
+      }
+    ],
+    "byProduct": {
+      "name": "Gas Filter",
+      "amount": 3.75
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Plastic",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": {
+      "name": "Heavy Oil Residue",
+      "amount": 10.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Plastic",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Polymer Resin",
+        "amount": 60.0
+      },
+      {
+        "name": "Water",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Plastic",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Rubber",
+        "amount": 30.0
+      },
+      {
+        "name": "Fuel",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Rubber",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": {
+      "name": "Heavy Oil Residue",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Rubber",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Polymer Resin",
+        "amount": 40.0
+      },
+      {
+        "name": "Water",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Rubber",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Plastic",
+        "amount": 30.0
+      },
+      {
+        "name": "Fuel",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Heavy Oil Residue",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": {
+      "name": "Polymer Resin",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Polymer Resin",
+      "amount": 130.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Heavy Oil Residue",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Petroleum Coke",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Alumina Solution",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Bauxite",
+        "amount": 120.0
+      },
+      {
+        "name": "Water",
+        "amount": 180.0
+      }
+    ],
+    "byProduct": {
+      "name": "Silica",
+      "amount": 50.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Alumina Solution",
+      "amount": 240.0
+    },
+    "items": [
+      {
+        "name": "Bauxite",
+        "amount": 200.0
+      },
+      {
+        "name": "Water",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Scrap",
+      "amount": 360.0
+    },
+    "items": [
+      {
+        "name": "Alumina Solution",
+        "amount": 240.0
+      },
+      {
+        "name": "Coal",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 120.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Scrap",
+      "amount": 300.0
+    },
+    "items": [
+      {
+        "name": "Alumina Solution",
+        "amount": 180.0
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 105.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Sulfuric Acid",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Sulfur",
+        "amount": 50.0
+      },
+      {
+        "name": "Water",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Fuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Polymer Resin",
+      "amount": 30.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Fuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Packaged Fuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 30.0
+      },
+      {
+        "name": "Packaged Water",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Liquid Biofuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Solid Biofuel",
+        "amount": 90.0
+      },
+      {
+        "name": "Water",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Turbofuel",
+      "amount": 18.75
+    },
+    "items": [
+      {
+        "name": "Fuel",
+        "amount": 22.5
+      },
+      {
+        "name": "Compacted Coal",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Turbofuel",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 37.5
+      },
+      {
+        "name": "Compacted Coal",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Ionized Fuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Rocket Fuel",
+        "amount": 40.0
+      },
+      {
+        "name": "Power Shard",
+        "amount": 2.5
+      }
+    ],
+    "byProduct": {
+      "name": "Compacted Coal",
+      "amount": 5.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Iron Ingot",
+      "amount": 65.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 35.0
+      },
+      {
+        "name": "Water",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Iron Ingot",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Iron Ore",
+        "amount": 50.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Copper Ingot",
+      "amount": 37.5
+    },
+    "items": [
+      {
+        "name": "Copper Ore",
+        "amount": 15.0
+      },
+      {
+        "name": "Water",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Copper Ingot",
+      "amount": 110.0
+    },
+    "items": [
+      {
+        "name": "Copper Ore",
+        "amount": 45.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 25.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Caterium Ingot",
+      "amount": 12.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ore",
+        "amount": 24.0
+      },
+      {
+        "name": "Water",
+        "amount": 24.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Caterium Ingot",
+      "amount": 36.0
+    },
+    "items": [
+      {
+        "name": "Caterium Ore",
+        "amount": 54.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Concrete",
+      "amount": 80.0
+    },
+    "items": [
+      {
+        "name": "Limestone",
+        "amount": 120.0
+      },
+      {
+        "name": "Water",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Quartz Crystal",
+      "amount": 52.5
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 67.5
+      },
+      {
+        "name": "Water",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Quartz Crystal",
+      "amount": 75.0
+    },
+    "items": [
+      {
+        "name": "Raw Quartz",
+        "amount": 120.0
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dissolved Silica",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 1,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Cable",
+      "amount": 67.5
+    },
+    "items": [
+      {
+        "name": "Wire",
+        "amount": 37.5
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Copper Sheet",
+      "amount": 22.5
+    },
+    "items": [
+      {
+        "name": "Copper Ingot",
+        "amount": 22.5
+      },
+      {
+        "name": "Water",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Fabric",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Polymer Resin",
+        "amount": 30.0
+      },
+      {
+        "name": "Water",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Refinery"
+    },
+    "itemToBuild": {
+      "name": "Smokeless Powder",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Black Powder",
+        "amount": 20.0
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Water",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Water",
+        "amount": 60.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Oil",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 30.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Heavy Oil Residue",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 30.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Liquid Biofuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Liquid Biofuel",
+        "amount": 40.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Fuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Fuel",
+        "amount": 40.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Turbofuel",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Turbofuel",
+        "amount": 20.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Rocket Fuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Rocket Fuel",
+        "amount": 120.0
+      },
+      {
+        "name": "Empty Fluid Tank",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Ionized Fuel",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Ionized Fuel",
+        "amount": 80.0
+      },
+      {
+        "name": "Empty Fluid Tank",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Alumina Solution",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Alumina Solution",
+        "amount": 120.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Sulfuric Acid",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Sulfuric Acid",
+        "amount": 40.0
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Nitrogen Gas",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Nitrogen Gas",
+        "amount": 240.0
+      },
+      {
+        "name": "Empty Fluid Tank",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Packaged Nitric Acid",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Nitric Acid",
+        "amount": 30.0
+      },
+      {
+        "name": "Empty Fluid Tank",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Water",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Packaged Water",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 120.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Crude Oil",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Packaged Oil",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Heavy Oil Residue",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Packaged Heavy Oil Residue",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Liquid Biofuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Packaged Liquid Biofuel",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Fuel",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Packaged Fuel",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 5,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Turbofuel",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Packaged Turbofuel",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Rocket Fuel",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Packaged Rocket Fuel",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Fluid Tank",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Ionized Fuel",
+      "amount": 80.0
+    },
+    "items": [
+      {
+        "name": "Packaged Ionized Fuel",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Fluid Tank",
+      "amount": 40.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Alumina Solution",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Packaged Alumina Solution",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 120.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Sulfuric Acid",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Packaged Sulfuric Acid",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Canister",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 8,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Nitrogen Gas",
+      "amount": 240.0
+    },
+    "items": [
+      {
+        "name": "Packaged Nitrogen Gas",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Fluid Tank",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 8,
+    "building": {
+      "type": "Packager"
+    },
+    "itemToBuild": {
+      "name": "Unpackage Nitric Acid",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Packaged Nitric Acid",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": {
+      "name": "Empty Fluid Tank",
+      "amount": 20.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Biochemical Sculptor",
+      "amount": 2.0
+    },
+    "items": [
+      {
+        "name": "Assembly Director System",
+        "amount": 0.5
+      },
+      {
+        "name": "Ficsite Trigon",
+        "amount": 40.0
+      },
+      {
+        "name": "Water",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 2,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Silica",
+      "amount": 270.0
+    },
+    "items": [
+      {
+        "name": "Dissolved Silica",
+        "amount": 120.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 50.0
+      },
+      {
+        "name": "Water",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Aluminum Scrap",
+      "amount": 300.0
+    },
+    "items": [
+      {
+        "name": "Bauxite",
+        "amount": 150.0
+      },
+      {
+        "name": "Coal",
+        "amount": 100.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 50.0
+      },
+      {
+        "name": "Water",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 50.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Nitric Acid",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Nitrogen Gas",
+        "amount": 120.0
+      },
+      {
+        "name": "Water",
+        "amount": 30.0
+      },
+      {
+        "name": "Iron Plate",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Fuel",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 50.0
+      },
+      {
+        "name": "Water",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 5,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Turbofuel",
+      "amount": 45.0
+    },
+    "items": [
+      {
+        "name": "Fuel",
+        "amount": 15.0
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 30.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 22.5
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 22.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 1,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Rocket Fuel",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Turbofuel",
+        "amount": 60.0
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": {
+      "name": "Compacted Coal",
+      "amount": 10.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 1,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Rocket Fuel",
+      "amount": 150.0
+    },
+    "items": [
+      {
+        "name": "Fuel",
+        "amount": 100.0
+      },
+      {
+        "name": "Nitrogen Gas",
+        "amount": 75.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 100.0
+      },
+      {
+        "name": "Coal",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": {
+      "name": "Compacted Coal",
+      "amount": 25.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Cooling System",
+      "amount": 6.0
+    },
+    "items": [
+      {
+        "name": "Heat Sink",
+        "amount": 12.0
+      },
+      {
+        "name": "Rubber",
+        "amount": 12.0
+      },
+      {
+        "name": "Water",
+        "amount": 30.0
+      },
+      {
+        "name": "Nitrogen Gas",
+        "amount": 150.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Cooling System",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Heat Sink",
+        "amount": 10.0
+      },
+      {
+        "name": "Motor",
+        "amount": 2.5
+      },
+      {
+        "name": "Nitrogen Gas",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Fused Modular Frame",
+      "amount": 1.5
+    },
+    "items": [
+      {
+        "name": "Heavy Modular Frame",
+        "amount": 1.5
+      },
+      {
+        "name": "Aluminum Casing",
+        "amount": 75.0
+      },
+      {
+        "name": "Nitrogen Gas",
+        "amount": 37.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Fused Modular Frame",
+      "amount": 3.0
+    },
+    "items": [
+      {
+        "name": "Heavy Modular Frame",
+        "amount": 3.0
+      },
+      {
+        "name": "Aluminum Ingot",
+        "amount": 150.0
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": 24.0
+      },
+      {
+        "name": "Fuel",
+        "amount": 30.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 7,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Battery",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Sulfuric Acid",
+        "amount": 50.0
+      },
+      {
+        "name": "Aluminum Solution",
+        "amount": 40.0
+      },
+      {
+        "name": "Aluminum Casing",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 30.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Encased Uranium Cell",
+      "amount": 25.0
+    },
+    "items": [
+      {
+        "name": "Uranium",
+        "amount": 50.0
+      },
+      {
+        "name": "Concrete",
+        "amount": 15.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": {
+      "name": "Sulfuric Acid",
+      "amount": 10.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Non-fissile Uranium",
+      "amount": 50.0
+    },
+    "items": [
+      {
+        "name": "Uranium Waste",
+        "amount": 37.5
+      },
+      {
+        "name": "Silica",
+        "amount": 25.0
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": 15.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 15.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 15.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 8,
+    "building": {
+      "type": "Blender"
+    },
+    "itemToBuild": {
+      "name": "Non-fissile Uranium",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Uranium",
+        "amount": 25.0
+      },
+      {
+        "name": "Uranium Waste",
+        "amount": 25.0
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": 15.0
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 25.0
+      }
+    ],
+    "byProduct": {
+      "name": "Water",
+      "amount": 40.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Nuclear Pasta",
+      "amount": 0.5
+    },
+    "items": [
+      {
+        "name": "Copper Powder",
+        "amount": 100.0
+      },
+      {
+        "name": "Pressure Conversion Cube",
+        "amount": 0.5
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Dark Matter Crystal",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Diamonds",
+        "amount": 30.0
+      },
+      {
+        "name": "Dark Matter Residue",
+        "amount": 150.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Dark Matter Crystal",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Dark Matter Residue",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Dark Matter Crystal",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Time Crystal",
+        "amount": 30.0
+      },
+      {
+        "name": "Dark Matter Residue",
+        "amount": 150.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 600.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 20.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 240.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 480.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 40.0
+    },
+    "items": [
+      {
+        "name": "Crude Oil",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Petroleum Coke",
+        "amount": 720.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 60.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 600.0
+      },
+      {
+        "name": "Packaged Turbofuel",
+        "amount": 40.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Plutonium Pellet",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Non-fissile Uranium",
+        "amount": 100.0
+      },
+      {
+        "name": "Uranium Waste",
+        "amount": 25.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 8,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Plutonium Cell",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Non-fissile Uranium",
+        "amount": 75.0
+      },
+      {
+        "name": "Aluminum Casing",
+        "amount": 10.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Particle Accelerator"
+    },
+    "itemToBuild": {
+      "name": "Ficsonium",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Plutonium Waste",
+        "amount": 10.0
+      },
+      {
+        "name": "Singularity Cell",
+        "amount": 10.0
+      },
+      {
+        "name": "Dark Matter Residue",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Time Crystal",
+      "amount": 6.0
+    },
+    "items": [
+      {
+        "name": "Diamonds",
+        "amount": 12.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Excited Photonic Matter",
+      "amount": 200.0
+    },
+    "items": [
+      {
+        "name": "(Free)",
+        "amount": 0.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Dark Matter Residue",
+      "amount": 100.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Diamonds",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Coal",
+        "amount": 120.0
+      },
+      {
+        "name": "Quartz Crystal",
+        "amount": 45.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 7,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Ionized Fuel",
+      "amount": 200.0
+    },
+    "items": [
+      {
+        "name": "Compacted Coal",
+        "amount": 40.0
+      },
+      {
+        "name": "Packaged Rocket Fuel",
+        "amount": 240.0
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "amount": 80.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Ficsite Ingot",
+      "amount": 10.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 40.0
+      },
+      {
+        "name": "Iron Ingot",
+        "amount": 240.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Ficsite Ingot",
+      "amount": 15.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 45.0
+      },
+      {
+        "name": "Caterium Ingot",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Ficsite Ingot",
+      "amount": 30.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 60.0
+      },
+      {
+        "name": "Aluminum Ingot",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Iron Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 240.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Copper Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Copper Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Raw Quartz",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Limestone",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Sulfur",
+        "amount": 20.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Coal",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Limestone",
+        "amount": 360.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Coal",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 180.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Sulfur",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 300.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Sulfur",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Coal",
+        "amount": 200.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Caterium Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Copper Ore",
+        "amount": 150.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Caterium Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Raw Quartz",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Raw Quartz",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Coal",
+        "amount": 240.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Raw Quartz",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Bauxite",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Bauxite",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Copper Ore",
+        "amount": 180.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Bauxite",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Caterium Ore",
+        "amount": 150.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Nitrogen Gas",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Caterium Ore",
+        "amount": 120.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Nitrogen Gas",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Bauxite",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": false,
+    "tier": 9,
+    "building": {
+      "type": "Converter"
+    },
+    "itemToBuild": {
+      "name": "Converter Uranium Ore",
+      "amount": 120.0
+    },
+    "items": [
+      {
+        "name": "Reanimated SAM",
+        "amount": 10.0
+      },
+      {
+        "name": "Bauxite",
+        "amount": 480.0
+      }
+    ],
+    "byProduct": null
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "AI Expansion Server",
+      "amount": 4.0
+    },
+    "items": [
+      {
+        "name": "Magnetic Field Generator",
+        "amount": 4.0
+      },
+      {
+        "name": "Neural-Quantum Processor",
+        "amount": 4.0
+      },
+      {
+        "name": "Superposition Oscillator",
+        "amount": 4.0
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 100.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 100.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "Superposition Oscillator",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Dark Matter Crystal",
+        "amount": 30.0
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 5.0
+      },
+      {
+        "name": "Alclad Aluminum Sheet",
+        "amount": 45.0
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 125.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 125.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "Neural-Quantum Processor",
+      "amount": 3.0
+    },
+    "items": [
+      {
+        "name": "Time Crystal",
+        "amount": 15.0
+      },
+      {
+        "name": "Supercomputer",
+        "amount": 3.0
+      },
+      {
+        "name": "Ficsite Trigon",
+        "amount": 45.0
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 75.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 75.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "Alien Power Matrix",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "SAM Fluctuator",
+        "amount": 12.5
+      },
+      {
+        "name": "Power Shard",
+        "amount": 7.5
+      },
+      {
+        "name": "Superposition Oscillator",
+        "amount": 7.5
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 60.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "Ficsonium Fuel Rod",
+      "amount": 2.5
+    },
+    "items": [
+      {
+        "name": "Ficsonium",
+        "amount": 5.0
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 5.0
+      },
+      {
+        "name": "Ficsite Trigon",
+        "amount": 100.0
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 50.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 50.0
+    }
+  },
+  {
+    "isAlternate": true,
+    "isSpaceElevator": false,
+    "isFuel": false,
+    "isWeaponOrTool": false,
+    "hasByProduct": true,
+    "tier": 9,
+    "building": {
+      "type": "Quantum Encoder"
+    },
+    "itemToBuild": {
+      "name": "Synthetic Power Shard",
+      "amount": 5.0
+    },
+    "items": [
+      {
+        "name": "Time Crystal",
+        "amount": 10.0
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "amount": 10.0
+      },
+      {
+        "name": "Quartz Crystal",
+        "amount": 60.0
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "amount": 60.0
+      }
+    ],
+    "byProduct": {
+      "name": "Dark Matter Residue",
+      "amount": 60.0
+    }
+  }
+]
