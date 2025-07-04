@@ -1,6 +1,6 @@
 [
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -22,7 +22,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -44,7 +44,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -192,7 +192,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -322,7 +322,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -452,7 +452,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -474,7 +474,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -540,7 +540,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -606,7 +606,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -628,7 +628,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -672,7 +672,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -716,7 +716,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -738,7 +738,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -760,7 +760,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -826,7 +826,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -848,7 +848,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -870,7 +870,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -892,7 +892,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -914,7 +914,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -936,7 +936,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -958,7 +958,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -980,10 +980,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
@@ -1002,10 +1002,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
@@ -1024,10 +1024,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
@@ -1046,10 +1046,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
@@ -1068,10 +1068,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1092,7 +1092,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
@@ -1100,7 +1100,7 @@
       "type": "Constructor"
     },
     "itemToBuild": {
-      "name": "Biocoal",
+      "name": "Coal",
       "amount": 45.0
     },
     "items": [
@@ -1114,7 +1114,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
@@ -1122,7 +1122,7 @@
       "type": "Constructor"
     },
     "itemToBuild": {
-      "name": "Charcoal",
+      "name": "Coal",
       "amount": 150.0
     },
     "items": [
@@ -1134,7 +1134,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1178,7 +1178,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1200,10 +1200,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1222,10 +1222,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1244,10 +1244,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1266,10 +1266,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1288,10 +1288,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1310,10 +1310,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1332,10 +1332,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1354,10 +1354,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1376,7 +1376,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1398,8 +1398,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -1424,8 +1424,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -1450,8 +1450,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -1476,8 +1476,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -1502,8 +1502,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -1528,10 +1528,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1554,10 +1554,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1580,10 +1580,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -1632,7 +1632,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1736,7 +1736,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1814,7 +1814,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1866,7 +1866,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -1996,7 +1996,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2126,7 +2126,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2284,7 +2284,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
@@ -2334,10 +2334,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2360,7 +2360,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2438,7 +2438,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2490,7 +2490,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2542,7 +2542,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2620,7 +2620,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2646,7 +2646,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2698,7 +2698,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -2753,7 +2753,7 @@
     "isAlternate": true,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2776,10 +2776,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2805,7 +2805,7 @@
     "isAlternate": true,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2828,10 +2828,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2854,10 +2854,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2880,10 +2880,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2906,10 +2906,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2932,10 +2932,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
@@ -2958,10 +2958,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -2984,10 +2984,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
@@ -3010,10 +3010,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
@@ -3037,7 +3037,7 @@
   },
   {
     "isAlternate": true,
-    "isSpaceElevator": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3067,7 +3067,7 @@
   },
   {
     "isAlternate": true,
-    "isSpaceElevator": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3097,7 +3097,7 @@
   },
   {
     "isAlternate": true,
-    "isSpaceElevator": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3126,8 +3126,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3156,8 +3156,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3190,8 +3190,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3224,8 +3224,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -3258,7 +3258,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3360,7 +3360,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3420,7 +3420,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3454,7 +3454,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3514,7 +3514,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3618,8 +3618,8 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 7,
     "building": {
@@ -3650,7 +3650,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3710,7 +3710,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3778,7 +3778,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3838,7 +3838,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -3932,10 +3932,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 6,
     "building": {
@@ -3962,10 +3962,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": true,
     "tier": 7,
     "building": {
@@ -3991,7 +3991,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4016,7 +4016,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4068,7 +4068,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4093,7 +4093,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4195,7 +4195,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4217,7 +4217,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4272,7 +4272,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4330,7 +4330,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4356,9 +4356,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
@@ -4383,7 +4383,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4405,7 +4405,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4429,9 +4429,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4455,9 +4455,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4483,7 +4483,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4507,9 +4507,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
@@ -4768,7 +4768,7 @@
       }
     ],
     "byProduct": {
-      "name": "Dissolved Silica",
+      "name": "Silica",
       "amount": 60.0
     }
   },
@@ -4828,7 +4828,7 @@
     "isAlternate": true,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
@@ -4851,10 +4851,10 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
@@ -4877,7 +4877,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4903,7 +4903,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4929,7 +4929,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -4955,9 +4955,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -4981,9 +4981,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -5007,9 +5007,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -5033,9 +5033,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
@@ -5059,9 +5059,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
@@ -5085,7 +5085,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5111,7 +5111,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5137,7 +5137,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5163,7 +5163,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5189,7 +5189,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5214,7 +5214,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5239,7 +5239,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5264,9 +5264,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
@@ -5289,9 +5289,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
@@ -5314,9 +5314,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
@@ -5339,9 +5339,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
@@ -5364,9 +5364,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
@@ -5389,7 +5389,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5414,7 +5414,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5439,7 +5439,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5464,7 +5464,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5489,8 +5489,8 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -5586,7 +5586,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5618,7 +5618,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -5644,7 +5644,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
@@ -5676,9 +5676,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 1,
@@ -5707,7 +5707,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 1,
@@ -5742,7 +5742,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5806,7 +5806,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5872,8 +5872,8 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "isFuel": true,
+    "isWeaponOrTool": true,
     "hasByProduct": true,
     "tier": 7,
     "building": {
@@ -5903,7 +5903,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -5936,7 +5936,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6010,8 +6010,8 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": false,
@@ -6036,7 +6036,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6110,7 +6110,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6228,7 +6228,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6280,7 +6280,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6310,7 +6310,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6332,7 +6332,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6345,16 +6345,11 @@
       "name": "Excited Photonic Matter",
       "amount": 200.0
     },
-    "items": [
-      {
-        "name": "(Free)",
-        "amount": 0.0
-      }
-    ],
+    "items": [],
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6404,7 +6399,7 @@
   {
     "isAlternate": true,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
@@ -6432,7 +6427,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6458,7 +6453,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6484,7 +6479,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6510,7 +6505,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6520,7 +6515,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Iron Ore",
+      "name": "Iron Ore",
       "amount": 120.0
     },
     "items": [
@@ -6536,7 +6531,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6546,7 +6541,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Copper Ore",
+      "name": "Copper Ore",
       "amount": 120.0
     },
     "items": [
@@ -6562,7 +6557,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6572,7 +6567,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Copper Ore",
+      "name": "Copper Ore",
       "amount": 120.0
     },
     "items": [
@@ -6588,7 +6583,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6598,7 +6593,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Limestone",
+      "name": "Limestone",
       "amount": 120.0
     },
     "items": [
@@ -6614,9 +6609,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
@@ -6624,7 +6619,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Coal",
+      "name": "Coal",
       "amount": 120.0
     },
     "items": [
@@ -6640,9 +6635,9 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
@@ -6650,7 +6645,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Coal",
+      "name": "Coal",
       "amount": 120.0
     },
     "items": [
@@ -6666,7 +6661,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6676,7 +6671,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Sulfur",
+      "name": "Sulfur",
       "amount": 120.0
     },
     "items": [
@@ -6692,7 +6687,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6702,7 +6697,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Sulfur",
+      "name": "Sulfur",
       "amount": 120.0
     },
     "items": [
@@ -6718,7 +6713,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6728,7 +6723,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Caterium Ore",
+      "name": "Caterium Ore",
       "amount": 120.0
     },
     "items": [
@@ -6744,7 +6739,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6754,7 +6749,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Caterium Ore",
+      "name": "Caterium Ore",
       "amount": 120.0
     },
     "items": [
@@ -6770,7 +6765,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6780,7 +6775,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Raw Quartz",
+      "name": "Raw Quartz",
       "amount": 120.0
     },
     "items": [
@@ -6796,7 +6791,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6806,7 +6801,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Raw Quartz",
+      "name": "Raw Quartz",
       "amount": 120.0
     },
     "items": [
@@ -6822,7 +6817,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6832,7 +6827,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Bauxite",
+      "name": "Bauxite",
       "amount": 120.0
     },
     "items": [
@@ -6848,7 +6843,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6858,7 +6853,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Bauxite",
+      "name": "Bauxite",
       "amount": 120.0
     },
     "items": [
@@ -6874,7 +6869,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6884,7 +6879,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Nitrogen Gas",
+      "name": "Nitrogen Gas",
       "amount": 120.0
     },
     "items": [
@@ -6900,7 +6895,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6910,7 +6905,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Nitrogen Gas",
+      "name": "Nitrogen Gas",
       "amount": 120.0
     },
     "items": [
@@ -6926,7 +6921,7 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -6936,7 +6931,7 @@
       "type": "Converter"
     },
     "itemToBuild": {
-      "name": "Converter Uranium Ore",
+      "name": "Uranium Ore",
       "amount": 120.0
     },
     "items": [
@@ -6952,8 +6947,8 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
+    "isAlternate": false,
+    "isSpaceElevator": true,
     "isFuel": false,
     "isWeaponOrTool": false,
     "hasByProduct": true,
@@ -6989,7 +6984,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -7026,7 +7021,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -7063,7 +7058,7 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
     "isWeaponOrTool": false,
@@ -7100,9 +7095,9 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
-    "isFuel": false,
+    "isFuel": true,
     "isWeaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
@@ -7137,17 +7132,17 @@
     }
   },
   {
-    "isAlternate": true,
+    "isAlternate": false,
     "isSpaceElevator": false,
     "isFuel": false,
-    "isWeaponOrTool": false,
+    "isWeaponOrTool": true,
     "hasByProduct": true,
     "tier": 9,
     "building": {
       "type": "Quantum Encoder"
     },
     "itemToBuild": {
-      "name": "Synthetic Power Shard",
+      "name": "Power Shard",
       "amount": 5.0
     },
     "items": [

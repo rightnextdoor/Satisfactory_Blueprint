@@ -210,18 +210,6 @@
     "isResource": false
   },
   {
-    "name": "Biocoal",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Charcoal",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
     "name": "Empty Canister",
     "iconKey": "",
     "amount": 0.0,
@@ -888,66 +876,6 @@
     "isResource": false
   },
   {
-    "name": "Converter Iron Ore",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Copper Ore",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Limestone",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Coal",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Sulfur",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Caterium Ore",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Raw Quartz",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Bauxite",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Nitrogen Gas",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Converter Uranium Ore",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
     "name": "AI Expansion Server",
     "iconKey": "",
     "amount": 0.0,
@@ -973,12 +901,6 @@
   },
   {
     "name": "Ficsonium Fuel Rod",
-    "iconKey": "",
-    "amount": 0.0,
-    "isResource": false
-  },
-  {
-    "name": "Synthetic Power Shard",
     "iconKey": "",
     "amount": 0.0,
     "isResource": false
