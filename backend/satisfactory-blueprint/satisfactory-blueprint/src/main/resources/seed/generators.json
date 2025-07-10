@@ -7,7 +7,10 @@
     "powerOutput": 250.0,
     "burnTime": 3.0,
     "fuelItems": [
-      { "name": "Fuel", "amount": 20.0 }
+      {
+        "name": "Fuel",
+        "amount": 20.0
+      }
     ],
     "iconKey": ""
   },
@@ -19,7 +22,10 @@
     "powerOutput": 250.0,
     "burnTime": 3.0,
     "fuelItems": [
-      { "name": "Liquid Biofuel", "amount": 20.0 }
+      {
+        "name": "Liquid Biofuel",
+        "amount": 20.0
+      }
     ],
     "iconKey": ""
   },
@@ -31,7 +37,10 @@
     "powerOutput": 250.0,
     "burnTime": 8.0,
     "fuelItems": [
-      { "name": "Turbofuel", "amount": 7.5 }
+      {
+        "name": "Turbofuel",
+        "amount": 7.5
+      }
     ],
     "iconKey": ""
   },
@@ -43,7 +52,10 @@
     "powerOutput": 250.0,
     "burnTime": 14.4,
     "fuelItems": [
-      { "name": "Rocket Fuel", "amount": 4.17 }
+      {
+        "name": "Rocket Fuel",
+        "amount": 4.17
+      }
     ],
     "iconKey": ""
   },
@@ -55,7 +67,10 @@
     "powerOutput": 250.0,
     "burnTime": 20.0,
     "fuelItems": [
-      { "name": "Ionized Fuel", "amount": 3.0 }
+      {
+        "name": "Ionized Fuel",
+        "amount": 3.0
+      }
     ],
     "iconKey": ""
   },
@@ -67,8 +82,14 @@
     "powerOutput": 75.0,
     "burnTime": 4.0,
     "fuelItems": [
-      { "name": "Coal", "amount": 15.0 },
-      { "name": "Water", "amount": 45.0 }
+      {
+        "name": "Coal",
+        "amount": 15.0
+      },
+      {
+        "name": "Water",
+        "amount": 45.0
+      }
     ],
     "iconKey": ""
   },
@@ -80,8 +101,14 @@
     "powerOutput": 75.0,
     "burnTime": 8.4,
     "fuelItems": [
-      { "name": "Compacted Coal", "amount": 7.142857 },
-      { "name": "Water", "amount": 45.0 }
+      {
+        "name": "Compacted Coal",
+        "amount": 7.142857
+      },
+      {
+        "name": "Water",
+        "amount": 45.0
+      }
     ],
     "iconKey": ""
   },
@@ -93,8 +120,14 @@
     "powerOutput": 75.0,
     "burnTime": 2.4,
     "fuelItems": [
-      { "name": "Petroleum Coke", "amount": 25.0 },
-      { "name": "Water", "amount": 45.0 }
+      {
+        "name": "Petroleum Coke",
+        "amount": 25.0
+      },
+      {
+        "name": "Water",
+        "amount": 45.0
+      }
     ],
     "iconKey": ""
   },
@@ -102,12 +135,21 @@
     "name": "NUCLEAR_REACTOR",
     "fuelType": "URANIUM_FUEL_ROD",
     "hasByProduct": true,
-    "byProduct": { "name": "Uranium Waste",    "amount": 10.0 },
+    "byProduct": {
+      "name": "Uranium Waste",
+      "amount": 10.0
+    },
     "powerOutput": 2500.0,
     "burnTime": 300.0,
     "fuelItems": [
-      { "name": "Uranium Fuel Rod",   "amount": 0.2 },
-      { "name": "Water",               "amount": 240.0 }
+      {
+        "name": "Uranium Fuel Rod",
+        "amount": 0.2
+      },
+      {
+        "name": "Water",
+        "amount": 240.0
+      }
     ],
     "iconKey": ""
   },
@@ -115,12 +157,21 @@
     "name": "NUCLEAR_REACTOR",
     "fuelType": "PLUTONIUM_FUEL_ROD",
     "hasByProduct": true,
-    "byProduct": { "name": "Plutonium Waste", "amount": 1.0 },
+    "byProduct": {
+      "name": "Plutonium Waste",
+      "amount": 1.0
+    },
     "powerOutput": 2500.0,
     "burnTime": 600.0,
     "fuelItems": [
-      { "name": "Plutonium Fuel Rod", "amount": 0.1 },
-      { "name": "Water",               "amount": 240.0 }
+      {
+        "name": "Plutonium Fuel Rod",
+        "amount": 0.1
+      },
+      {
+        "name": "Water",
+        "amount": 240.0
+      }
     ],
     "iconKey": ""
   },
@@ -132,8 +183,14 @@
     "powerOutput": 2500.0,
     "burnTime": 60.0,
     "fuelItems": [
-      { "name": "Ficsonium Fuel Rod", "amount": 1.0 },
-      { "name": "Water",               "amount": 240.0 }
+      {
+        "name": "Ficsonium Fuel Rod",
+        "amount": 1.0
+      },
+      {
+        "name": "Water",
+        "amount": 240.0
+      }
     ],
     "iconKey": ""
   },
@@ -145,7 +202,10 @@
     "powerOutput": 30.0,
     "burnTime": 4.0,
     "fuelItems": [
-      { "name": "Biomass",        "amount": 15.0 }
+      {
+        "name": "Biomass",
+        "amount": 15.0
+      }
     ],
     "iconKey": ""
   },
@@ -157,7 +217,10 @@
     "powerOutput": 30.0,
     "burnTime": 4.0,
     "fuelItems": [
-      { "name": "Solid Biofuel",  "amount": 15.0 }
+      {
+        "name": "Solid Biofuel",
+        "amount": 15.0
+      }
     ],
     "iconKey": ""
   },
@@ -169,7 +232,10 @@
     "powerOutput": 30.0,
     "burnTime": 4.0,
     "fuelItems": [
-      { "name": "Wood",           "amount": 15.0 }
+      {
+        "name": "Wood",
+        "amount": 15.0
+      }
     ],
     "iconKey": ""
   },
@@ -181,13 +247,16 @@
     "powerOutput": 30.0,
     "burnTime": 4.0,
     "fuelItems": [
-      { "name": "Leaves",         "amount": 15.0 }
+      {
+        "name": "Leaves",
+        "amount": 15.0
+      }
     ],
     "iconKey": ""
   },
   {
     "name": "GEOTHERMAL_GENERATOR",
-    "fuelType": "",
+    "fuelType": "GEOTHERMAL",
     "hasByProduct": false,
     "byProduct": null,
     "powerOutput": 600.0,

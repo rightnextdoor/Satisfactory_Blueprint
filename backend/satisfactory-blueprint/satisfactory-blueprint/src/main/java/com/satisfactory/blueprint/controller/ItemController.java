@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/items")
@@ -21,27 +22,32 @@ public class ItemController {
 
     /** List all items */
     @GetMapping("/list")
-    public List<Item> listAll() {
-        return itemService.findAll();
+    public List<ItemDto> listAll() {
+        return itemService.findAll().stream()
+                .map(this::toDto)
+                .collect(Collectors.toList());
     }
 
     /** Get a single item by ID (in request body) */
     @PostMapping("/get")
-    public Item getById(@RequestBody IdRequest req) {
-        return itemService.findById(req.getId());
+    public ItemDto getById(@RequestBody IdRequest req) {
+        Item item = itemService.findById(req.getId());
+        return toDto(item);
     }
 
     /** Create a new item */
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public Item create(@RequestBody ItemDto dto) {
-        return itemService.create(dto);
+    public ItemDto create(@RequestBody ItemDto dto) {
+        Item created = itemService.create(dto);
+        return toDto(created);
     }
 
     /** Update an existing item */
     @PutMapping("/update")
-    public Item update(@RequestBody ItemDto dto) {
-        return itemService.update(dto);
+    public ItemDto update(@RequestBody ItemDto dto) {
+        Item updated = itemService.update(dto);
+        return toDto(updated);
     }
 
     /** Delete an item */
@@ -49,5 +55,18 @@ public class ItemController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@RequestBody IdRequest req) {
         itemService.delete(req.getId());
+    }
+
+    // ——————————————————————————————————————————————————
+    // DTO ↔ Entity mapping
+    // ——————————————————————————————————————————————————
+
+    private ItemDto toDto(Item item) {
+        ItemDto dto = new ItemDto();
+        dto.setId(item.getId());
+        dto.setName(item.getName());
+        dto.setIconKey(item.getIconKey());
+        dto.setResource(item.isResource());
+        return dto;
     }
 }

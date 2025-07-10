@@ -19,7 +19,7 @@ public class GeneratorFuelValidator {
 
     static {
         ALLOWED.put(GeneratorType.COAL_GENERATOR,
-                Set.of(FuelType.COAL, FuelType.COMPACTED_COAL, FuelType.PETROLEUM_COKE));
+                Set.of(FuelType.COAL, FuelType.COMPACTED_COAL, FuelType.PETROLEUM_COKE, FuelType.WATER));
         ALLOWED.put(GeneratorType.FUEL_GENERATOR,
                 Set.of(FuelType.FUEL, FuelType.LIQUID_BIOFUEL, FuelType.TURBOFUEL,
                         FuelType.ROCKET_FUEL, FuelType.IONIZED_FUEL));

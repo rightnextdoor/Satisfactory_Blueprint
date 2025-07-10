@@ -1,13 +1,13 @@
 [
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Smelter"
+      "type": "SMELTER"
     },
     "itemToBuild": {
       "name": "Iron Ingot",
@@ -22,14 +22,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Smelter"
+      "type": "SMELTER"
     },
     "itemToBuild": {
       "name": "Copper Ingot",
@@ -44,14 +44,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Smelter"
+      "type": "SMELTER"
     },
     "itemToBuild": {
       "name": "Caterium Ingot",
@@ -66,14 +66,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Smelter"
+      "type": "SMELTER"
     },
     "itemToBuild": {
       "name": "Aluminum Ingot",
@@ -88,14 +88,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Iron Ingot",
@@ -114,14 +114,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Iron Ingot",
@@ -140,14 +140,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Copper Ingot",
@@ -166,14 +166,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Copper Ingot",
@@ -192,14 +192,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Ingot",
@@ -218,14 +218,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Ingot",
@@ -244,14 +244,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Ingot",
@@ -270,14 +270,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Ingot",
@@ -296,14 +296,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Caterium Ingot",
@@ -322,14 +322,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Aluminum Ingot",
@@ -348,14 +348,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Iron Plate",
@@ -374,14 +374,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Beam",
@@ -400,14 +400,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Steel Pipe",
@@ -426,14 +426,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Foundry"
+      "type": "FOUNDRY"
     },
     "itemToBuild": {
       "name": "Quartz Crystal",
@@ -452,14 +452,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Iron Plate",
@@ -474,14 +474,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Iron Rod",
@@ -496,14 +496,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Iron Rod",
@@ -518,14 +518,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Iron Rod",
@@ -540,14 +540,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Screw",
@@ -562,14 +562,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Screw",
@@ -584,14 +584,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Screw",
@@ -606,14 +606,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Copper Sheet",
@@ -628,14 +628,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Steel Beam",
@@ -650,14 +650,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Steel Beam",
@@ -672,14 +672,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Steel Pipe",
@@ -694,14 +694,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Steel Pipe",
@@ -716,14 +716,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Aluminum Casing",
@@ -738,14 +738,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Ficsite Trigon",
@@ -760,14 +760,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Wire",
@@ -782,14 +782,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Wire",
@@ -804,14 +804,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Wire",
@@ -826,14 +826,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Cable",
@@ -848,14 +848,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Quickwire",
@@ -870,14 +870,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Reanimated SAM",
@@ -892,14 +892,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Concrete",
@@ -914,14 +914,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Quartz Crystal",
@@ -936,14 +936,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Silica",
@@ -958,14 +958,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Copper Powder",
@@ -980,14 +980,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Biomass",
@@ -1002,14 +1002,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Biomass",
@@ -1024,14 +1024,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Biomass",
@@ -1046,14 +1046,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Biomass",
@@ -1068,14 +1068,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Solid Biofuel",
@@ -1090,14 +1090,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Coal",
@@ -1112,14 +1112,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Coal",
@@ -1134,14 +1134,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Empty Canister",
@@ -1156,14 +1156,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Empty Canister",
@@ -1178,14 +1178,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Empty Fluid Tank",
@@ -1200,14 +1200,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Hog Protein",
@@ -1222,14 +1222,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Hatcher Protein",
@@ -1244,14 +1244,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Stinger Protein",
@@ -1266,14 +1266,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Spitter Protein",
@@ -1288,14 +1288,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Alien DNA Capsule",
@@ -1310,14 +1310,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Power Shard",
@@ -1332,14 +1332,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Power Shard",
@@ -1354,14 +1354,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Power Shard",
@@ -1376,14 +1376,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Constructor"
+      "type": "CONSTRUCTOR"
     },
     "itemToBuild": {
       "name": "Iron Rebar",
@@ -1398,14 +1398,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Smart Plating",
@@ -1424,14 +1424,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Versatile Framework",
@@ -1450,14 +1450,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Automated Wiring",
@@ -1476,14 +1476,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Assembly Director System",
@@ -1502,14 +1502,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Magnetic Field Generator",
@@ -1528,14 +1528,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Fireworks",
@@ -1554,14 +1554,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Fireworks",
@@ -1580,14 +1580,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Fireworks",
@@ -1606,14 +1606,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Iron Plate",
@@ -1632,14 +1632,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Reinforced Iron Plate",
@@ -1658,14 +1658,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Reinforced Iron Plate",
@@ -1684,14 +1684,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Reinforced Iron Plate",
@@ -1710,14 +1710,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Reinforced Iron Plate",
@@ -1736,14 +1736,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Modular Frame",
@@ -1762,14 +1762,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Modular Frame",
@@ -1788,14 +1788,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Modular Frame",
@@ -1814,14 +1814,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Encased Industrial Beam",
@@ -1840,14 +1840,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Encased Industrial Beam",
@@ -1866,14 +1866,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Aluminum Sheet",
@@ -1892,14 +1892,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Aluminum Casing",
@@ -1918,14 +1918,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Wire",
@@ -1944,14 +1944,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Cable",
@@ -1970,14 +1970,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Cable",
@@ -1996,14 +1996,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Circuit Board",
@@ -2022,14 +2022,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Circuit Board",
@@ -2048,14 +2048,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Circuit Board",
@@ -2074,14 +2074,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Circuit Board",
@@ -2100,14 +2100,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Quickwire",
@@ -2126,14 +2126,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "A.I. Limiter",
@@ -2152,14 +2152,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "A.I. Limiter",
@@ -2178,14 +2178,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Computer",
@@ -2204,14 +2204,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Supercomputer",
@@ -2230,14 +2230,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Concrete",
@@ -2256,14 +2256,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Concrete",
@@ -2282,14 +2282,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Compacted Coal",
@@ -2308,14 +2308,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Silica",
@@ -2334,14 +2334,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Fabric",
@@ -2360,14 +2360,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Rotor",
@@ -2386,14 +2386,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Rotor",
@@ -2412,14 +2412,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Rotor",
@@ -2438,14 +2438,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Stator",
@@ -2464,14 +2464,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Stator",
@@ -2490,14 +2490,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Motor",
@@ -2516,14 +2516,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Motor",
@@ -2542,14 +2542,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Heat Sink",
@@ -2568,14 +2568,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Heat Sink",
@@ -2594,14 +2594,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Empty Canister",
@@ -2620,14 +2620,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Pressure Conversion Cube",
@@ -2646,14 +2646,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Electromagnetic Control Rod",
@@ -2672,14 +2672,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Electromagnetic Control Rod",
@@ -2698,14 +2698,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Encased Plutonium Cell",
@@ -2724,14 +2724,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Plutonium Fuel Unit",
@@ -2750,14 +2750,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Automated Miner",
@@ -2776,14 +2776,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Black Powder",
@@ -2802,14 +2802,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Black Powder",
@@ -2828,14 +2828,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Stun Rebar",
@@ -2854,14 +2854,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Shatter Rebar",
@@ -2880,14 +2880,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Nobelisk",
@@ -2906,14 +2906,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Gas Nobelisk",
@@ -2932,14 +2932,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Cluster Nobelisk",
@@ -2958,14 +2958,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Pulse Nobelisk",
@@ -2984,14 +2984,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Rifle Ammo",
@@ -3010,14 +3010,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Assembler"
+      "type": "ASSEMBLER"
     },
     "itemToBuild": {
       "name": "Homing Rifle Ammo",
@@ -3036,14 +3036,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Smart Plating",
@@ -3066,14 +3066,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 3,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Versatile Framework",
@@ -3096,14 +3096,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Automated Wiring",
@@ -3126,14 +3126,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Modular Engine",
@@ -3156,14 +3156,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Adaptive Control Unit",
@@ -3190,14 +3190,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Thermal Propulsion Rocket",
@@ -3224,14 +3224,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Ballistic Warp Drive",
@@ -3258,14 +3258,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Heavy Modular Frame",
@@ -3292,14 +3292,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Heavy Modular Frame",
@@ -3326,14 +3326,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Heavy Modular Frame",
@@ -3360,14 +3360,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "High-Speed Connector",
@@ -3390,14 +3390,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "High-Speed Connector",
@@ -3420,14 +3420,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Singularity Cell",
@@ -3454,14 +3454,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "SAM Fluctuator",
@@ -3484,14 +3484,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 4,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Motor",
@@ -3514,14 +3514,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Turbo Motor",
@@ -3548,14 +3548,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Turbo Motor",
@@ -3582,14 +3582,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Turbo Motor",
@@ -3616,14 +3616,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Battery",
@@ -3635,7 +3635,7 @@
         "amount": 45.0
       },
       {
-        "name": "Alclad Aluminum Sheet",
+        "name": "Aluminum Sheet",
         "amount": 52.5
       },
       {
@@ -3650,14 +3650,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Computer",
@@ -3680,14 +3680,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Computer",
@@ -3710,14 +3710,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Supercomputer",
@@ -3744,14 +3744,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Supercomputer",
@@ -3778,14 +3778,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Crystal Oscillator",
@@ -3808,14 +3808,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Crystal Oscillator",
@@ -3838,14 +3838,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Radio Control Unit",
@@ -3868,14 +3868,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Radio Control Unit",
@@ -3898,14 +3898,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Radio Control Unit",
@@ -3932,14 +3932,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 6,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Gas Filter",
@@ -3962,14 +3962,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
-    "hasByProduct": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
+    "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Manufacturer"
+      "type": "MANUFACTURER"
     },
     "itemToBuild": {
       "name": "Iodine Infused Filter",
@@ -3983,22 +3983,23 @@
       {
         "name": "Aluminum Casing",
         "amount": 3.75
+      },
+      {
+        "name": "Gas Filter",
+        "amount": 3.75
       }
     ],
-    "byProduct": {
-      "name": "Gas Filter",
-      "amount": 3.75
-    }
+    "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Plastic",
@@ -4016,14 +4017,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Plastic",
@@ -4042,14 +4043,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Plastic",
@@ -4068,14 +4069,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Rubber",
@@ -4093,14 +4094,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Rubber",
@@ -4119,14 +4120,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Rubber",
@@ -4145,14 +4146,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Heavy Oil Residue",
@@ -4170,14 +4171,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Polymer Resin",
@@ -4195,14 +4196,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Petroleum Coke",
@@ -4217,14 +4218,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Alumina Solution",
@@ -4246,14 +4247,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Alumina Solution",
@@ -4272,14 +4273,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Aluminum Scrap",
@@ -4301,14 +4302,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Aluminum Scrap",
@@ -4330,14 +4331,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Sulfuric Acid",
@@ -4356,14 +4357,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Fuel",
@@ -4381,14 +4382,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Fuel",
@@ -4403,14 +4404,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Packaged Fuel",
@@ -4429,14 +4430,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Liquid Biofuel",
@@ -4455,14 +4456,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Turbofuel",
@@ -4481,14 +4482,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Turbofuel",
@@ -4507,14 +4508,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Ionized Fuel",
@@ -4536,14 +4537,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Iron Ingot",
@@ -4562,14 +4563,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Iron Ingot",
@@ -4588,14 +4589,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Copper Ingot",
@@ -4614,14 +4615,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Copper Ingot",
@@ -4640,14 +4641,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Caterium Ingot",
@@ -4666,14 +4667,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Caterium Ingot",
@@ -4692,14 +4693,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Concrete",
@@ -4718,14 +4719,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Quartz Crystal",
@@ -4744,14 +4745,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Quartz Crystal",
@@ -4773,14 +4774,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 1,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Cable",
@@ -4799,14 +4800,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Copper Sheet",
@@ -4825,14 +4826,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Fabric",
@@ -4851,14 +4852,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Refinery"
+      "type": "REFINERY"
     },
     "itemToBuild": {
       "name": "Smokeless Powder",
@@ -4877,14 +4878,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Water",
@@ -4903,14 +4904,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Oil",
@@ -4929,14 +4930,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Heavy Oil Residue",
@@ -4955,14 +4956,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Liquid Biofuel",
@@ -4981,14 +4982,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Fuel",
@@ -5007,14 +5008,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Turbofuel",
@@ -5033,14 +5034,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Rocket Fuel",
@@ -5059,14 +5060,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Ionized Fuel",
@@ -5085,14 +5086,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Alumina Solution",
@@ -5111,14 +5112,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Sulfuric Acid",
@@ -5137,14 +5138,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Nitrogen Gas",
@@ -5163,14 +5164,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Packaged Nitric Acid",
@@ -5189,14 +5190,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Water",
@@ -5214,14 +5215,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Crude Oil",
@@ -5239,14 +5240,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Heavy Oil Residue",
@@ -5264,14 +5265,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Liquid Biofuel",
@@ -5289,14 +5290,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Fuel",
@@ -5314,14 +5315,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 5,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Turbofuel",
@@ -5339,14 +5340,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Rocket Fuel",
@@ -5364,14 +5365,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Ionized Fuel",
@@ -5389,14 +5390,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Alumina Solution",
@@ -5414,14 +5415,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Sulfuric Acid",
@@ -5439,14 +5440,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 8,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Nitrogen Gas",
@@ -5464,14 +5465,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 8,
     "building": {
-      "type": "Packager"
+      "type": "PACKAGER"
     },
     "itemToBuild": {
       "name": "Unpackage Nitric Acid",
@@ -5489,14 +5490,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Biochemical Sculptor",
@@ -5519,14 +5520,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 2,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Silica",
@@ -5534,7 +5535,7 @@
     },
     "items": [
       {
-        "name": "Dissolved Silica",
+        "name": "Silica",
         "amount": 120.0
       },
       {
@@ -5549,14 +5550,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Aluminum Scrap",
@@ -5586,14 +5587,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Nitric Acid",
@@ -5616,14 +5617,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Fuel",
@@ -5642,14 +5643,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 5,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Turbofuel",
@@ -5676,14 +5677,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 1,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Rocket Fuel",
@@ -5705,14 +5706,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 1,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Rocket Fuel",
@@ -5742,14 +5743,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Cooling System",
@@ -5776,14 +5777,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Cooling System",
@@ -5806,14 +5807,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Fused Modular Frame",
@@ -5836,14 +5837,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Fused Modular Frame",
@@ -5870,14 +5871,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": true,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": true,
     "hasByProduct": true,
     "tier": 7,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Battery",
@@ -5903,14 +5904,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Encased Uranium Cell",
@@ -5918,7 +5919,7 @@
     },
     "items": [
       {
-        "name": "Uranium",
+        "name": "Uranium Ore",
         "amount": 50.0
       },
       {
@@ -5936,14 +5937,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Non-fissile Uranium",
@@ -5973,14 +5974,14 @@
     }
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 8,
     "building": {
-      "type": "Blender"
+      "type": "BLENDER"
     },
     "itemToBuild": {
       "name": "Non-fissile Uranium",
@@ -5988,7 +5989,7 @@
     },
     "items": [
       {
-        "name": "Uranium",
+        "name": "Uranium Ore",
         "amount": 25.0
       },
       {
@@ -6010,14 +6011,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Nuclear Pasta",
@@ -6036,14 +6037,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Dark Matter Crystal",
@@ -6062,14 +6063,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Dark Matter Crystal",
@@ -6084,14 +6085,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Dark Matter Crystal",
@@ -6110,14 +6111,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6132,14 +6133,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6158,14 +6159,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6180,14 +6181,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6202,14 +6203,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6228,14 +6229,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Plutonium Pellet",
@@ -6254,14 +6255,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 8,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Plutonium Cell",
@@ -6280,14 +6281,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Particle Accelerator"
+      "type": "PARTICLE_ACCELERATOR"
     },
     "itemToBuild": {
       "name": "Ficsonium",
@@ -6310,14 +6311,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Time Crystal",
@@ -6332,14 +6333,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Excited Photonic Matter",
@@ -6349,14 +6350,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Dark Matter Residue",
@@ -6371,14 +6372,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Diamonds",
@@ -6397,14 +6398,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": true,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": true,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 7,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Ionized Fuel",
@@ -6427,14 +6428,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Ficsite Ingot",
@@ -6453,14 +6454,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Ficsite Ingot",
@@ -6479,14 +6480,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Ficsite Ingot",
@@ -6505,14 +6506,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Iron Ore",
@@ -6531,14 +6532,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Copper Ore",
@@ -6557,14 +6558,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Copper Ore",
@@ -6583,14 +6584,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Limestone",
@@ -6609,14 +6610,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Coal",
@@ -6635,14 +6636,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Coal",
@@ -6661,14 +6662,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Sulfur",
@@ -6687,14 +6688,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Sulfur",
@@ -6713,14 +6714,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Caterium Ore",
@@ -6739,14 +6740,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Caterium Ore",
@@ -6765,14 +6766,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Raw Quartz",
@@ -6791,14 +6792,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Raw Quartz",
@@ -6817,14 +6818,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Bauxite",
@@ -6843,14 +6844,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Bauxite",
@@ -6869,14 +6870,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Nitrogen Gas",
@@ -6895,14 +6896,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Nitrogen Gas",
@@ -6921,14 +6922,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": false,
     "tier": 9,
     "building": {
-      "type": "Converter"
+      "type": "CONVERTER"
     },
     "itemToBuild": {
       "name": "Uranium Ore",
@@ -6947,14 +6948,14 @@
     "byProduct": null
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": true,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": true,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "AI Expansion Server",
@@ -6984,14 +6985,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "Superposition Oscillator",
@@ -7007,7 +7008,7 @@
         "amount": 5.0
       },
       {
-        "name": "Alclad Aluminum Sheet",
+        "name": "Aluminum Sheet",
         "amount": 45.0
       },
       {
@@ -7021,14 +7022,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "Neural-Quantum Processor",
@@ -7058,14 +7059,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "Alien Power Matrix",
@@ -7095,14 +7096,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": true,
-    "isWeaponOrTool": false,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": true,
+    "weaponOrTool": false,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "Ficsonium Fuel Rod",
@@ -7132,14 +7133,14 @@
     }
   },
   {
-    "isAlternate": false,
-    "isSpaceElevator": false,
-    "isFuel": false,
-    "isWeaponOrTool": true,
+    "alternate": false,
+    "spaceElevator": false,
+    "fuel": false,
+    "weaponOrTool": true,
     "hasByProduct": true,
     "tier": 9,
     "building": {
-      "type": "Quantum Encoder"
+      "type": "QUANTUM_ENCODER"
     },
     "itemToBuild": {
       "name": "Power Shard",

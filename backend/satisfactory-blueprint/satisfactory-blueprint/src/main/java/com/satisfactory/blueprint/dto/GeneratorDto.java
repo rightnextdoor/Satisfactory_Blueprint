@@ -12,9 +12,9 @@ public class GeneratorDto {
     private GeneratorType name;
     private FuelType fuelType;
     private boolean hasByProduct;
-    private ItemDto byProduct;        // nullable
+    private ItemDataDto byProduct;
     private double powerOutput;
     private double burnTime;
-    private List<ItemDto> fuelItems;  // list of fuel item DTOs
-    private String iconKey;           // nullable
+    private List<ItemDataDto> fuelItems;
+    private String iconKey;
 }

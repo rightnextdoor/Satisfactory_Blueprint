@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/buildings")
@@ -21,27 +22,32 @@ public class BuildingController {
 
     /** List all buildings */
     @GetMapping("/list")
-    public List<Building> listAll() {
-        return buildingService.findAll();
+    public List<BuildingDto> listAll() {
+        return buildingService.findAll().stream()
+                .map(this::toDto)
+                .collect(Collectors.toList());
     }
 
     /** Get a single building by ID */
     @PostMapping("/get")
-    public Building getById(@RequestBody IdRequest req) {
-        return buildingService.findById(req.getId());
+    public BuildingDto getById(@RequestBody IdRequest req) {
+        Building b = buildingService.findById(req.getId());
+        return toDto(b);
     }
 
     /** Create a new building */
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public Building create(@RequestBody BuildingDto dto) {
-        return buildingService.create(dto);
+    public BuildingDto create(@RequestBody BuildingDto dto) {
+        Building created = buildingService.create(dto);
+        return toDto(created);
     }
 
     /** Update an existing building */
     @PutMapping("/update")
-    public Building update(@RequestBody BuildingDto dto) {
-        return buildingService.update(dto);
+    public BuildingDto update(@RequestBody BuildingDto dto) {
+        Building updated = buildingService.update(dto);
+        return toDto(updated);
     }
 
     /** Delete a building */
@@ -49,5 +55,17 @@ public class BuildingController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@RequestBody IdRequest req) {
         buildingService.delete(req.getId());
+    }
+
+    // ----- MAPPING -----
+
+    private BuildingDto toDto(Building b) {
+        BuildingDto dto = new BuildingDto();
+        dto.setId(b.getId());
+        dto.setType(b.getType());
+        dto.setIconKey(b.getIconKey());
+        dto.setPowerUsage(b.getPowerUsage());
+        dto.setSortOrder(b.getSortOrder());
+        return dto;
     }
 }

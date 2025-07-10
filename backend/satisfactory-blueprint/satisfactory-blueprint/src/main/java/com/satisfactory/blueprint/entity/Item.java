@@ -1,5 +1,6 @@
 package com.satisfactory.blueprint.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,6 +12,7 @@ import lombok.Data;
 @Entity
 @Table(name = "items")
 @Data
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class Item {
 
     @Id
@@ -31,15 +33,8 @@ public class Item {
     private String iconKey;
 
     /**
-     * The standard amount associated with this item when used in a recipe context
-     * (e.g. 30 for Iron Ore → Iron Ingot).
-     */
-    @Column(nullable = false)
-    private double amount;
-
-    /**
      * True if this is a raw resource (mined, harvested), false if it’s a crafted item.
      */
     @Column(nullable = false)
-    private boolean isResource;
+    private boolean resource;
 }

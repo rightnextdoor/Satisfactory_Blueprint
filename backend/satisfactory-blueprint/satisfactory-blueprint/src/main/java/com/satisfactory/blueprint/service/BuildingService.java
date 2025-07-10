@@ -2,10 +2,14 @@ package com.satisfactory.blueprint.service;
 
 import com.satisfactory.blueprint.dto.BuildingDto;
 import com.satisfactory.blueprint.entity.Building;
+import com.satisfactory.blueprint.entity.Recipe;
 import com.satisfactory.blueprint.entity.enums.BuildingType;
 import com.satisfactory.blueprint.exception.BadRequestException;
+import com.satisfactory.blueprint.exception.ResourceConflictException;
 import com.satisfactory.blueprint.exception.ResourceNotFoundException;
 import com.satisfactory.blueprint.repository.BuildingRepository;
+import com.satisfactory.blueprint.repository.RecipeRepository;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,9 +20,12 @@ import java.util.List;
 public class BuildingService {
 
     private final BuildingRepository buildingRepository;
+    private final RecipeRepository recipeRepository;
 
-    public BuildingService(BuildingRepository buildingRepository) {
+    public BuildingService(BuildingRepository buildingRepository,
+                           RecipeRepository recipeRepository) {
         this.buildingRepository = buildingRepository;
+        this.recipeRepository = recipeRepository;
     }
 
     /**
@@ -80,7 +87,17 @@ public class BuildingService {
      * Delete a building by ID. Throws 404 if not found.
      */
     public void delete(Long id) {
-        Building existing = findById(id);
-        buildingRepository.delete(existing);
+        Building toDelete = buildingRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Building not found: " + id));
+
+        // 1) find and null‐out any recipes pointing here
+        List<Recipe> linked = recipeRepository.findAllByBuilding(toDelete);
+        for (Recipe r : linked) {
+            r.setBuilding(null);
+        }
+        recipeRepository.saveAll(linked);
+
+        // 2) now it’s safe to delete
+        buildingRepository.delete(toDelete);
     }
 }

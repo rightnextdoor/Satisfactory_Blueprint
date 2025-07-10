@@ -1,65 +1,81 @@
 package com.satisfactory.blueprint.entity;
 
+import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.entity.enums.BuildingType;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "recipes")
-@Data
 public class Recipe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** True if this is an alternate recipe */
     @Column(nullable = false)
-    private boolean isAlternate;
+    private boolean alternate;
 
-    /** True if used for the Space Elevator */
     @Column(nullable = false)
-    private boolean isSpaceElevator;
+    private boolean spaceElevator;
 
-    /** True if this recipe produces fuel */
     @Column(nullable = false)
-    private boolean isFuel;
+    private boolean fuel;
 
-    /** True if this recipe produces weapons or tools */
     @Column(nullable = false)
-    private boolean isWeaponOrTool;
+    private boolean weaponOrTool;
 
-    /** True if this recipe has a by-product */
     @Column(nullable = false)
     private boolean hasByProduct;
 
-    /** Tier level for sorting/filtering in the planner */
     @Column(nullable = false)
     private int tier;
 
-    /** Which building produces this recipe */
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "building_id")
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "building_id", nullable = true)
     private Building building;
 
-    /** The item that this recipe outputs */
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "item_to_build_id")
-    private Item itemToBuild;
-
-    /** Ingredients (items) required by this recipe; their `amount` field indicates qty */
-    @ManyToMany
-    @JoinTable(
-            name = "recipe_items",
-            joinColumns = @JoinColumn(name = "recipe_id"),
-            inverseJoinColumns = @JoinColumn(name = "item_id")
+    @Embedded
+    @AssociationOverride(
+            name = "item",
+            joinColumns = @JoinColumn(name = "item_to_build_id", nullable = false)
     )
-    private List<Item> items;
+    @AttributeOverride(
+            name = "amount",
+            column = @Column(name = "item_to_build_amount", nullable = false)
+    )
+    private ItemData itemToBuild;
 
-    /** Optional by-product item; its `amount` field indicates qty */
-    @ManyToOne
-    @JoinColumn(name = "by_product_id", nullable = true)
-    private Item byProduct;
+    @ElementCollection
+    @CollectionTable(
+            name = "recipe_items",
+            joinColumns = @JoinColumn(name = "recipe_id")
+    )
+    @AssociationOverride(
+            name = "item",
+            joinColumns = @JoinColumn(name = "item_id", nullable = false)
+    )
+    @AttributeOverride(
+            name = "amount",
+            column = @Column(name = "amount", nullable = false)
+    )
+    private List<ItemData> items = new ArrayList<>();
+
+
+    @Embedded
+    @AssociationOverride(
+            name = "item",
+            joinColumns = @JoinColumn(name = "by_product_id")
+    )
+    @AttributeOverride(
+            name = "amount",
+            column = @Column(name = "by_product_amount")
+    )
+    private ItemData byProduct;
 }

@@ -1,13 +1,18 @@
 package com.satisfactory.blueprint.controller;
 
-import com.satisfactory.blueprint.dto.IdRequest;
 import com.satisfactory.blueprint.dto.GeneratorDto;
+import com.satisfactory.blueprint.dto.IdRequest;
+import com.satisfactory.blueprint.dto.ItemDataDto;
+import com.satisfactory.blueprint.dto.ItemDto;
 import com.satisfactory.blueprint.entity.Generator;
+import com.satisfactory.blueprint.entity.Item;
+import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.service.GeneratorService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/generators")
@@ -21,27 +26,29 @@ public class GeneratorController {
 
     /** List all generators */
     @GetMapping("/list")
-    public List<Generator> listAll() {
-        return generatorService.findAll();
+    public List<GeneratorDto> listAll() {
+        return generatorService.findAll().stream()
+                .map(this::toDto)
+                .collect(Collectors.toList());
     }
 
     /** Get a single generator by ID */
     @PostMapping("/get")
-    public Generator getById(@RequestBody IdRequest req) {
-        return generatorService.findById(req.getId());
+    public GeneratorDto getById(@RequestBody IdRequest req) {
+        return toDto(generatorService.findById(req.getId()));
     }
 
     /** Create a new generator */
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public Generator create(@RequestBody GeneratorDto dto) {
-        return generatorService.create(dto);
+    public GeneratorDto create(@RequestBody GeneratorDto dto) {
+        return toDto(generatorService.create(dto));
     }
 
     /** Update an existing generator */
     @PutMapping("/update")
-    public Generator update(@RequestBody GeneratorDto dto) {
-        return generatorService.update(dto.getId(), dto);
+    public GeneratorDto update(@RequestBody GeneratorDto dto) {
+        return toDto(generatorService.update(dto.getId(), dto));
     }
 
     /** Delete a generator */
@@ -49,5 +56,43 @@ public class GeneratorController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@RequestBody IdRequest req) {
         generatorService.delete(req.getId());
+    }
+
+    // --- mapping helpers ---
+
+    private GeneratorDto toDto(Generator gen) {
+        GeneratorDto dto = new GeneratorDto();
+        dto.setId(gen.getId());
+        dto.setName(gen.getName());
+        dto.setFuelType(gen.getFuelType());
+        dto.setHasByProduct(gen.isHasByProduct());
+        if (gen.isHasByProduct() && gen.getByProduct() != null) {
+            dto.setByProduct(toDto(gen.getByProduct()));
+        }
+        dto.setPowerOutput(gen.getPowerOutput());
+        dto.setBurnTime(gen.getBurnTime());
+        dto.setIconKey(gen.getIconKey());
+        dto.setFuelItems(
+                gen.getFuelItems().stream()
+                        .map(this::toDto)
+                        .collect(Collectors.toList())
+        );
+        return dto;
+    }
+
+    private ItemDataDto toDto(ItemData data) {
+        ItemDataDto dto = new ItemDataDto();
+        dto.setAmount(data.getAmount());
+        dto.setItem(toDto(data.getItem()));
+        return dto;
+    }
+
+    private ItemDto toDto(Item item) {
+        ItemDto dto = new ItemDto();
+        dto.setId(item.getId());
+        dto.setName(item.getName());
+        dto.setIconKey(item.getIconKey());
+        dto.setResource(item.isResource());
+        return dto;
     }
 }

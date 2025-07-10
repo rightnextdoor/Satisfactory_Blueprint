@@ -6,7 +6,6 @@ import lombok.Data;
 public class ItemDto {
     private Long id;
     private String name;
-    private String iconKey;    // matches Item.iconKey, nullable
-    private double amount;
-    private boolean isResource;
+    private String iconKey;
+    private boolean resource;
 }

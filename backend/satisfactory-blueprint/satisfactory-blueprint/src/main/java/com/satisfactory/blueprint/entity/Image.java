@@ -16,6 +16,7 @@ public class Image {
      * A short key, e.g. "iron-ore.png" or UUID string
      */
     @Id
+    @Column(name = "`key`", nullable = false)
     private String key;
 
     /**

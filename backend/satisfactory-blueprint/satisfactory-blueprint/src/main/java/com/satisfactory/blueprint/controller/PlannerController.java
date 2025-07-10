@@ -1,11 +1,7 @@
 package com.satisfactory.blueprint.controller;
 
-import com.satisfactory.blueprint.dto.IdRequest;
-import com.satisfactory.blueprint.dto.PlannerDto;
-import com.satisfactory.blueprint.dto.AddEntryRequest;
-import com.satisfactory.blueprint.dto.UpdateEntryRequest;
+import com.satisfactory.blueprint.dto.*;
 import com.satisfactory.blueprint.entity.Planner;
-import com.satisfactory.blueprint.entity.PlannerEntry;
 import com.satisfactory.blueprint.service.PlannerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -22,13 +18,13 @@ public class PlannerController {
         this.plannerService = plannerService;
     }
 
-    /** List all planners */
+    /** List all planners (no body needed) */
     @GetMapping("/list")
     public List<Planner> listAll() {
         return plannerService.findAll();
     }
 
-    /** Get a single planner by ID */
+    /** Get a single planner by ID in the request body */
     @PostMapping("/get")
     public Planner getById(@RequestBody IdRequest req) {
         return plannerService.findById(req.getId());
@@ -38,48 +34,59 @@ public class PlannerController {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     public Planner create(@RequestBody PlannerDto dto) {
-        return plannerService.create(dto.getName(), dto.isFuelFactory());
+        return plannerService.create(dto);
     }
 
-    /** Update an existing planner’s name or fuel‐factory flag */
-    @PutMapping("/update")
-    public Planner update(@RequestBody PlannerDto dto) {
-        return plannerService.update(dto.getId(), dto.getName(), dto.isFuelFactory());
+    /** Update planner settings (name, generator, targetAmount, etc.) */
+    @PutMapping("/settings")
+    public Planner updateSettings(@RequestBody PlannerDto dto) {
+        return plannerService.updatePlannerSettings(dto);
     }
 
-    /** Delete a planner */
+    /** Delete a planner by ID in the request body */
     @DeleteMapping("/delete")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@RequestBody IdRequest req) {
-        plannerService.delete(req.getId());
+    public void deletePlanner(@RequestBody IdRequest req) {
+        plannerService.deletePlanner(req.getId());
     }
 
-    /** Add a new entry to a planner */
-    @PostMapping("/entries/create")
-    @ResponseStatus(HttpStatus.CREATED)
-    public PlannerEntry addEntry(@RequestBody AddEntryRequest req) {
-        return plannerService.addEntry(
+    //––– Entry‐level operations (all via body only) –––
+
+    /** Swap an entry’s recipe */
+    @PutMapping("/entry/recipe")
+    public Planner updateEntryRecipe(@RequestBody EntryRecipeRequest req) {
+        return plannerService.updatePlannerEntryRecipe(
+                req.getPlannerId(), req.getEntryDto()
+        );
+    }
+
+    /** Add or update a manual allocation on an entry */
+    @PutMapping("/entry/manual")
+    public Planner updateEntryManual(@RequestBody ManualAllocationRequest req) {
+        return plannerService.updatePlannerEntryManualAllocation(
                 req.getPlannerId(),
-                req.getRecipeId(),
-                req.getBuildingCount()
-        );
-    }
-
-    /** Update an existing planner entry */
-    @PutMapping("/entries/update")
-    public PlannerEntry updateEntry(@RequestBody UpdateEntryRequest req) {
-        return plannerService.updateEntry(
                 req.getEntryId(),
-                req.getBuildingCount(),
-                req.getOutgoingAmountPerMinute(),
-                req.getNewRecipeId()
+                req.getManualAllocationDto()
         );
     }
 
-    /** Delete a planner entry */
-    @DeleteMapping("/entries/delete")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteEntry(@RequestBody IdRequest req) {
-        plannerService.deleteEntry(req.getId());
+    /** Remove a manual allocation from an entry */
+    @DeleteMapping("/entry/manual/delete")
+    public Planner deleteEntryManual(@RequestBody ManualAllocationDeleteRequest req) {
+        return plannerService.deletePlannerEntryManualAllocation(
+                req.getPlannerId(),
+                req.getEntryId(),
+                req.getLabel()
+        );
+    }
+
+    /** Delete an entire entry (recipe) from a planner */
+    @DeleteMapping("/entry/delete")
+    public Planner deleteEntry(@RequestBody EntryDeleteRequest req) {
+        return plannerService.deletePlannerEntry(
+                req.getPlannerId(),
+                req.getEntryId()
+        );
     }
 }
+
