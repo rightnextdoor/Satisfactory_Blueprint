@@ -1,5 +1,7 @@
 package com.satisfactory.blueprint.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.satisfactory.blueprint.config.CustomDoubleSerializer;
 import com.satisfactory.blueprint.entity.Recipe;
 import lombok.Data;
 
@@ -21,12 +23,15 @@ public class PlannerEntryDto {
     /**
      * How many buildings are required for this recipe entry. Must be > 0.
      */
-    private double buildingCount;
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double buildingCount;
+    private Boolean buildingOverride;
 
     /**
      * The outgoing rate (items/min) for this entry. Changing this will
      * re-calculate buildingCount.
      */
+    @JsonSerialize(using = CustomDoubleSerializer.class)
     private double outgoingAmount;
 
     /**

@@ -1,23 +1,15 @@
 package com.satisfactory.blueprint.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-/**
- * DTO for creating, updating, and deleting transport items within a route.
- */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class TransportItemDto {
-    private Long id;
-
-    /** ID of the route this item belongs to */
-    private Long routeId;
-
-    /** ID of the item being transported */
-    private Long itemId;
-
-    /** Amount of this item to transport, in units per minute */
-    private double amountPerMinute;
-
-    /** Optional index of the car (or trailer) this item is loaded into */
-    private Integer carSlot;
+    private ItemDto item;
+    private Double targetQuantity;
+    private Double coveredQuantity;
+    private Double remainingQuantity;
 }

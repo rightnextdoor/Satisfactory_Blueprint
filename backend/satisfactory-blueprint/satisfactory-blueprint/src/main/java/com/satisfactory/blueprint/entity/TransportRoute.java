@@ -1,5 +1,6 @@
 package com.satisfactory.blueprint.entity;
 
+import com.satisfactory.blueprint.entity.embedded.CartAllocation;
 import com.satisfactory.blueprint.entity.enums.VehicleType;
 import com.satisfactory.blueprint.entity.enums.FuelType;
 import jakarta.persistence.*;
@@ -17,34 +18,30 @@ public class TransportRoute {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** The transport plan this route belongs to */
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "transport_plan_id", nullable = false)
-    private TransportPlan transportPlan;
+    /** User-defined station name, e.g. "Train Station 1" */
+    private String stationName;
 
-    /** Type of vehicle used (TRAIN, TRUCK, PLANE) */
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private VehicleType vehicleType;
 
-    /** Fuel type required by this vehicle (e.g., DIESEL, TURBOFUEL, BATTERY) */
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private FuelType fuelType;
+    /** For truck/plane: capacity and single load assignment */
+    private Double capacity;
+    @ManyToOne
+    @JoinColumn(name = "assigned_item_id")
+    private Item assignedItem;
+    private Double loadQuantity;
 
-    /** Label or destination for this route (e.g., "Home Base", "Mine Outpost") */
-    @Column(nullable = false)
-    private String destinationLabel;
+    /** Train-specific: list of cart capacities */
+    @ElementCollection
+    @CollectionTable(name = "train_cart_capacities", joinColumns = @JoinColumn(name = "route_id"))
+    private List<Double> cartCapacities = new ArrayList<>();
 
-    /** How many vehicles of this type are assigned */
-    @Column(nullable = false)
-    private int vehicleCount;
+    /** Train-specific: per-cart allocations */
+    @ElementCollection
+    @CollectionTable(name = "cart_allocations", joinColumns = @JoinColumn(name = "route_id"))
+    private List<CartAllocation> cartAllocations = new ArrayList<>();
 
-    /** Number of cars (or trailers) per vehicle */
-    @Column(nullable = false)
-    private int carsPerVehicle;
-
-    /** Items assigned to this route */
-    @OneToMany(mappedBy = "route", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TransportItem> items = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "plan_id")
+    private TransportPlan transportPlan;
 }

@@ -80,4 +80,14 @@ public class PlannerEntry {
                  joinColumns = @JoinColumn(name = "entry_id", nullable = false)
              )
     private List<PlannerAllocation> manualAllocations = new ArrayList<>();
+
+    @Transient
+    private boolean buildingOverride = false;
+
+    public boolean isBuildingOverride() {
+        return buildingOverride;
+    }
+    public void setBuildingOverride(boolean buildingOverride) {
+        this.buildingOverride = buildingOverride;
+    }
 }

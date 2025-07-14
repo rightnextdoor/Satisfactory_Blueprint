@@ -1,15 +1,14 @@
 package com.satisfactory.blueprint.dto;
 
-import com.satisfactory.blueprint.entity.enums.GeneratorType;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.satisfactory.blueprint.config.CustomDoubleSerializer;
 import com.satisfactory.blueprint.entity.enums.PlannerMode;
 import com.satisfactory.blueprint.entity.enums.PlannerTargetType;
 import lombok.Data;
 
+import java.time.Instant;
 import java.util.List;
 
-/**
- * DTO for creating or updating a Planner.
- */
 @Data
 public class PlannerDto {
     /** Set for update; leave null on create. */
@@ -27,7 +26,16 @@ public class PlannerDto {
     private GeneratorDto generator;
 
     /** The user’s “target amount”: either number of generators or amount of fuel/min. */
+    @JsonSerialize(using = CustomDoubleSerializer.class)
     private Double targetAmount;
+
+    /** Audit fields */
+    private Instant createdAt;
+    private Instant updatedAt;
+
+    /** The expanded tree of entries */
     private List<PlannerEntryDto> entries;
-    private List<ItemDataDto> resources;
+
+    /** The raw‐resource totals */
+    private List<ResourcesDto> resources;
 }

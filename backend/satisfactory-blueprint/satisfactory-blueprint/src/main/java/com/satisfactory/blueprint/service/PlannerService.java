@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 @Transactional
@@ -93,11 +94,6 @@ public class PlannerService {
                 && !Objects.equals(oldTarget, dto.getTargetAmount());
 
         if (isFuel && (genChanged || targetChanged)) {
-            System.out.println(">>> Generator changed from " + oldGen
-                    + " → " + dto.getGenerator().getId());
-            System.out.println(">>> TargetAmount changed from " + oldTarget
-                    + " → " + p.getTargetAmount());
-
             // clear existing entries so Hibernate will orphan‐delete
             p.getEntries().clear();
             plannerRepo.flush();   // ensure the deletes hit the DB immediately
@@ -112,18 +108,67 @@ public class PlannerService {
 
     //––– UPDATE RECIPE ON AN ENTRY –––
 
-    public Planner updatePlannerEntryRecipe(Long plannerId, PlannerEntryDto entryDto) {
+    public Planner updatePlannerEntryRecipe(Long plannerId, PlannerEntryDto dto) {
         Planner planner = findById(plannerId);
-        Recipe recipe   = recipeService.findById(entryDto.getRecipe().getId());
+        Recipe  newRecipe = recipeService.findById(dto.getRecipe().getId());
 
-        PlannerEntry entry = entryRepo.findById(entryDto.getId())
-                .orElseThrow(() -> new ResourceNotFoundException("Entry not found: " + entryDto.getId()));
+        PlannerEntry entry = entryRepo.findById(dto.getId())
+                .orElseThrow(() -> new ResourceNotFoundException("Entry not found: " + dto.getId()));
 
-        updateEntryRecipe(entry, recipe);
+        // 1) swap in the recipe
+        updateEntryRecipe(entry, newRecipe);
         entryRepo.save(entry);
 
+        // 2) apply any building‐count override **before** ripple
+        applyBuildingCountOverride(entry, dto);
+        entryRepo.save(entry);
+
+        // 3) ripple the rest of the graph (children will recalc, but this one is “frozen”)
         rippleAndSave(planner);
         return plannerRepo.save(planner);
+    }
+    private void applyBuildingCountOverride(PlannerEntry entry,
+                                            PlannerEntryDto dto) {
+        // 1) bail out if no override requested
+        if (dto.getBuildingCount() == null) {
+            return;
+        }
+        double overrideCount = dto.getBuildingCount();
+
+        // 2) compute the minimum allowed (# buildings required by all allocations)
+        double minimumRequired = Stream
+                .concat(entry.getRecipeAllocations().stream(),
+                        entry.getManualAllocations().stream())
+                .mapToDouble(PlannerAllocation::getBuildingCount)
+                .sum();
+
+        if (overrideCount < minimumRequired) {
+            throw new IllegalArgumentException(
+                    "Cannot set building count for “"
+                            + entry.getTargetItem().getName()
+                            + "” below required minimum of "
+                            + String.format("%.2f", minimumRequired)
+            );
+        }
+
+        // 3) mark this entry as “overridden” so expandPlannerEntries leaves it alone
+        entry.setBuildingOverride(true);
+
+        // 4) apply override
+        entry.setBuildingCount(overrideCount);
+        double perUnitOutput = entry.getRecipe()
+                .getItemToBuild()
+                .getAmount();
+        entry.setOutgoingAmount(overrideCount * perUnitOutput);
+
+        // 5) rebuild ingredientAllocations off the new override
+        entry.getIngredientAllocations().clear();
+        for (ItemData input : entry.getRecipe().getItems()) {
+            ItemData alloc = new ItemData();
+            alloc.setItem(input.getItem());
+            alloc.setAmount(input.getAmount() * overrideCount);
+            entry.getIngredientAllocations().add(alloc);
+        }
     }
 
     //––– UPDATE MANUAL ALLOCATION –––
@@ -133,6 +178,10 @@ public class PlannerService {
             Long entryId,
             PlannerAllocationDto manualDto
     ) {
+        if ("Generator fuel".equalsIgnoreCase(manualDto.getLabel())) {
+            throw new IllegalStateException("Cannot modify the generator’s target allocation.");
+        }
+
         Planner planner = findById(plannerId);
 
         PlannerEntry entry = entryRepo.findById(entryId)
@@ -411,7 +460,9 @@ public class PlannerService {
                         .mapToDouble(PlannerAllocation::getBuildingCount).sum();
                 double newCount = totalRecipeBc + totalManualBc;
 
-                if (Double.compare(newCount, ce.getBuildingCount()) != 0) {
+                if (!ce.isBuildingOverride()
+                        && Double.compare(newCount, ce.getBuildingCount()) != 0) {
+
                     updateEntryAllocations(ce);
                     queue.add(child);
                 }
@@ -527,6 +578,12 @@ public class PlannerService {
             rippleAndSave(p);
             plannerRepo.save(p);
         }
+    }
+
+    public List<ItemData> getResourcesForPlanner(Long plannerId) {
+        Planner planner = plannerRepo.findById(plannerId)
+                .orElseThrow(() -> new NoSuchElementException("Planner not found: " + plannerId));
+        return planner.getResources();
     }
 
 }
