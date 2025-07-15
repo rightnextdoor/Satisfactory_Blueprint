@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueprint Designer – Flat & Bright</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-blue-400 text-white px-6 py-4">
+      <div class="flex items-center">
+        <!-- Title on the left -->
+        <a href="#" class="text-2xl font-bold">
+          Satisfactory Blueprint Designer
+        </a>
+        <!-- Centered Nav Links with larger text -->
+        <div class="mx-auto flex space-x-10 text-2xl">
+          <a href="#" class="hover:text-gray-100">Items</a>
+          <a href="#" class="hover:text-gray-100">Buildings</a>
+          <a href="#" class="hover:text-gray-100">Generators</a>
+          <a href="#" class="hover:text-gray-100">Recipes</a>
+          <a href="#" class="hover:text-gray-100">Planner</a>
+          <a href="#" class="hover:text-gray-100">Transport Planner</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-6">
+      <h1 class="text-4xl font-bold mb-6 text-center">
+        Satisfactory Blueprint Designer
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Latest Plan Card -->
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+          <h2 class="text-xl font-semibold mb-2 text-teal-600">
+            Latest Factory Plan
+          </h2>
+          <p class="mb-1">My Factory Plan</p>
+          <p class="text-sm text-gray-500 mb-4">
+            Last updated: 2025-07-13 16:42
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700"
+          >
+            View Planner
+          </a>
+        </div>
+
+        <!-- Recent Transport Routes Card -->
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+          <h2 class="text-xl font-semibold mb-2 text-teal-600">
+            Recent Transport Routes
+          </h2>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>
+              <span class="font-medium">Coal → Main Base:</span> Truck, 120 t/hr
+            </li>
+            <li>
+              <span class="font-medium">Iron Ore Loop:</span> Truck, 200 t/hr
+            </li>
+            <li>
+              <span class="font-medium">Copper Line:</span> Train, 500 t/hr
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="inline-block bg-lime-500 text-white px-4 py-2 rounded hover:bg-lime-600"
+          >
+            Go to Transport
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

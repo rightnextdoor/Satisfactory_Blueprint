@@ -1,0 +1,41 @@
+/* src/styles/home/HeroSection.css */
+.hero-section {
+  @apply bg-black py-3 antialiased;
+}
+
+.hero-container {
+  @apply max-w-4xl mx-auto text-center px-4;
+}
+
+.title {
+  @apply font-extrabold uppercase tracking-wide leading-none inline-block;
+  font-size: 6rem;
+  background: linear-gradient(
+    to right,
+    #f5f7fa 0%,
+    #e4ebf5 25%,
+    #b8c7e8 50%,
+    #83a4d4 75%,
+    #5a76b1 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  @apply mt-8 font-extrabold uppercase tracking-wider leading-none inline-block;
+  font-size: 4rem;
+  background: linear-gradient(
+    to right,
+    #ffeb99 0%,
+    #ffd24d 30%,
+    #ffc107 60%,
+    #ffb300 80%,
+    #e6a600 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  margin-left: 0.5rem;
+}

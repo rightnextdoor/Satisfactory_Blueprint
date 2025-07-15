@@ -34,7 +34,6 @@ public class Planner {
      * or a raw FUEL output?
      */
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private PlannerTargetType targetType;
 
     /**
@@ -49,7 +48,6 @@ public class Planner {
      * The “target amount” the user entered: either
      * # of generators, or amount of fuel per minute.
      */
-    @Column(nullable = false)
     private Double targetAmount;
 
     /** When this plan was first created */
