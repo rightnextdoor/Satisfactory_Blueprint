@@ -1,0 +1,99 @@
+/* src/styles/Item.css */
+
+/* Page wrapper */
+.item-page {
+  @apply flex h-screen bg-[#e3ecfd];
+}
+
+/* Sidebar */
+.item-page__sidebar {
+  /* existing rules… */
+  @apply w-64 bg-[#1c1f3b] text-white p-6 flex flex-col;
+
+  /* add these: */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.item-page__sidebar-title {
+  @apply text-2xl font-bold mb-8;
+}
+.item-page__tab {
+  @apply text-left px-4 py-2 rounded transition;
+}
+.item-page__tab:hover {
+  @apply bg-[#2a2d4a];
+}
+.item-page__tab--active {
+  @apply bg-[#3b82f6] font-semibold;
+}
+
+/* Top Bar */
+.item-page__topbar {
+  @apply bg-white shadow px-6 py-4 flex justify-center items-center;
+}
+.item-page__title {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+/* Content Area */
+.item-page__content {
+  @apply relative flex-1;
+}
+.item-page__card {
+  @apply bg-white rounded-lg shadow p-6;
+}
+
+/* Table Styles */
+.item-page__table {
+  @apply w-full mt-4 text-base text-left text-gray-700;
+}
+.item-page__thead {
+  @apply text-gray-500 uppercase border-b;
+}
+.item-page__th,
+.item-page__td {
+  @apply text-base;
+}
+
+.item-page__th {
+  @apply px-6 py-3;
+}
+.item-page__td {
+  @apply px-6 py-4;
+}
+.item-page__row--odd {
+  @apply bg-white;
+}
+.item-page__row--even {
+  @apply bg-gray-50;
+}
+.item-page__row:hover {
+  @apply bg-blue-50;
+}
+
+/* Action Icons */
+.item-page__actions {
+  @apply flex justify-center space-x-3;
+}
+.item-page__action-btn {
+  @apply text-xl cursor-pointer;
+}
+.item-page__action-btn--refresh {
+  @apply text-blue-500;
+}
+.item-page__action-btn--disable {
+  @apply text-red-500;
+}
+.item-page__action-btn--delete {
+  @apply text-gray-500;
+}
+
+/* Center the search input */
+.item-page__search {
+  @apply block mx-auto;
+}
+
+.item-page__thead th {
+  @apply sticky -top-6 z-10 bg-[#1c1f3b] text-white;
+}
