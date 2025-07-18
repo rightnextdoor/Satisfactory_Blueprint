@@ -1,0 +1,52 @@
+/* src/styles/home/TransportRoutes.css */
+
+/* Section wrapper */
+.transport-routes {
+  @apply space-y-4 p-4;
+}
+
+/* Title */
+.transport-routes__title {
+  @apply w-full bg-blue-400 text-white text-2xl font-bold text-center py-4;
+  margin: 0 !important;
+  padding-bottom: 2rem !important;
+}
+
+/* Search input */
+.transport-routes__search {
+  @apply border border-gray-300 rounded px-4 py-2 mb-4 block mx-auto w-full md:w-1/3;
+  margin-top: 2rem !important;
+}
+
+/* Card wrapper */
+.transport-routes__card {
+  @apply w-full max-w-none bg-white rounded-lg shadow-lg border-2 border-gray-300 p-6 overflow-auto;
+}
+
+/* Table */
+.transport-routes__table {
+  @apply w-full table-auto border-none border-collapse;
+}
+.transport-routes__thead {
+  @apply bg-blue-400 text-white;
+}
+.transport-routes__th {
+  @apply px-6 py-3 text-left cursor-pointer;
+}
+.transport-routes__td {
+  @apply px-6 py-4;
+}
+.transport-routes__row--odd {
+  @apply bg-white;
+}
+.transport-routes__row--even {
+  @apply bg-gray-50;
+}
+.transport-routes__row:hover {
+  @apply bg-blue-50;
+}
+
+/* Update button */
+.transport-routes__update-btn {
+  @apply bg-blue-400 text-white px-3 py-1 rounded hover:bg-blue-500 transition;
+}

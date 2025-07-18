@@ -1,15 +1,20 @@
 /* src/styles/home/HeroSection.css */
+
+/* Hero wrapper: fixed height, flex-centered */
 .hero-section {
-  @apply bg-black py-3 antialiased;
+  @apply bg-black h-[30vh] flex items-center justify-center antialiased;
 }
 
+/* Inner container: caps at 4xl, centered */
 .hero-container {
-  @apply max-w-4xl mx-auto text-center px-4;
+  @apply max-w-4xl w-full mx-auto text-center px-4 flex flex-col;
 }
 
+/* Fluid “clamp” typography */
 .title {
   @apply font-extrabold uppercase tracking-wide leading-none inline-block;
-  font-size: 6rem;
+  /* scales between 2rem (min) and 4rem (max), preferring 6vw */
+  font-size: clamp(2rem, 6vw, 4rem);
   background: linear-gradient(
     to right,
     #f5f7fa 0%,
@@ -24,8 +29,9 @@
 }
 
 .subtitle {
-  @apply mt-8 font-extrabold uppercase tracking-wider leading-none inline-block;
-  font-size: 4rem;
+  @apply mt-4 font-extrabold uppercase tracking-wider leading-none inline-block;
+  /* scales between 1.5rem and 3rem, preferring 5vw */
+  font-size: clamp(1.5rem, 5vw, 3rem);
   background: linear-gradient(
     to right,
     #ffeb99 0%,

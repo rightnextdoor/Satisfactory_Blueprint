@@ -3,9 +3,11 @@ import React from 'react';
 import type { PlannerDto } from '../../../types';
 import PlannerTableCard from './PlannerTableCard';
 import { formatDate } from '../../../utils/dateUtils';
+import type { SortOrder } from '../../../hooks/useSort';
 
 export type SortField =
   | 'default'
+  | 'id'
   | 'name'
   | 'mode'
   | 'targetType'
@@ -20,7 +22,7 @@ interface PlannerTableProps {
   onToggle: (id: number) => void;
   onUpdate: (planner: PlannerDto) => void;
   sortField: SortField;
-  sortOrder: 0 | 1 | -1;
+  sortOrder: SortOrder;
   onSort: (field: SortField) => void;
   cardClassName?: string;
   tableClassName?: string;
@@ -48,91 +50,84 @@ const PlannerTable: React.FC<PlannerTableProps> = ({
   rowOddClassName = '',
   rowEvenClassName = '',
   updateBtnClassName = '',
-}) => (
-  <PlannerTableCard className={cardClassName}>
-    <table className={tableClassName}>
-      <thead className={theadClassName}>
-        <tr>
-          {/* Empty header cell instead of select-all checkbox */}
-          <th className={thClassName}></th>
-          <th className={thClassName}>#</th>
-          {(
-            [
-              'name',
-              'mode',
-              'targetType',
-              'generator',
-              'targetAmount',
-              'createdAt',
-              'updatedAt',
-            ] as SortField[]
-          ).map((field) => {
-            const labels: Record<SortField, string> = {
-              default: '',
-              name: 'Name',
-              mode: 'Mode',
-              targetType: 'Target Type',
-              generator: 'Generator',
-              targetAmount: 'Target Amt',
-              createdAt: 'Created',
-              updatedAt: 'Updated',
-            };
-            const indicator =
-              sortField === field
-                ? sortOrder === 1
-                  ? ' ↑'
-                  : sortOrder === -1
-                  ? ' ↓'
-                  : ''
-                : '';
+}) => {
+  const indicator = (field: SortField) =>
+    sortField === field
+      ? sortOrder === 1
+        ? '↑'
+        : sortOrder === -1
+        ? '↓'
+        : ''
+      : '';
+
+  const sortableTh = (field: SortField, label: string) => (
+    <th
+      className={`${thClassName} cursor-pointer whitespace-nowrap`}
+      onClick={() => onSort(field)}
+    >
+      <span className="inline-flex items-center">
+        {label}&nbsp;{indicator(field)}
+      </span>
+    </th>
+  );
+
+  return (
+    <PlannerTableCard className={cardClassName}>
+      <table className={tableClassName}>
+        <thead className={theadClassName}>
+          <tr>
+            {/* selection checkbox column */}
+            <th className={thClassName}></th>
+
+            {/* sortable columns */}
+            {sortableTh('id', '#')}
+            {sortableTh('name', 'Name')}
+            {sortableTh('mode', 'Mode')}
+            {sortableTh('targetType', 'Target Type')}
+            {sortableTh('generator', 'Generator')}
+            {sortableTh('targetAmount', 'Target Amt')}
+            {sortableTh('createdAt', 'Created')}
+            {sortableTh('updatedAt', 'Updated')}
+
+            {/* action column */}
+            <th className={thClassName}>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {planners.map((p, i) => {
+            const rowClass = i % 2 === 0 ? rowOddClassName : rowEvenClassName;
             return (
-              <th
-                key={field}
-                className={`${thClassName} cursor-pointer`}
-                onClick={() => onSort(field)}
-              >
-                {labels[field]}
-                {indicator}
-              </th>
+              <tr key={p.id} className={`${rowClass} hover:bg-blue-50`}>
+                <td className={tdClassName}>
+                  <input
+                    type="checkbox"
+                    checked={selectedIds.has(p.id!)}
+                    onChange={() => onToggle(p.id!)}
+                  />
+                </td>
+                <td className={tdClassName}>{i + 1}</td>
+                <td className={tdClassName}>{p.name}</td>
+                <td className={tdClassName}>{p.mode}</td>
+                <td className={tdClassName}>{p.targetType}</td>
+                <td className={tdClassName}>{p.generator?.name}</td>
+                <td className={tdClassName}>{p.targetAmount ?? ''}</td>
+                <td className={tdClassName}>{formatDate(p.createdAt)}</td>
+                <td className={tdClassName}>{formatDate(p.updatedAt)}</td>
+                <td className={tdClassName}>
+                  <button
+                    onClick={() => onUpdate(p)}
+                    className={updateBtnClassName}
+                  >
+                    Update
+                  </button>
+                </td>
+              </tr>
             );
           })}
-          <th className={thClassName}>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        {planners.map((p, i) => {
-          const rowClass = i % 2 === 0 ? rowOddClassName : rowEvenClassName;
-          return (
-            <tr key={p.id} className={`${rowClass} hover:bg-blue-50`}>
-              <td className={tdClassName}>
-                <input
-                  type="checkbox"
-                  checked={selectedIds.has(p.id!)}
-                  onChange={() => onToggle(p.id!)}
-                />
-              </td>
-              <td className={tdClassName}>{i + 1}</td>
-              <td className={tdClassName}>{p.name}</td>
-              <td className={tdClassName}>{p.mode}</td>
-              <td className={tdClassName}>{p.targetType}</td>
-              <td className={tdClassName}>{p.generator?.name}</td>
-              <td className={tdClassName}>{p.targetAmount ?? ''}</td>
-              <td className={tdClassName}>{formatDate(p.createdAt)}</td>
-              <td className={tdClassName}>{formatDate(p.updatedAt)}</td>
-              <td className={tdClassName}>
-                <button
-                  onClick={() => onUpdate(p)}
-                  className={updateBtnClassName}
-                >
-                  Update
-                </button>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  </PlannerTableCard>
-);
+        </tbody>
+      </table>
+    </PlannerTableCard>
+  );
+};
 
 export default PlannerTable;

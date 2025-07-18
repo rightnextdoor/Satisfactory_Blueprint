@@ -1,59 +1,54 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/components/home/RecentPlanners.tsx
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { PlannerDto } from '../../../types';
 import { plannerService } from '../../../services/plannerService';
 import SectionTitle from '../planner/SectionTitle';
-import PlannerSearch from '../planner/PlannerSearch';
+import { SearchAutocomplete } from '../../common/SearchAutocomplete';
 import PlannerTable from '../planner/PlannerTable';
+import { useSort } from '../../../hooks/useSort';
+import '../../../styles/home/RecentPlanners.css';
 import type { SortField } from '../planner/PlannerTable';
 
 const RecentPlanners: React.FC = () => {
   const [planners, setPlanners] = useState<PlannerDto[]>([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [sortField, setSortField] = useState<SortField>('default');
-  const [sortOrder, setSortOrder] = useState<0 | 1 | -1>(0);
+  const [filteredPlanners, setFilteredPlanners] = useState<PlannerDto[]>([]);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Derived lists
-  const baseList = planners;
-  const filtered = useMemo(
-    () =>
-      baseList.filter(
-        (p) =>
-          p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.createdAt?.includes(searchQuery) ||
-          p.updatedAt?.includes(searchQuery)
-      ),
-    [baseList, searchQuery]
-  );
-  const sorted = useMemo(() => {
-    if (sortField === 'default' || sortOrder === 0) return filtered;
-    return [...filtered].sort((a, b) => {
-      const aVal = (a[sortField] ?? '').toString();
-      const bVal = (b[sortField] ?? '').toString();
-      if (aVal < bVal) return -1 * sortOrder;
-      if (aVal > bVal) return 1 * sortOrder;
-      return 0;
-    });
-  }, [filtered, sortField, sortOrder]);
+  // sorting hook
+  const { sorted, sortField, sortOrder, toggleSort } = useSort<PlannerDto>({
+    items: filteredPlanners,
+    initialField: 'default',
+  });
 
-  // Handlers
-  const toggleSort = (field: SortField) => {
-    if (sortField !== field) {
-      setSortField(field);
-      setSortOrder(1);
-    } else if (sortOrder === 1) {
-      setSortOrder(-1);
-    } else if (sortOrder === -1) {
-      setSortField('default');
-      setSortOrder(0);
-    } else {
-      setSortOrder(1);
-    }
-  };
+  // fetch data
+  useEffect(() => {
+    setLoading(true);
+    plannerService
+      .listAll()
+      .then((data) => {
+        const list = Array.isArray(data) ? data : (data as any).planners;
+        setPlanners(list);
+        setFilteredPlanners(list);
+      })
+      .catch((e: any) => {
+        const msg = e?.response?.data?.message ?? e.message ?? 'Error';
+        setError(msg);
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  // export handler
+  useEffect(() => {
+    const h = () => {
+      console.log('Export planners:', Array.from(selectedIds));
+      setSelectedIds(new Set());
+    };
+    window.addEventListener('export-recent-planners', h);
+    return () => window.removeEventListener('export-recent-planners', h);
+  }, [selectedIds]);
 
   const toggleSelect = (id: number) => {
     setSelectedIds((prev) => {
@@ -68,67 +63,29 @@ const RecentPlanners: React.FC = () => {
     console.log('Update planner', p);
   };
 
-  // Data fetch
-  useEffect(() => {
-    setLoading(true);
-    setError(null);
-
-    plannerService
-      .listAll()
-      .then((data) => {
-        const list = Array.isArray(data) ? data : (data as any).planners;
-        if (!Array.isArray(list)) {
-          throw new Error('Unexpected response shape');
-        }
-        setPlanners(list);
-      })
-      .catch((e: any) => {
-        console.error(e);
-        const backendMsg = e?.response?.data?.message;
-        setError(
-          typeof backendMsg === 'string'
-            ? backendMsg
-            : e instanceof Error
-            ? e.message
-            : 'Failed to load planners.'
-        );
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, []);
-
-  useEffect(() => {
-    const handler = () => {
-      console.log('Export planners:', Array.from(selectedIds));
-      // clear all checkboxes
-      setSelectedIds(new Set());
-    };
-
-    window.addEventListener('export-recent-planners', handler);
-    return () => {
-      window.removeEventListener('export-recent-planners', handler);
-    };
-  }, [selectedIds]);
-
   if (loading) return <div>Loading planners…</div>;
   if (error) return <div className="text-red-600">Error: {error}</div>;
 
   return (
     <section className="recent-planners">
-      {/* OUTER CARD WRAPPER: now encloses title, search, and table */}
       <div className="recent-planners__card">
         <SectionTitle
           title="Factory Plans"
           className="recent-planners__title"
         />
 
-        <PlannerSearch
-          className="recent-planners__search"
-          query={searchQuery}
-          onChange={setSearchQuery}
+        <SearchAutocomplete<PlannerDto>
+          className="recent-planners__search mx-auto mb-6 w-full sm:w-1/2 md:w-1/3"
+          items={planners}
+          fields={['name', 'createdAt', 'updatedAt']}
+          placeholder="Search by name or date…"
+          onFilter={setFilteredPlanners}
+          onSelect={(item) => {
+            console.log('Selected:', item);
+          }}
         />
 
+        {/* Sorting is now in the table headers */}
         <PlannerTable
           tableClassName="recent-planners__table"
           theadClassName="recent-planners__thead"
@@ -141,7 +98,7 @@ const RecentPlanners: React.FC = () => {
           selectedIds={selectedIds}
           onToggle={toggleSelect}
           onUpdate={handleUpdate}
-          sortField={sortField}
+          sortField={sortField as SortField}
           sortOrder={sortOrder}
           onSort={toggleSort}
         />

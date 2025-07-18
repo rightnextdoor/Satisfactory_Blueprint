@@ -1,0 +1,17 @@
+/* src/styles/home/Home.css */
+
+/* connect to the Tailwind engine for utilities */
+@reference "tailwindcss";
+
+@layer components {
+  /* Section wrapper: vertical stacking with additional spacing */
+  .home-cards-container {
+    @apply flex flex-col space-y-12 px-4 sm:px-8; /* added responsive horizontal padding */
+  }
+
+  /* Card wrapper: full viewport width and auto height */
+  .home-card {
+    @apply w-full max-w-none bg-white rounded-lg shadow-lg border-2 border-gray-300 p-6 mx-auto; /* fill container and center */
+    height: auto;
+  }
+}
