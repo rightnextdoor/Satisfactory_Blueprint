@@ -1,0 +1,31 @@
+/* src/styles/image/IconSection.css */
+
+@reference "tailwindcss";
+@layer components {
+  /* Preview styling for icon images */
+  .icon-preview {
+    @apply w-16 h-16 object-contain border rounded;
+  }
+
+  /* Fullscreen modal overlay for cropping */
+  .icon-crop-modal {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+  }
+
+  /* Container wrapping the cropper UI */
+  .crop-container {
+    @apply bg-white p-4 rounded-lg shadow-lg w-[300px] h-[300px] flex flex-col;
+  }
+
+  /* Row of Crop/Cancel buttons under cropper */
+  .crop-controls {
+    @apply mt-2 flex justify-end gap-2;
+  }
+}
+
+.item-form__group input[type='text'],
+.item-form__group select,
+.item-form__group textarea {
+  background: #fff !important;
+  border: 1px solid #000 !important;
+}

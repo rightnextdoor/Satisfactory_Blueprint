@@ -10,6 +10,7 @@ import UpdateItem from '../components/items/update/UpdateItem';
 const Items: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<ItemTab>('view');
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   // Log when entering update tab
   useEffect(() => {
@@ -24,6 +25,12 @@ const Items: React.FC = () => {
       selectedTab === tab ? 'visible' : 'invisible pointer-events-none'
     }`;
 
+  // Called after create or update to refresh list and go back to view
+  const handleDone = () => {
+    setSelectedTab('view');
+    setRefreshKey((k) => k + 1);
+  };
+
   return (
     <div className="item-page">
       <ItemSidebar selected={selectedTab} onSelect={setSelectedTab} />
@@ -36,15 +43,18 @@ const Items: React.FC = () => {
             <ViewItems
               selectedItemId={selectedItemId}
               onSelect={setSelectedItemId}
+              refreshKey={refreshKey}
             />
           </div>
 
-          <div className={paneClasses('create')}>
-            <CreateItem />
-          </div>
+          {selectedTab === 'create' && (
+            <div className={paneClasses('create')}>
+              <CreateItem onDone={handleDone} />
+            </div>
+          )}
 
           <div className={paneClasses('update')}>
-            <UpdateItem itemId={selectedItemId} />
+            <UpdateItem itemId={selectedItemId} onDone={handleDone} />
           </div>
         </main>
       </div>

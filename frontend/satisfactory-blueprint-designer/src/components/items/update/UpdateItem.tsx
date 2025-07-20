@@ -1,47 +1,103 @@
-// src/components/items/update/UpdateItem.tsx
+/* src/components/items/update/UpdateItem.tsx */
 import React, { useState, useEffect } from 'react';
+import ItemForm, { type ItemFormData } from '../ItemForm';
 import type { ItemDto } from '../../../types';
 import { itemService } from '../../../services/itemService';
+import { syncImageField } from '../../../services/imageField';
 
-export interface UpdateItemProps {
-  itemId: number | null;
+interface InitialData {
+  name: string;
+  resource: boolean;
+  iconKey?: string;
 }
 
-const UpdateItem: React.FC<UpdateItemProps> = ({ itemId }) => {
-  const [item, setItem] = useState<ItemDto | null>(null);
+interface UpdateItemProps {
+  /** ID of the item to update */
+  itemId: number | null;
+  /** Called after update, cancel, or delete to go back to view */
+  onDone: () => void;
+}
 
+const UpdateItem: React.FC<UpdateItemProps> = ({ itemId, onDone }) => {
+  const [initial, setInitial] = useState<InitialData | null>(null);
+
+  // Load existing item data
   useEffect(() => {
-    if (itemId !== null) {
-      itemService
-        .getById(itemId)
-        .then((data) => {
-          console.log('Loaded item for update:', data);
-          setItem(data);
-        })
-        .catch((err) => console.error('Failed to load item:', err));
+    setInitial(null);
+    if (itemId == null) return;
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const item = await itemService.getById(itemId);
+        if (!cancelled) {
+          setInitial({
+            name: item.name,
+            resource: item.resource,
+            iconKey: item.iconKey,
+          });
+        }
+      } catch {
+        if (!cancelled) onDone();
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [itemId, onDone]);
+
+  if (itemId == null) {
+    return <div>Please select an item to update.</div>;
+  }
+  if (!initial) {
+    return <div>Loading...</div>;
+  }
+
+  const handleSubmit = async (data: ItemFormData) => {
+    // 1) upload/resolve image
+    const finalKey = await syncImageField(
+      initial.iconKey,
+      data.iconKey ?? '',
+      data.file
+    );
+
+    // 2) build update payload
+    const payload: ItemDto = {
+      id: itemId,
+      name: data.name.trim(),
+      resource: data.resource,
+      iconKey: finalKey,
+    };
+
+    // 3) send update
+    await itemService.update(payload);
+    onDone();
+  };
+
+  const handleCancel = () => {
+    onDone();
+  };
+
+  const handleDelete = async () => {
+    // delete image if present
+    if (initial.iconKey) {
+      await syncImageField(initial.iconKey, '', undefined);
     }
-  }, [itemId]);
+    // delete item record
+    await itemService.delete(itemId);
+    onDone();
+  };
 
   return (
-    <div className="item-page__card">
-      <h2 className="text-center font-bold text-xl mb-4">Update Item</h2>
-
-      {item ? (
-        <div className="space-y-2">
-          <p>
-            <strong>ID:</strong> {item.id}
-          </p>
-          <p>
-            <strong>Name:</strong> {item.name}
-          </p>
-          <p>
-            <strong>Resource:</strong> {String(item.resource)}
-          </p>
-          {/* TODO: Add form fields for updating item */}
-        </div>
-      ) : (
-        <p className="text-center text-gray-500">Select an item to update.</p>
-      )}
+    <div className="p-4">
+      <h1 className="text-2xl font-semibold mb-4">Update Item</h1>
+      <ItemForm
+        initial={initial}
+        onSubmit={handleSubmit}
+        onCancel={handleCancel}
+        onDelete={handleDelete}
+      />
     </div>
   );
 };

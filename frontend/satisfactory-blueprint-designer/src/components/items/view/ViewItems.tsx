@@ -10,44 +10,69 @@ import ItemTable from './ItemTable';
 interface ViewItemsProps {
   selectedItemId: number | null;
   onSelect: (id: number | null) => void;
+  /** Changing this will re-fetch the list */
+  refreshKey: number;
 }
 
-const ViewItems: React.FC<ViewItemsProps> = ({ selectedItemId, onSelect }) => {
+const ViewItems: React.FC<ViewItemsProps> = ({
+  selectedItemId,
+  onSelect,
+  refreshKey,
+}) => {
   const [items, setItems] = useState<ItemDto[]>([]);
   const [filtered, setFiltered] = useState<ItemDto[]>([]);
   const [icons, setIcons] = useState<Record<number, string>>({});
+  const [query, setQuery] = useState('');
 
-  // 1) Fetch items & icons
+  // Fetch items & icons whenever refreshKey changes
   useEffect(() => {
+    let cancelled = false;
+
     itemService
       .listAll()
       .then((data) => {
+        if (cancelled) return;
         setItems(data);
-        setFiltered(data);
+        setIcons({});
         data.forEach((it) => {
-          if (it.iconKey) {
-            imageService
-              .get(it.iconKey)
-              .then((blob) => {
-                const url = URL.createObjectURL(blob);
-                setIcons((prev) => ({ ...prev, [it.id]: url }));
-              })
-              .catch((err) =>
-                console.error('Error loading icon for item', it.id, err)
-              );
-          }
+          const rawKey = it.iconKey;
+          const key = rawKey?.trim();
+          if (!key) return;
+          imageService
+            .get(key)
+            .then((blob) => {
+              if (cancelled) return;
+              const url = URL.createObjectURL(blob);
+              setIcons((prev) => ({ ...prev, [it.id]: url }));
+            })
+            .catch((err) => {
+              if (
+                err?.response?.status !== 404 &&
+                err?.response?.status !== 400
+              ) {
+                console.error(`Error loading icon for item ${it.id}`, err);
+              }
+            });
         });
       })
       .catch((err) => console.error('Failed to load items', err));
-  }, []);
 
-  // 2) Search handler
-  const handleSearch = (query: string) => {
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshKey]);
+
+  // Re-apply filter whenever items list or query changes
+  useEffect(() => {
     const q = query.trim().toLowerCase();
-    setFiltered(items.filter((it) => it.name.toLowerCase().includes(q)));
-  };
+    if (q) {
+      setFiltered(items.filter((it) => it.name.toLowerCase().includes(q)));
+    } else {
+      setFiltered(items);
+    }
+  }, [items, query]);
 
-  // 3) Sorting over filtered data
+  // Sorting over filtered data
   const { sorted, sortField, sortOrder, toggleSort } = useSort<ItemDto>({
     items: filtered,
     initialField: 'id',
@@ -55,27 +80,25 @@ const ViewItems: React.FC<ViewItemsProps> = ({ selectedItemId, onSelect }) => {
 
   return (
     <div className="item-page__card">
-      {/* Centered, bold section title */}
       <SectionTitle text="View Items" />
 
-      {/* Centered Search input */}
       <div className="mb-4">
         <input
           type="text"
           placeholder="Search by name…"
-          onChange={(e) => handleSearch(e.target.value)}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
           className="item-page__search border rounded px-3 py-2 w-full sm:w-1/2"
         />
       </div>
 
-      {/* Table with in-header sorting */}
       <ItemTable
         items={sorted}
         icons={icons}
         selectedItemId={selectedItemId}
-        onSelect={(id: number | null) => onSelect(id)} // allows deselect
+        onSelect={onSelect}
         sortField={sortField}
-        sortOrder={sortOrder} // already a SortOrder
+        sortOrder={sortOrder}
         onSort={toggleSort}
       />
     </div>

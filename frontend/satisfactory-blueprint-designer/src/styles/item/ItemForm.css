@@ -1,0 +1,67 @@
+/* src/styles/item/ItemForm.css */
+
+@reference "tailwindcss";
+@layer components {
+  /* Container for the form */
+  .item-form {
+    @apply max-w-lg mx-auto p-4 flex flex-col gap-8;
+  }
+
+  /* Wrapper for each form field */
+  .item-form__group {
+    @apply mb-8; /* increased spacing between groups */
+  }
+
+  /* Label styling: bold and larger */
+  .item-form__label {
+    @apply block font-bold text-lg text-gray-700 mb-2;
+  }
+
+  /* Common styles for all text inputs, selects, and textareas */
+  .item-form__input,
+  .item-form__group input:not([type='checkbox']),
+  .item-form__group select,
+  .item-form__group textarea {
+    @apply w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-lg text-gray-900;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  /* Checkbox styling with extra spacing */
+  .item-form__checkbox {
+    @apply mr-4 h-5 w-5 text-blue-600 focus:ring-blue-500;
+  }
+
+  /* Button container with gap */
+  .item-form__actions {
+    @apply flex justify-end gap-4 mt-8;
+  }
+
+  /* Cancel button specific style */
+  .item-form__button--cancel {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium px-6 py-2 rounded-lg;
+  }
+
+  /* Save button specific style */
+  .item-form__button--save {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg;
+  }
+
+  /* Disabled save button */
+  .item-form__button--save.disabled {
+    @apply bg-gray-400 cursor-not-allowed;
+  }
+}
+
+@layer components {
+  /* Force only text inputs (and selects/textareas if used) to white bg + black border */
+  .item-form__group input[type='text'],
+  .item-form__group select,
+  .item-form__group textarea {
+    background-color: #ffffff !important;
+    border: 1px solid #000000 !important;
+  }
+}
+
+.item-form__group input[type='checkbox'] + .item-form__label {
+  @apply ml-3; /* 0.75rem gap */
+}
