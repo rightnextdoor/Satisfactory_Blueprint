@@ -54,4 +54,13 @@ public class ImageService {
         }
         imageRepository.deleteById(key);
     }
+
+    public boolean exists(String key) {
+
+        if (key == null || key.isBlank()) {
+            return false;
+        }
+
+        return imageRepository.existsByKey(key);
+    }
 }

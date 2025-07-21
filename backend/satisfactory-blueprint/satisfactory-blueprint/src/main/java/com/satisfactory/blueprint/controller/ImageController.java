@@ -11,6 +11,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/images")
 public class ImageController {
@@ -44,5 +47,11 @@ public class ImageController {
     public ResponseEntity<Void> deleteImage(@RequestBody ImageKeyRequest req) {
         imageService.deleteImage(req.getKey());
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/exists")
+    public ResponseEntity<Map<String, Boolean>> exists(@RequestBody ImageKeyRequest req) {
+        boolean present = imageService.exists(req.getKey());
+        return ResponseEntity.ok(Map.of("exists", present));
     }
 }

@@ -46,7 +46,7 @@ const CreateItem: React.FC<CreateItemProps> = ({ onDone }) => {
   };
 
   return (
-    <div className="item-page__card p-4">
+    <div className="p-4">
       <h2 className="text-xl font-semibold mb-4">Create Item</h2>
       <ItemForm onSubmit={handleSubmit} onCancel={handleCancel} />
     </div>

@@ -4,6 +4,7 @@ import type { ItemDto } from '../../../types';
 import { itemService } from '../../../services/itemService';
 import { imageService } from '../../../services/imageService';
 import { useSort } from '../../../hooks/useSort';
+import { SearchAutocomplete } from '../../common/SearchAutocomplete';
 import SectionTitle from './SectionTitle';
 import ItemTable from './ItemTable';
 
@@ -22,7 +23,6 @@ const ViewItems: React.FC<ViewItemsProps> = ({
   const [items, setItems] = useState<ItemDto[]>([]);
   const [filtered, setFiltered] = useState<ItemDto[]>([]);
   const [icons, setIcons] = useState<Record<number, string>>({});
-  const [query, setQuery] = useState('');
 
   // Fetch items & icons whenever refreshKey changes
   useEffect(() => {
@@ -33,11 +33,13 @@ const ViewItems: React.FC<ViewItemsProps> = ({
       .then((data) => {
         if (cancelled) return;
         setItems(data);
+        setFiltered(data);
         setIcons({});
+
         data.forEach((it) => {
-          const rawKey = it.iconKey;
-          const key = rawKey?.trim();
+          const key = it.iconKey?.trim();
           if (!key) return;
+
           imageService
             .get(key)
             .then((blob) => {
@@ -62,16 +64,6 @@ const ViewItems: React.FC<ViewItemsProps> = ({
     };
   }, [refreshKey]);
 
-  // Re-apply filter whenever items list or query changes
-  useEffect(() => {
-    const q = query.trim().toLowerCase();
-    if (q) {
-      setFiltered(items.filter((it) => it.name.toLowerCase().includes(q)));
-    } else {
-      setFiltered(items);
-    }
-  }, [items, query]);
-
   // Sorting over filtered data
   const { sorted, sortField, sortOrder, toggleSort } = useSort<ItemDto>({
     items: filtered,
@@ -82,15 +74,15 @@ const ViewItems: React.FC<ViewItemsProps> = ({
     <div className="item-page__card">
       <SectionTitle text="View Items" />
 
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by name…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="item-page__search border rounded px-3 py-2 w-full sm:w-1/2"
-        />
-      </div>
+      <SearchAutocomplete<ItemDto>
+        className="item-page__search mb-4 w-full sm:w-1/2"
+        items={items}
+        fields={['name']}
+        placeholder="Search by name…"
+        onFilter={setFiltered}
+        onSelect={(it) => onSelect(it.id)}
+        renderItem={(it) => it.name}
+      />
 
       <ItemTable
         items={sorted}
