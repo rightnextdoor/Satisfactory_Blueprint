@@ -1,0 +1,81 @@
+/* src/styles/building/Building.css */
+
+/* Page wrapper */
+.building-page {
+  @apply flex h-screen bg-[#e3ecfd];
+}
+
+/* Sidebar */
+.building-page__sidebar {
+  @apply w-64 bg-[#1c1f3b] text-white p-6 flex flex-col;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.building-page__sidebar-title {
+  @apply text-2xl font-bold mb-8;
+}
+.building-page__tab {
+  @apply text-left px-4 py-2 rounded transition;
+}
+.building-page__tab:hover {
+  @apply bg-[#2a2d4a];
+}
+.building-page__tab--active {
+  @apply bg-[#3b82f6] font-semibold;
+}
+
+/* Top Bar */
+.building-page__topbar {
+  @apply bg-white shadow px-6 py-4 flex justify-center items-center;
+}
+.building-page__title {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+/* Content Area */
+.building-page__content {
+  @apply relative flex-1 p-6;
+}
+
+/* Card */
+.building-page__card {
+  @apply bg-white rounded-lg shadow p-6;
+}
+
+/* Search input centering */
+.building-page__search {
+  @apply block mx-auto;
+}
+
+/* Table Styles (mirroring Item.css :contentReference[oaicite:0]{index=0}) */
+.building-page__table {
+  @apply w-full mt-4 text-base text-left text-gray-700;
+}
+.building-page__thead {
+  @apply text-gray-500 uppercase border-b;
+}
+.building-page__th,
+.building-page__td {
+  @apply text-base;
+}
+.building-page__th {
+  @apply px-6 py-3;
+}
+.building-page__td {
+  @apply px-6 py-4;
+}
+.building-page__row--odd {
+  @apply bg-white;
+}
+.building-page__row--even {
+  @apply bg-gray-50;
+}
+.building-page__row:hover {
+  @apply bg-blue-50;
+}
+
+/* Sticky header */
+.building-page__thead th {
+  @apply sticky -top-6 z-10 bg-[#1c1f3b] text-white;
+}

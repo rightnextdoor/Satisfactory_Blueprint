@@ -27,4 +27,15 @@ export const imageService = {
       data: { key } as ImageKeyRequest,
     });
   },
+
+  /** POST /api/images/exists → returns { exists: boolean } */
+  async exists(key: string): Promise<boolean> {
+    if (!key?.trim()) {
+      return false;
+    }
+    const resp = await api.post<{ exists: boolean }>(`${BASE}/exists`, {
+      key,
+    } as ImageKeyRequest);
+    return resp.data.exists;
+  },
 };

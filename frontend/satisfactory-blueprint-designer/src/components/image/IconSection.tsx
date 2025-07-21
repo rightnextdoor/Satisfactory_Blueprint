@@ -87,15 +87,17 @@ const IconSection: React.FC<IconSectionProps> = ({
     }
     setKeyStatus('checking');
     imageService
-      .get(iconKey)
-      .then((blob) => {
-        if (!file) {
-          const objectUrl = URL.createObjectURL(blob);
-          setPreviewUrl(objectUrl);
+      .exists(iconKey)
+      .then((exists) => {
+        if (exists) {
+          setKeyStatus('unknown');
+        } else {
+          setKeyStatus('available');
         }
-        setKeyStatus('unknown');
       })
-      .catch(() => setKeyStatus('available'));
+      .catch(() => {
+        setKeyStatus('invalid');
+      });
   };
 
   const handleKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
