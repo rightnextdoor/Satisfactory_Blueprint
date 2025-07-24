@@ -1,862 +1,862 @@
 [
   {
     "name": "Iron Ore",
-    "iconKey": "",
+    "iconFile": "items/Iron_Ore.png",
     "resource": true
   },
   {
     "name": "Copper Ore",
-    "iconKey": "",
+    "iconFile": "items/Copper_Ore.png",
     "resource": true
   },
   {
     "name": "Caterium Ore",
-    "iconKey": "",
+    "iconFile": "items/Caterium_Ore.png",
     "resource": true
   },
   {
     "name": "Raw Quartz",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Limestone",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Coal",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Sulfur",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Crude Oil",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Bauxite",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "SAM",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Water",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Nitrogen Gas",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Uranium Ore",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Iron Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Copper Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Caterium Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Aluminum Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Steel Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Iron Plate",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Steel Beam",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Steel Pipe",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Quartz Crystal",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Iron Rod",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Screw",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Copper Sheet",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Aluminum Casing",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ficsite Trigon",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Wire",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Cable",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Quickwire",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Reanimated SAM",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Concrete",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Silica",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Copper Powder",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Biomass",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Solid Biofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Empty Canister",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Empty Fluid Tank",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Hog Protein",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Hatcher Protein",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Stinger Protein",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Spitter Protein",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Alien DNA Capsule",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Power Shard",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Iron Rebar",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Smart Plating",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Versatile Framework",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Automated Wiring",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Assembly Director System",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Magnetic Field Generator",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Fireworks",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Reinforced Iron Plate",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Modular Frame",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Encased Industrial Beam",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Aluminum Sheet",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Circuit Board",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "A.I. Limiter",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Computer",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Supercomputer",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Compacted Coal",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Fabric",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Rotor",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Stator",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Motor",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Heat Sink",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Pressure Conversion Cube",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Electromagnetic Control Rod",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Encased Plutonium Cell",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plutonium Fuel Unit",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Automated Miner",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Black Powder",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Stun Rebar",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Shatter Rebar",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Nobelisk",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Gas Nobelisk",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Cluster Nobelisk",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Pulse Nobelisk",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Rifle Ammo",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Homing Rifle Ammo",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Modular Engine",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Adaptive Control Unit",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Thermal Propulsion Rocket",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ballistic Warp Drive",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Heavy Modular Frame",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "High-Speed Connector",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Singularity Cell",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "SAM Fluctuator",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Turbo Motor",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Battery",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Crystal Oscillator",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Radio Control Unit",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Gas Filter",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Iodine Infused Filter",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plastic",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Rubber",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Heavy Oil Residue",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Polymer Resin",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Petroleum Coke",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Alumina Solution",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Aluminum Scrap",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Sulfuric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Liquid Biofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Turbofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ionized Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Smokeless Powder",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Water",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Oil",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Heavy Oil Residue",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Liquid Biofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Turbofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Rocket Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Ionized Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Alumina Solution",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Sulfuric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Nitrogen Gas",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Packaged Nitric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Water",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Crude Oil",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Heavy Oil Residue",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Liquid Biofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Turbofuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Rocket Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Ionized Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Alumina Solution",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Sulfuric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Nitrogen Gas",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Unpackage Nitric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Biochemical Sculptor",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Nitric Acid",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Rocket Fuel",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Cooling System",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Fused Modular Frame",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Encased Uranium Cell",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Non-fissile Uranium",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Nuclear Pasta",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Dark Matter Crystal",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Diamonds",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plutonium Pellet",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plutonium Cell",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ficsonium",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Time Crystal",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Excited Photonic Matter",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Dark Matter Residue",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ficsite Ingot",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "AI Expansion Server",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Superposition Oscillator",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Neural-Quantum Processor",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Alien Power Matrix",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ficsonium Fuel Rod",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Uranium Fuel Rod",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Uranium Waste",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plutonium Fuel Rod",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Plutonium Waste",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Wood",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Leaves",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Mycelia",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Alien Protein",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Hog Remains",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Hatcher Remains",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Stinger Remains",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Plasma Spitter Remains",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Blue Power Slug",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Yellow Power Slug",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Purple Power Slug",
-    "iconKey": "",
+    "iconFile": "",
     "resource": true
   },
   {
     "name": "Ficsmas Tree Branch",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Actual Snow",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Ficsmas Bow",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Candy Cane",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   },
   {
     "name": "Aluminum Solution",
-    "iconKey": "",
+    "iconFile": "",
     "resource": false
   }
 ]
