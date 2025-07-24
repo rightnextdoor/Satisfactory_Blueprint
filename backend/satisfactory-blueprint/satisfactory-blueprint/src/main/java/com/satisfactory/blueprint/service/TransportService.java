@@ -360,16 +360,23 @@ public class TransportService {
         // Map each TransportItem (with remaining calculation)
         List<TransportItemDto> itemDtos = plan.getTransportItems().stream()
                 .map(ti -> {
-                    // Now ti.getItem() returns the Item entity directly
                     Item itemEnt = ti.getItem();
-                    ItemDto itemDto = new ItemDto(
-                            itemEnt.getId(),
-                            itemEnt.getName(),
-                            itemEnt.getIconKey(),
-                            itemEnt.isResource()
-                    );
-                    double target   = ti.getTargetQuantity();
-                    double covered  = ti.getCoveredQuantity();
+                    // Build ItemDto with ImageDto instead of iconKey
+                    ItemDto itemDto = new ItemDto();
+                    itemDto.setId(itemEnt.getId());
+                    itemDto.setName(itemEnt.getName());
+                    Image imgEnt = itemEnt.getImage();
+                    if (imgEnt != null) {
+                        ImageDto imgDto = new ImageDto();
+                        imgDto.setId(imgEnt.getId());
+                        imgDto.setContentType(imgEnt.getContentType());
+                        imgDto.setData(imgEnt.getData());
+                        itemDto.setImage(imgDto);
+                    }
+                    itemDto.setResource(itemEnt.isResource());
+
+                    double target    = ti.getTargetQuantity();
+                    double covered   = ti.getCoveredQuantity();
                     double remaining = Math.max(target - covered, 0);
                     return new TransportItemDto(itemDto, target, covered, remaining);
                 })
@@ -400,22 +407,33 @@ public class TransportService {
 
         if (route.getAssignedItem() != null) {
             Item item = route.getAssignedItem();
-            dto.setAssignedItem(new ItemDto(
-                    item.getId(),
-                    item.getName(),
-                    item.getIconKey(),
-                    item.isResource()
-            ));
+            ItemDto itemDto = new ItemDto();
+            itemDto.setId(item.getId());
+            itemDto.setName(item.getName());
+            // map Image entity to ImageDto
+            Image imgEnt = item.getImage();
+            if (imgEnt != null) {
+                ImageDto imgDto = new ImageDto();
+                imgDto.setId(imgEnt.getId());
+                imgDto.setContentType(imgEnt.getContentType());
+                imgDto.setData(imgEnt.getData());
+                itemDto.setImage(imgDto);
+            }
+            itemDto.setResource(item.isResource());
+            dto.setAssignedItem(itemDto);
         }
 
         dto.setCartCapacities(new ArrayList<>(route.getCartCapacities()));
         List<CartAllocationDto> cartDtos = route.getCartAllocations().stream()
-                .map(ca -> new CartAllocationDto(
-                        ca.getCartIndex(),
-                        ca.getItem().getId(),
-                        ca.getCartCapacity(),
-                        ca.getLoadedQuantity()
-                ))
+                .map(ca -> {
+                    CartAllocationDto cad = new CartAllocationDto();
+                    cad.setCartIndex(ca.getCartIndex());
+                    // if you later want full ItemDto here, map similarly; currently just ID:
+                    cad.setItemId(ca.getItem().getId());
+                    cad.setCartCapacity(ca.getCartCapacity());
+                    cad.setLoadedQuantity(ca.getLoadedQuantity());
+                    return cad;
+                })
                 .collect(Collectors.toList());
         dto.setCartAllocations(cartDtos);
 

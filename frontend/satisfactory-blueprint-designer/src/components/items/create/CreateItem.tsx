@@ -2,9 +2,12 @@
 // src/components/items/create/CreateItem.tsx
 import React from 'react';
 import ItemForm, { type ItemFormData } from '../ItemForm';
-import type { ItemDto } from '../../../types';
+import type { ItemDto } from '../../../types/itemDto';
+import type { ImageDto } from '../../../types/image';
+import type { ImageUploadRequest } from '../../../types/imageUploadRequest';
+import type { OwnerType } from '../../../types/enums';
 import { itemService } from '../../../services/itemService';
-import { syncImageField } from '../../../services/imageField';
+import { imageService } from '../../../services/imageService';
 
 interface CreateItemProps {
   /** Called when form is done (either cancel or successful save) */
@@ -14,29 +17,64 @@ interface CreateItemProps {
 const CreateItem: React.FC<CreateItemProps> = ({ onDone }) => {
   const handleSubmit = async (data: ItemFormData) => {
     try {
-      // 1) upload/resolve the image (if any) and get back a key
-      const finalKey = await syncImageField(
-        /* initialKey = */ '',
-        data.iconKey ?? '',
-        data.file
-      );
-
-      // 2) build payload. cast as ItemDto so itemService.create() accepts it
-      const payload = {
+      // 1) Create the Item without any image
+      const created: ItemDto = await itemService.create({
         name: data.name.trim(),
         resource: data.resource,
-        iconKey: finalKey || undefined,
-      } as unknown as ItemDto;
+      });
 
-      // 3) actually create
-      await itemService.create(payload);
+      let finalImage: ImageDto | undefined;
 
-      // 4) switch back to “view” and refresh
+      // Helper to convert a File to base64 string
+      const toBase64 = (file: File) =>
+        new Promise<string>((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () =>
+            resolve((reader.result as string).split(',')[1]);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+
+      // 2) If user uploaded a new file, upload + assign it
+      if (data.file) {
+        const base64 = await toBase64(data.file);
+        const req: ImageUploadRequest = {
+          ownerType: 'ITEM' as OwnerType,
+          ownerId: created.id,
+          contentType: data.file.type,
+          data: base64,
+        };
+        finalImage = await imageService.upload(req);
+      }
+      // 3) Otherwise if they chose an existing image, assign it
+      else if (data.imageId) {
+        const req: ImageUploadRequest = {
+          id: data.imageId,
+          data: undefined,
+          contentType: undefined,
+          oldImageId: undefined,
+          ownerType: 'ITEM' as OwnerType,
+          ownerId: created.id,
+        };
+        finalImage = await imageService.upload(req);
+      }
+
+      // 4) If we got an image back, update the Item to link it
+      if (finalImage) {
+        const updated: ItemDto = {
+          id: created.id,
+          name: created.name,
+          resource: created.resource,
+          image: finalImage,
+        };
+        await itemService.update(updated);
+      }
+
+      // 5) Done—go back to view
       onDone();
     } catch (err: any) {
-      // bubble up error message so ItemForm will display it
       const msg =
-        err?.response?.data?.message || err.message || 'Failed to create item';
+        err?.response?.data?.message || err?.message || 'Failed to create item';
       throw new Error(msg);
     }
   };

@@ -39,7 +39,14 @@ export type FuelType =
   | 'TURBOFUEL'
   | 'ROCKET_FUEL'
   | 'IONIZED_FUEL'
-  | 'URANIUM_FUEL_ROD';
+  | 'URANIUM_FUEL_ROD'
+  | 'PLUTONIUM_FUEL_ROD'
+  | 'FICSONIUM_FUEL_ROD'
+  | 'BIOMASS'
+  | 'SOLID_BIOFUEL'
+  | 'WOOD'
+  | 'LEAVES'
+  | 'GEOTHERMAL';
 
 export const FuelTypes: FuelType[] = [
   'COAL',
@@ -52,7 +59,18 @@ export const FuelTypes: FuelType[] = [
   'ROCKET_FUEL',
   'IONIZED_FUEL',
   'URANIUM_FUEL_ROD',
+  'PLUTONIUM_FUEL_ROD',
+  'FICSONIUM_FUEL_ROD',
+  'BIOMASS',
+  'SOLID_BIOFUEL',
+  'WOOD',
+  'LEAVES',
+  'GEOTHERMAL',
 ];
+
+/** Owner types */
+export type OwnerType = 'ITEM' | 'BUILDING' | 'GENERATOR';
+export const OwnerTypes: OwnerType[] = ['ITEM', 'BUILDING', 'GENERATOR'];
 
 /** Generator types */
 export type GeneratorType =

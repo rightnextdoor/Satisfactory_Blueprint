@@ -9,5 +9,5 @@ public class BuildingDto {
     private BuildingType type;
     private int sortOrder;
     private double powerUsage;
-    private String iconKey;   // nullable
+    private ImageDto image;
 }

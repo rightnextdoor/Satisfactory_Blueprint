@@ -1,5 +1,5 @@
-/* src/components/buildings/BuildingForm.tsx */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// src/components/buildings/BuildingForm.tsx
 import React, { useState, useEffect } from 'react';
 import '../../styles/building/BuildingForm.css';
 import IconSection from '../image/IconSection';
@@ -7,21 +7,26 @@ import Button from '../common/Button';
 import { BuildingTypes } from '../../types/enums';
 import type { BuildingType } from '../../types/enums';
 
+/** What the parent onSubmit will receive */
 export interface BuildingFormData {
   type: BuildingType;
   sortOrder: number;
   powerUsage: number;
-  iconKey?: string;
-  file?: File;
-  deleteIcon: boolean;
+  /** ID of an existing image to keep (or `null` to unlink) */
+  selectedImageId?: string | null;
+  /** New file to upload */
+  file?: File | null;
+  /** Whether to remove the existing image */
+  removed: boolean;
 }
 
 interface BuildingFormProps {
+  /** If provided, this is an edit; initial.imageId is the ID of the existing icon */
   initial?: {
     type: BuildingType;
     sortOrder: number;
     powerUsage: number;
-    iconKey?: string;
+    imageId?: string;
   };
   onSubmit: (data: BuildingFormData) => Promise<void>;
   onCancel: () => void;
@@ -43,15 +48,23 @@ const BuildingForm: React.FC<BuildingFormProps> = ({
   const [powerUsage, setPowerUsage] = useState<string>(
     initial?.powerUsage != null ? String(initial.powerUsage) : ''
   );
-  const [iconKey, setIconKey] = useState<string>(initial?.iconKey || '');
-  const [file, setFile] = useState<File>();
-  const [deleteIcon, setDeleteIcon] = useState<boolean>(false);
+
+  // New image state
+  const [selectedImageId, setSelectedImageId] = useState<string | null>(
+    initial?.imageId ?? null
+  );
+  const [file, setFile] = useState<File | null>(null);
+  const [removed, setRemoved] = useState<boolean>(false);
+
   const [isSaving, setIsSaving] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [imageHasError, setImageHasError] = useState<boolean>(false);
 
+  // Reset when initial changes
   useEffect(() => {
-    setDeleteIcon(false);
+    setRemoved(false);
+    setSelectedImageId(initial?.imageId ?? null);
+    setFile(null);
   }, [initial]);
 
   const handleSave = async () => {
@@ -82,12 +95,11 @@ const BuildingForm: React.FC<BuildingFormProps> = ({
         type,
         sortOrder: so,
         powerUsage: pu,
-        iconKey: iconKey || undefined,
-        file,
-        deleteIcon,
+        selectedImageId: removed ? null : selectedImageId,
+        file: file ?? null,
+        removed,
       });
     } catch (err: any) {
-      // display backend error if provided
       const serverMsg =
         err?.response?.data?.message ||
         err?.response?.data?.error ||
@@ -145,16 +157,28 @@ const BuildingForm: React.FC<BuildingFormProps> = ({
 
       <div className="building-form__group">
         <IconSection
-          initialIconKey={initial?.iconKey}
-          iconKey={iconKey}
+          initialImageId={initial?.imageId}
           file={file}
-          onIconKeyChange={(k) => {
-            setIconKey(k);
-            setDeleteIcon(!k && !!initial?.iconKey && !file);
-          }}
+          selectedImageId={selectedImageId}
+          removed={removed}
           onFileChange={(f) => {
             setFile(f);
-            setDeleteIcon(false);
+            setRemoved(false);
+          }}
+          onSelectExisting={(id) => {
+            setSelectedImageId(id);
+            setRemoved(false);
+          }}
+          onRemoveOriginal={() => {
+            setRemoved(true);
+            setFile(null);
+            setSelectedImageId(null);
+          }}
+          onDiscardUpload={() => setFile(null)}
+          onDiscardExisting={() => setSelectedImageId(null)}
+          onCrop={(f) => {
+            setFile(f);
+            setRemoved(false);
           }}
           onValidationChange={setImageHasError}
         />
@@ -166,7 +190,6 @@ const BuildingForm: React.FC<BuildingFormProps> = ({
             variant="secondary"
             className="building-form__button--delete"
             onClick={onDelete}
-            disabled={isSaving}
           >
             Delete
           </Button>
@@ -176,17 +199,13 @@ const BuildingForm: React.FC<BuildingFormProps> = ({
             variant="primary"
             className="building-form__button--cancel"
             onClick={onCancel}
-            disabled={isSaving}
           >
             Cancel
           </Button>
           <Button
             variant="primary"
-            className={`building-form__button--save ${
-              isSaving ? 'disabled' : ''
-            }`}
+            className="building-form__button--save"
             onClick={handleSave}
-            disabled={isSaving}
           >
             {isSaving ? 'Saving…' : 'Save'}
           </Button>

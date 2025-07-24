@@ -16,5 +16,5 @@ public class GeneratorDto {
     private double powerOutput;
     private double burnTime;
     private List<ItemDataDto> fuelItems;
-    private String iconKey;
+    private ImageDto image;
 }

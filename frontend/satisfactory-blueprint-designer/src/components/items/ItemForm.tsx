@@ -1,30 +1,28 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* src/components/items/ItemForm.tsx */
+// src/components/items/ItemForm.tsx
 import React, { useState, useEffect } from 'react';
 import '../../styles/item/ItemForm.css';
 import IconSection from '../image/IconSection';
 import Button from '../common/Button';
+import type { ImageDto } from '../../types/image';
 
 export interface ItemFormData {
   name: string;
   resource: boolean;
-  iconKey?: string;
-  file?: File;
-  deleteIcon: boolean;
+  imageId?: string | null;
+  file?: File | null;
+  removeImage: boolean;
 }
 
 interface ItemFormProps {
-  /** Initial values for pre-filling (update); omit for create */
   initial?: {
+    id?: number;
     name: string;
     resource: boolean;
-    iconKey?: string;
+    image?: ImageDto;
   };
-  /** Called to submit the form data */
   onSubmit: (data: ItemFormData) => Promise<void>;
-  /** Called when user cancels */
   onCancel: () => void;
-  /** Optional: if provided, shows a Delete button */
   onDelete?: () => void;
 }
 
@@ -36,16 +34,24 @@ const ItemForm: React.FC<ItemFormProps> = ({
 }) => {
   const [name, setName] = useState(initial?.name || '');
   const [resource, setResource] = useState(initial?.resource || false);
-  const [iconKey, setIconKey] = useState(initial?.iconKey || '');
-  const [file, setFile] = useState<File>();
-  const [deleteIcon, setDeleteIcon] = useState(false);
+
+  // image state
+  const [selectedImageId, setSelectedImageId] = useState<string | null>(
+    initial?.image?.id ?? null
+  );
+  const [file, setFile] = useState<File | null>(null);
+  const [removeImage, setRemoveImage] = useState<boolean>(false);
+
   const [isSaving, setIsSaving] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [imageHasError, setImageHasError] = useState(false);
 
   useEffect(() => {
-    // track dirty if needed
-  }, [name, resource, iconKey, file, deleteIcon, initial]);
+    // Only clear removeImage if the user actively re-selects the original image
+    if (selectedImageId === initial?.image?.id) {
+      setRemoveImage(false);
+    }
+  }, [selectedImageId, initial]);
 
   const handleSave = async () => {
     setErrorMsg(null);
@@ -57,17 +63,22 @@ const ItemForm: React.FC<ItemFormProps> = ({
       setErrorMsg('Please fix image errors before saving.');
       return;
     }
+
     setIsSaving(true);
     try {
       await onSubmit({
         name: name.trim(),
         resource,
-        iconKey: iconKey || undefined,
+        imageId: selectedImageId,
         file,
-        deleteIcon,
+        removeImage,
       });
     } catch (err: any) {
-      setErrorMsg(err.message || 'Failed to save');
+      setErrorMsg(
+        err?.response?.data?.message ||
+          err?.message ||
+          'Failed to save. Please try again.'
+      );
     } finally {
       setIsSaving(false);
     }
@@ -76,7 +87,7 @@ const ItemForm: React.FC<ItemFormProps> = ({
   return (
     <div className="item-form">
       {errorMsg && (
-        <div className="item-form__error text-red-600 mb-2">{errorMsg}</div>
+        <div className="item-form__error text-red-600 mb-4">{errorMsg}</div>
       )}
 
       <div className="item-form__group">
@@ -104,44 +115,50 @@ const ItemForm: React.FC<ItemFormProps> = ({
 
       <div className="item-form__group">
         <IconSection
-          initialIconKey={initial?.iconKey}
-          iconKey={iconKey}
+          initialImageId={initial?.image?.id}
           file={file}
-          onIconKeyChange={(k) => {
-            setIconKey(k);
-            if (!k && initial?.iconKey && !file) {
-              setDeleteIcon(true);
-            } else {
-              setDeleteIcon(false);
-            }
-          }}
+          selectedImageId={selectedImageId}
+          removed={removeImage}
           onFileChange={(f) => {
             setFile(f);
-            setDeleteIcon(false);
+            setRemoveImage(false);
+          }}
+          onSelectExisting={(id) => {
+            setSelectedImageId(id);
+            setRemoveImage(!id && !!initial?.image);
+            setFile(null);
+          }}
+          onRemoveOriginal={() => {
+            setFile(null);
+            setSelectedImageId(null);
+            setRemoveImage(true);
+          }}
+          onDiscardUpload={() => setFile(null)}
+          onDiscardExisting={() => setSelectedImageId(null)}
+          onCrop={(f) => {
+            setFile(f);
+            setRemoveImage(false);
           }}
           onValidationChange={setImageHasError}
         />
       </div>
 
-      <div className="item-form__actions flex justify-between items-center mt-4">
+      <div className="item-form__actions flex justify-end space-x-2 mt-6">
         {onDelete && (
           <Button
             variant="secondary"
             className="bg-red-600 hover:bg-red-700 text-white"
             onClick={onDelete}
-            disabled={isSaving}
           >
             Delete
           </Button>
         )}
-        <div className="flex space-x-2">
-          <Button variant="primary" onClick={onCancel} disabled={isSaving}>
-            Cancel
-          </Button>
-          <Button variant="primary" onClick={handleSave} disabled={isSaving}>
-            {isSaving ? 'Saving…' : 'Save'}
-          </Button>
-        </div>
+        <Button variant="secondary" onClick={onCancel}>
+          Cancel
+        </Button>
+        <Button variant="primary" onClick={handleSave}>
+          {isSaving ? 'Saving…' : 'Save'}
+        </Button>
       </div>
     </div>
   );

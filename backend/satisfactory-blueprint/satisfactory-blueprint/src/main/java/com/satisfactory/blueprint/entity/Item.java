@@ -1,12 +1,7 @@
 package com.satisfactory.blueprint.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -25,12 +20,9 @@ public class Item {
     @Column(nullable = false, unique = true)
     private String name;
 
-    /**
-     * Key into the Image table (e.g. “iron-ore.png” or UUID string).
-     * The frontend will request /api/images/get with this key.
-     */
-    @Column(nullable = true)
-    private String iconKey;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "image_id", foreignKey = @ForeignKey(name = "fk_item_image"))
+    private Image image;
 
     /**
      * True if this is a raw resource (mined, harvested), false if it’s a crafted item.

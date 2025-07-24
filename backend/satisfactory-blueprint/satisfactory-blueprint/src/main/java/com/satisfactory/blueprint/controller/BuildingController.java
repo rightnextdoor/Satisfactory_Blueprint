@@ -2,7 +2,9 @@ package com.satisfactory.blueprint.controller;
 
 import com.satisfactory.blueprint.dto.BuildingDto;
 import com.satisfactory.blueprint.dto.IdRequest;
+import com.satisfactory.blueprint.dto.ImageDto;
 import com.satisfactory.blueprint.entity.Building;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.service.BuildingService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -63,9 +65,20 @@ public class BuildingController {
         BuildingDto dto = new BuildingDto();
         dto.setId(b.getId());
         dto.setType(b.getType());
-        dto.setIconKey(b.getIconKey());
         dto.setPowerUsage(b.getPowerUsage());
         dto.setSortOrder(b.getSortOrder());
+
+        // map the Image entity to ImageDto
+        Image imgEnt = b.getImage();
+        if (imgEnt != null) {
+            ImageDto imgDto = new ImageDto();
+            imgDto.setId(imgEnt.getId());
+            imgDto.setContentType(imgEnt.getContentType());
+            imgDto.setData(imgEnt.getData());
+            dto.setImage(imgDto);
+        }
+
         return dto;
     }
+
 }

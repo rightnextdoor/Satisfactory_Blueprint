@@ -1,18 +1,22 @@
 package com.satisfactory.blueprint.service;
 
 import com.satisfactory.blueprint.dto.GeneratorDto;
+import com.satisfactory.blueprint.dto.ImageDto;
 import com.satisfactory.blueprint.dto.ItemDataDto;
 import com.satisfactory.blueprint.entity.Generator;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.entity.enums.FuelType;
 import com.satisfactory.blueprint.exception.ResourceNotFoundException;
 import com.satisfactory.blueprint.repository.GeneratorRepository;
+import com.satisfactory.blueprint.repository.ImageRepository;
 import com.satisfactory.blueprint.repository.ItemRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.Optional;
 
@@ -23,13 +27,16 @@ public class GeneratorService {
     private final GeneratorRepository generatorRepository;
     private final ItemRepository itemRepository;
     private final GeneratorFuelValidator fuelValidator;
+    private final ImageRepository imageRepo;
 
     public GeneratorService(GeneratorRepository generatorRepository,
                             ItemRepository itemRepository,
-                            GeneratorFuelValidator fuelValidator) {
+                            GeneratorFuelValidator fuelValidator,
+                            ImageRepository imageRepo) {
         this.generatorRepository = generatorRepository;
         this.itemRepository = itemRepository;
         this.fuelValidator = fuelValidator;
+        this.imageRepo = imageRepo;
     }
 
     public List<Generator> findAll() {
@@ -69,7 +76,6 @@ public class GeneratorService {
         gen.setFuelType(fuelType);
         gen.setPowerOutput(dto.getPowerOutput());
         gen.setBurnTime(dto.getBurnTime());
-        gen.setIconKey(dto.getIconKey());
 
         // by-product
         if (dto.getByProduct() != null) {
@@ -108,4 +114,5 @@ public class GeneratorService {
         data.setAmount(dto.getAmount());
         return data;
     }
+
 }

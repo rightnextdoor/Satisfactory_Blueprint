@@ -1,10 +1,14 @@
 // src/types/building.ts
 
+import { type BuildingType } from './enums';
+import { type ImageDto } from './image';
+
 /** Matches com.satisfactory.blueprint.dto.BuildingDto */
 export interface BuildingDto {
   id: number;
-  type: string; // FIXME: replace `string` with specific BuildingType union if available
+  type: BuildingType;
   sortOrder: number;
   powerUsage: number;
-  iconKey?: string; // nullable in the backend
+  /** The associated image, if any */
+  image?: ImageDto;
 }

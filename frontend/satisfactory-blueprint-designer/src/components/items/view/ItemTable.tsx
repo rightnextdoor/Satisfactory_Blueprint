@@ -7,7 +7,7 @@ export interface ItemTableProps {
   items: ItemDto[];
   icons: Record<number, string>;
   selectedItemId: number | null;
-  onSelect: (id: number | null) => void;
+  onSelect: (id: number) => void;
   sortField: string;
   sortOrder: SortOrder;
   onSort: (field: string) => void;
@@ -61,10 +61,7 @@ const ItemTable: React.FC<ItemTableProps> = ({
               name="selectedItem"
               value={item.id}
               checked={selectedItemId === item.id}
-              onClick={() =>
-                onSelect(selectedItemId === item.id ? null : item.id)
-              }
-              readOnly
+              onChange={() => onSelect(item.id)}
             />
           </td>
           <td className="item-page__td">{idx + 1}</td>

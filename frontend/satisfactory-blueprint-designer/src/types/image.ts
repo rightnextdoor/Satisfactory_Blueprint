@@ -1,12 +1,19 @@
 // src/types/image.ts
 
 /**
- * Mirrors com.satisfactory.blueprint.entity.Image
- * (returned by POST /upload as JSON)
+ * Mirrors com.satisfactory.blueprint.dto.ImageDto
+ * (returned by POST /api/images/upload and GET /api/images/{id})
  */
 export interface ImageDto {
-  // NOTE: adjust/add fields if your entity has more (e.g. id, createdAt)
-  key: string;
+  /** The UUID primary key of the image */
+  id: string;
+
+  /** The MIME type, e.g. "image/png" */
   contentType: string;
-  data: string; // base64‐encoded string
+
+  /**
+   * Base64-encoded image data.
+   * May be null when listing all images (to avoid large payloads).
+   */
+  data: string | null;
 }

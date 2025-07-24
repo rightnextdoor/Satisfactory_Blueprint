@@ -1,6 +1,7 @@
 // src/services/itemService.ts
 import api from './api';
 import type { ItemDto, IdRequest } from '../types';
+import type { ItemCreateRequest } from '../types/itemCreateRequest';
 
 const BASE = '/items';
 
@@ -18,8 +19,8 @@ export const itemService = {
   },
 
   /** POST /api/items/create → Create new item */
-  async create(dto: ItemDto): Promise<ItemDto> {
-    const res = await api.post<ItemDto>(`${BASE}/create`, dto);
+  async create(req: ItemCreateRequest): Promise<ItemDto> {
+    const res = await api.post<ItemDto>(`${BASE}/create`, req);
     return res.data;
   },
 

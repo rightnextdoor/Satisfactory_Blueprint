@@ -1,0 +1,91 @@
+/* src/styles/generator/Generator.css */
+
+/* Page wrapper */
+.generator-page {
+  @apply flex h-screen bg-[#e3ecfd];
+}
+
+/* Sidebar */
+.generator-page__sidebar {
+  @apply w-64 bg-[#1c1f3b] text-white p-6 flex flex-col;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.generator-page__sidebar-title {
+  @apply text-2xl font-bold mb-8;
+}
+.generator-page__tab {
+  @apply text-left px-4 py-2 rounded transition;
+}
+.generator-page__tab:hover {
+  @apply bg-[#2a2d4a];
+}
+.generator-page__tab--active {
+  @apply bg-[#3b82f6] font-semibold;
+}
+
+/* Top Bar */
+.generator-page__topbar {
+  @apply bg-white shadow px-6 py-4 flex justify-center items-center;
+}
+.generator-page__title {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+/* Content Area */
+.generator-page__content {
+  @apply relative flex-1 p-6;
+}
+
+/* Card */
+.generator-page__card {
+  @apply bg-white rounded-lg shadow p-6;
+}
+
+/* Search input centering */
+.generator-page__search {
+  @apply block mx-auto;
+}
+
+/* Table Styles */
+.generator-page__table {
+  @apply w-full mt-4 text-base text-left text-gray-700;
+}
+
+.generator-page__thead {
+  @apply text-gray-500 uppercase border-b;
+}
+
+.generator-page__th,
+.generator-page__td {
+  @apply text-base;
+}
+.generator-page__th {
+  @apply px-6 py-3;
+}
+.generator-page__td {
+  @apply px-6 py-4;
+}
+
+.generator-page__row--odd {
+  @apply bg-white;
+}
+.generator-page__row--even {
+  @apply bg-gray-50;
+}
+.generator-page__row:hover {
+  @apply bg-blue-50;
+}
+
+.generator-page__thead th {
+  @apply sticky -top-6 z-10 bg-[#1c1f3b] text-white;
+}
+
+/* src/styles/generator/Generator.css */
+.generator-page__th-content {
+  @apply inline-flex items-center space-x-1;
+}
+.generator-page__sort-icon {
+  @apply text-sm; /* optional sizing */
+}

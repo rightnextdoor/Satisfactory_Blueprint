@@ -1,5 +1,5 @@
 // src/pages/Items.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ItemSidebar from '../components/items/ItemSidebar';
 import type { ItemTab } from '../components/items/ItemSidebar';
 import ItemTitle from '../components/items/ItemTitle';
@@ -12,20 +12,11 @@ const Items: React.FC = () => {
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
   const [refreshKey, setRefreshKey] = useState(0);
 
-  // Log when entering update tab
-  useEffect(() => {
-    if (selectedTab === 'update') {
-      console.log('Update tab selected. Item ID:', selectedItemId);
-    }
-  }, [selectedTab, selectedItemId]);
-
-  // Helper to build pane classes
   const paneClasses = (tab: ItemTab) =>
     `absolute inset-0 overflow-y-auto p-6 ${
       selectedTab === tab ? 'visible' : 'invisible pointer-events-none'
     }`;
 
-  // Called after create or update to refresh list and go back to view
   const handleDone = () => {
     setSelectedTab('view');
     setRefreshKey((k) => k + 1);
@@ -39,6 +30,7 @@ const Items: React.FC = () => {
         <ItemTitle />
 
         <main className="item-page__content">
+          {/* Always mounted so it keeps its scroll/selection */}
           <div className={paneClasses('view')}>
             <ViewItems
               selectedItemId={selectedItemId}
@@ -47,15 +39,19 @@ const Items: React.FC = () => {
             />
           </div>
 
+          {/* Create only when needed */}
           {selectedTab === 'create' && (
             <div className={paneClasses('create')}>
               <CreateItem onDone={handleDone} />
             </div>
           )}
 
-          <div className={paneClasses('update')}>
-            <UpdateItem itemId={selectedItemId} onDone={handleDone} />
-          </div>
+          {/* Update only when needed */}
+          {selectedTab === 'update' && (
+            <div className={paneClasses('update')}>
+              <UpdateItem itemId={selectedItemId} onDone={handleDone} />
+            </div>
+          )}
         </main>
       </div>
     </div>

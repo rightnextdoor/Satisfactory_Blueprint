@@ -84,9 +84,7 @@ public class Generator {
     )
     private List<ItemData> fuelItems = new ArrayList<>();
 
-    /**
-     * Optional icon key for the frontend to fetch via the Image service.
-     */
-    @Column(nullable = true)
-    private String iconKey;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "image_id", foreignKey = @ForeignKey(name = "fk_generator_image"))
+    private Image image;
 }

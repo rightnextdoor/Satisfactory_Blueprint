@@ -1,16 +1,17 @@
 package com.satisfactory.blueprint.dto;
 
+import com.satisfactory.blueprint.entity.enums.OwnerType;
 import lombok.Data;
 
-/**
- * Payload for uploading an image:
- * - key: the user‐chosen identifier (e.g. "iron‐ore")
- * - contentType: MIME type ("image/png")
- * - data: base64‐encoded image bytes
- */
+import java.util.UUID;
+
 @Data
 public class ImageUploadRequest {
-    private String key;
+    private UUID id;
     private String contentType;
     private String data;
+    private UUID oldImageId;
+    private OwnerType ownerType;
+    private Long ownerId;
+
 }

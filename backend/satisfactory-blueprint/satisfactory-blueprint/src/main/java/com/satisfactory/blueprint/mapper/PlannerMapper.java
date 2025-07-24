@@ -1,11 +1,7 @@
 package com.satisfactory.blueprint.mapper;
 
 import com.satisfactory.blueprint.dto.*;
-import com.satisfactory.blueprint.entity.Generator;
-import com.satisfactory.blueprint.entity.Item;
-import com.satisfactory.blueprint.entity.Planner;
-import com.satisfactory.blueprint.entity.PlannerEntry;
-import com.satisfactory.blueprint.entity.Recipe;
+import com.satisfactory.blueprint.entity.*;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.entity.embedded.PlannerAllocation;
 import org.springframework.stereotype.Service;
@@ -66,8 +62,17 @@ public class PlannerMapper {
         dto.setFuelType(generator.getFuelType());
         dto.setBurnTime(generator.getBurnTime());
         dto.setPowerOutput(generator.getPowerOutput());
-        dto.setIconKey(generator.getIconKey());
         dto.setHasByProduct(generator.isHasByProduct());
+
+        // map the Image entity to ImageDto
+        Image imgEnt = generator.getImage();
+        if (imgEnt != null) {
+            ImageDto imgDto = new ImageDto();
+            imgDto.setId(imgEnt.getId());
+            imgDto.setContentType(imgEnt.getContentType());
+            imgDto.setData(imgEnt.getData());
+            dto.setImage(imgDto);
+        }
 
         if (generator.getByProduct() != null) {
             dto.setByProduct(mapItemData(generator.getByProduct()));
@@ -80,6 +85,7 @@ public class PlannerMapper {
 
         return dto;
     }
+
 
     private PlannerEntryDto mapPlannerEntry(PlannerEntry entry) {
         PlannerEntryDto dto = new PlannerEntryDto();
@@ -145,10 +151,21 @@ public class PlannerMapper {
         ItemDto dto = new ItemDto();
         dto.setId(item.getId());
         dto.setName(item.getName());
-        dto.setIconKey(item.getIconKey());
+
+        // map Image entity to ImageDto
+        Image imgEnt = item.getImage();
+        if (imgEnt != null) {
+            ImageDto imgDto = new ImageDto();
+            imgDto.setId(imgEnt.getId());
+            imgDto.setContentType(imgEnt.getContentType());
+            imgDto.setData(imgEnt.getData());
+            dto.setImage(imgDto);
+        }
+
         dto.setResource(item.isResource());
         return dto;
     }
+
 
     private ItemDataDto mapItemData(ItemData itemData) {
         ItemDataDto dto = new ItemDataDto();

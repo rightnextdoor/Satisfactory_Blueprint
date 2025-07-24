@@ -1,3 +1,4 @@
+// src/components/buildings/view/BuildingTable.tsx
 import React from 'react';
 import type { BuildingDto } from '../../../types';
 import type { SortOrder } from '../../../hooks/useSort';
@@ -6,7 +7,7 @@ export interface BuildingTableProps {
   buildings: BuildingDto[];
   icons: Record<number, string>;
   selectedBuildingId: number | null;
-  onSelect: (id: number | null) => void;
+  onSelect: (id: number) => void;
   sortField: string;
   sortOrder: SortOrder;
   onSort: (field: string) => void;
@@ -70,10 +71,7 @@ const BuildingTable: React.FC<BuildingTableProps> = ({
               name="selectedBuilding"
               value={b.id}
               checked={selectedBuildingId === b.id}
-              onClick={() =>
-                onSelect(selectedBuildingId === b.id ? null : b.id)
-              }
-              readOnly
+              onChange={() => onSelect(b.id)}
             />
           </td>
           <td className="building-page__td">{idx + 1}</td>
