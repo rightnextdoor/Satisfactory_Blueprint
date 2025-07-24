@@ -1,19 +1,23 @@
 package com.satisfactory.blueprint.service;
 
 import com.satisfactory.blueprint.dto.BuildingDto;
+import com.satisfactory.blueprint.dto.ImageDto;
 import com.satisfactory.blueprint.entity.Building;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.Recipe;
 import com.satisfactory.blueprint.entity.enums.BuildingType;
 import com.satisfactory.blueprint.exception.BadRequestException;
 import com.satisfactory.blueprint.exception.ResourceConflictException;
 import com.satisfactory.blueprint.exception.ResourceNotFoundException;
 import com.satisfactory.blueprint.repository.BuildingRepository;
+import com.satisfactory.blueprint.repository.ImageRepository;
 import com.satisfactory.blueprint.repository.RecipeRepository;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @Transactional
@@ -21,11 +25,14 @@ public class BuildingService {
 
     private final BuildingRepository buildingRepository;
     private final RecipeRepository recipeRepository;
+    private final ImageRepository imageRepo;
 
     public BuildingService(BuildingRepository buildingRepository,
-                           RecipeRepository recipeRepository) {
+                           RecipeRepository recipeRepository,
+                           ImageRepository imageRepo) {
         this.buildingRepository = buildingRepository;
         this.recipeRepository = recipeRepository;
+        this.imageRepo    = imageRepo;
     }
 
     /**
@@ -53,11 +60,12 @@ public class BuildingService {
             throw new BadRequestException(
                     "A building of type '" + type + "' already exists.");
         }
+
         Building toCreate = new Building();
         toCreate.setType(type);
         toCreate.setSortOrder(buildingData.getSortOrder());
         toCreate.setPowerUsage(buildingData.getPowerUsage());
-        toCreate.setIconKey(buildingData.getIconKey());
+
         return buildingRepository.save(toCreate);
     }
 
@@ -78,7 +86,6 @@ public class BuildingService {
         existing.setType(newType);
         existing.setSortOrder(updated.getSortOrder());
         existing.setPowerUsage(updated.getPowerUsage());
-        existing.setIconKey(updated.getIconKey());
 
         return buildingRepository.save(existing);
     }
@@ -100,4 +107,5 @@ public class BuildingService {
         // 2) now it’s safe to delete
         buildingRepository.delete(toDelete);
     }
+
 }

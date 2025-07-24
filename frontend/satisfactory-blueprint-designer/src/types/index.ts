@@ -8,7 +8,6 @@ export * from './itemDataDto';
 export * from './idRequest';
 export * from './image';
 export * from './imageUploadRequest';
-export * from './imageKeyRequest';
 export * from './planner';
 export * from './recipe';
 export * from './nameRequest';

@@ -89,7 +89,7 @@ public class SeedDataLoader implements ApplicationRunner {
                 gen.setFuelType(FuelType.valueOf(raw.fuelType()));
                 gen.setPowerOutput(raw.powerOutput());
                 gen.setBurnTime(raw.burnTime());
-                gen.setIconKey(raw.iconKey());
+//                gen.setIconKey(raw.iconKey());
 
                 // by‐product
                 if (raw.hasByProduct()) {

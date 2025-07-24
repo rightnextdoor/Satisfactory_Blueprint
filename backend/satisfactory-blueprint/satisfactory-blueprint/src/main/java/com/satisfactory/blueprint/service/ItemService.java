@@ -1,19 +1,23 @@
 package com.satisfactory.blueprint.service;
 
+import com.satisfactory.blueprint.dto.ImageDto;
 import com.satisfactory.blueprint.dto.ItemDto;
 import com.satisfactory.blueprint.entity.Generator;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.Item;
 import com.satisfactory.blueprint.entity.Recipe;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.exception.BadRequestException;
 import com.satisfactory.blueprint.exception.ResourceNotFoundException;
 import com.satisfactory.blueprint.repository.GeneratorRepository;
+import com.satisfactory.blueprint.repository.ImageRepository;
 import com.satisfactory.blueprint.repository.ItemRepository;
 import com.satisfactory.blueprint.repository.RecipeRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -23,13 +27,16 @@ public class ItemService {
     private final ItemRepository itemRepository;
     private final RecipeRepository recipeRepo;
     private final GeneratorRepository generatorRepo;
+    private final ImageRepository  imageRepo;
 
     public ItemService(ItemRepository itemRepository,
                        RecipeRepository recipeRepo,
-                       GeneratorRepository generatorRepo) {
+                       GeneratorRepository generatorRepo,
+                       ImageRepository imageRepo) {
         this.itemRepository = itemRepository;
         this.recipeRepo    = recipeRepo;
         this.generatorRepo = generatorRepo;
+        this.imageRepo  = imageRepo;
     }
 
     /**
@@ -58,7 +65,7 @@ public class ItemService {
         }
         Item item = new Item();
         item.setName(dto.getName());
-        item.setIconKey(dto.getIconKey());
+
         item.setResource(dto.isResource());
         return itemRepository.save(item);
     }
@@ -76,7 +83,7 @@ public class ItemService {
                     "An item with name '" + newName + "' already exists.");
         }
         existing.setName(newName);
-        existing.setIconKey(dto.getIconKey());
+
         existing.setResource(dto.isResource());
         return itemRepository.save(existing);
     }
@@ -136,4 +143,5 @@ public class ItemService {
         // 5) now safe to delete the item itself
         itemRepository.delete(item);
     }
+
 }

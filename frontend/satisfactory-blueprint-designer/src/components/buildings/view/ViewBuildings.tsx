@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // src/components/buildings/view/ViewBuildings.tsx
 import React, { useState, useEffect } from 'react';
 import type { BuildingDto } from '../../../types';
@@ -27,6 +28,7 @@ const ViewBuildings: React.FC<ViewBuildingsProps> = ({
   // Fetch buildings & icons whenever refreshKey changes
   useEffect(() => {
     let cancelled = false;
+
     buildingService
       .listAll()
       .then((data) => {
@@ -34,27 +36,23 @@ const ViewBuildings: React.FC<ViewBuildingsProps> = ({
         setBuildings(data);
         setFiltered(data);
         setIcons({});
-        data.forEach((b) => {
-          const rawKey = b.iconKey;
-          const key = rawKey?.trim();
-          if (!key) return;
 
+        data.forEach((b) => {
+          const imageId = b.image?.id;
+          if (!imageId) return;
           imageService
-            .get(key)
-            .then((blob) => {
+            .get(imageId)
+            .then((imgDto) => {
               if (cancelled) return;
-              setIcons((prev) => ({
-                ...prev,
-                [b.id]: URL.createObjectURL(blob),
-              }));
+              const url = `data:${imgDto.contentType};base64,${imgDto.data}`;
+              setIcons((prev) => ({ ...prev, [b.id]: url }));
             })
             .catch((err) => {
-              // swallow 400/404, only log real errors
               if (
-                err?.response?.status !== 404 &&
-                err?.response?.status !== 400
+                err?.response?.status !== 400 &&
+                err?.response?.status !== 404
               ) {
-                console.error(`Error loading icon for building ${b.id}`, err);
+                console.error(`Error loading image for building ${b.id}`, err);
               }
             });
         });
@@ -71,6 +69,13 @@ const ViewBuildings: React.FC<ViewBuildingsProps> = ({
     items: filtered,
     initialField: 'sortOrder',
   });
+
+  // Auto-select first building if none selected yet
+  useEffect(() => {
+    if (selectedBuildingId == null && sorted.length > 0) {
+      onSelect(sorted[0].id);
+    }
+  }, [selectedBuildingId, sorted, onSelect]);
 
   return (
     <div className="building-page__card">

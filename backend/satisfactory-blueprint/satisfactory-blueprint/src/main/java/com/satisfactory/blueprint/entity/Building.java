@@ -33,10 +33,7 @@ public class Building {
     @Column(nullable = false)
     private double powerUsage;
 
-    /**
-     * Key into the Image table (e.g. "smelter.png").
-     * Can be null if no icon is set.
-     */
-    @Column(nullable = true)
-    private String iconKey;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "image_id", foreignKey = @ForeignKey(name = "fk_building_image"))
+    private Image image;
 }

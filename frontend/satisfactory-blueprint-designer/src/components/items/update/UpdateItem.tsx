@@ -1,90 +1,102 @@
-/* src/components/items/update/UpdateItem.tsx */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// src/components/items/update/UpdateItem.tsx
 import React, { useState, useEffect } from 'react';
 import ItemForm, { type ItemFormData } from '../ItemForm';
-import type { ItemDto } from '../../../types';
+import type { ItemDto } from '../../../types/itemDto';
+import type { ImageDto } from '../../../types/image';
+import type { ImageUploadRequest } from '../../../types/imageUploadRequest';
+import type { OwnerType } from '../../../types/enums';
 import { itemService } from '../../../services/itemService';
-import { syncImageField } from '../../../services/imageField';
-
-interface InitialData {
-  name: string;
-  resource: boolean;
-  iconKey?: string;
-}
+import { imageService } from '../../../services/imageService';
 
 interface UpdateItemProps {
-  /** ID of the item to update */
   itemId: number | null;
-  /** Called after update, cancel, or delete to go back to view */
   onDone: () => void;
 }
 
 const UpdateItem: React.FC<UpdateItemProps> = ({ itemId, onDone }) => {
-  const [initial, setInitial] = useState<InitialData | null>(null);
+  const [initial, setInitial] = useState<ItemDto | null>(null);
 
-  // Load existing item data
+  // Load the existing item and seed the form
   useEffect(() => {
-    setInitial(null);
-    if (itemId == null) return;
+    if (itemId == null) return void setInitial(null);
     let cancelled = false;
 
-    (async () => {
-      try {
-        const item = await itemService.getById(itemId);
-        if (!cancelled) {
-          setInitial({
-            name: item.name,
-            resource: item.resource,
-            iconKey: item.iconKey,
-          });
-        }
-      } catch {
-        if (!cancelled) onDone();
-      }
-    })();
+    itemService
+      .getById(itemId)
+      .then((item) => {
+        if (!cancelled) setInitial(item);
+      })
+      .catch(() => !cancelled && onDone());
 
     return () => {
       cancelled = true;
     };
   }, [itemId, onDone]);
 
-  if (itemId == null) {
-    return <div>Please select an item to update.</div>;
-  }
-  if (!initial) {
-    return <div>Loading...</div>;
-  }
+  if (itemId == null) return <p>Please select an item to update.</p>;
+  if (!initial) return <p>Loading…</p>;
 
   const handleSubmit = async (data: ItemFormData) => {
-    // 1) upload/resolve image
-    const finalKey = await syncImageField(
-      initial.iconKey,
-      data.iconKey ?? '',
-      data.file
-    );
+    // 1) If they removed the original
+    if (data.removeImage && initial?.image?.id) {
+      // delete the original image that was there when the form loaded
+      await imageService.remove(initial.image.id, 'ITEM' as OwnerType, itemId);
+    }
 
-    // 2) build update payload
+    let finalImage: ImageDto | undefined;
+
+    // 2) New file upload wins
+    if (data.file) {
+      // convert File → base64
+      const toBase64 = (f: File) =>
+        new Promise<string>((res, rej) => {
+          const reader = new FileReader();
+          reader.onload = () => res((reader.result as string).split(',')[1]);
+          reader.onerror = rej;
+          reader.readAsDataURL(f);
+        });
+      const base64 = await toBase64(data.file);
+
+      const req: ImageUploadRequest = {
+        ownerType: 'ITEM',
+        ownerId: itemId,
+        contentType: data.file.type,
+        data: base64,
+        oldImageId: initial.image?.id,
+      };
+      finalImage = await imageService.upload(req);
+    }
+    // 3) Else if they kept an existing image
+    else if (!data.removeImage && data.imageId) {
+      const req: ImageUploadRequest = {
+        id: data.imageId,
+        data: undefined,
+        contentType: undefined,
+        oldImageId: initial.image?.id,
+        ownerType: 'ITEM' as OwnerType,
+        ownerId: itemId,
+      };
+      finalImage = await imageService.upload(req);
+    }
+    // 4) else no image
+
+    // 5) Build the full ItemDto
     const payload: ItemDto = {
-      id: itemId,
+      id: initial.id,
       name: data.name.trim(),
       resource: data.resource,
-      iconKey: finalKey,
+      ...(finalImage ? { image: finalImage } : {}),
     };
 
-    // 3) send update
     await itemService.update(payload);
     onDone();
   };
 
-  const handleCancel = () => {
-    onDone();
-  };
-
   const handleDelete = async () => {
-    // delete image if present
-    if (initial.iconKey) {
-      await syncImageField(initial.iconKey, '', undefined);
+    if (initial.image) {
+      await imageService.remove(initial.image.id, 'ITEM' as OwnerType, itemId);
     }
-    // delete item record
     await itemService.delete(itemId);
     onDone();
   };
@@ -93,9 +105,13 @@ const UpdateItem: React.FC<UpdateItemProps> = ({ itemId, onDone }) => {
     <div className="p-4">
       <h1 className="text-2xl font-semibold mb-4">Update Item</h1>
       <ItemForm
-        initial={initial}
+        initial={{
+          name: initial.name,
+          resource: initial.resource,
+          image: initial.image ?? undefined,
+        }}
         onSubmit={handleSubmit}
-        onCancel={handleCancel}
+        onCancel={onDone}
         onDelete={handleDelete}
       />
     </div>

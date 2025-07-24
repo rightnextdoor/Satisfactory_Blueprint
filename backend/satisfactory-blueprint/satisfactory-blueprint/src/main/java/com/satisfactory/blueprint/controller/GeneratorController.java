@@ -1,10 +1,8 @@
 package com.satisfactory.blueprint.controller;
 
-import com.satisfactory.blueprint.dto.GeneratorDto;
-import com.satisfactory.blueprint.dto.IdRequest;
-import com.satisfactory.blueprint.dto.ItemDataDto;
-import com.satisfactory.blueprint.dto.ItemDto;
+import com.satisfactory.blueprint.dto.*;
 import com.satisfactory.blueprint.entity.Generator;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.Item;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.service.GeneratorService;
@@ -12,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RestController
@@ -60,6 +59,15 @@ public class GeneratorController {
 
     // --- mapping helpers ---
 
+    private final Function<Image, ImageDto> mapImage = img -> {
+        if (img == null) return null;
+        ImageDto dto = new ImageDto();
+        dto.setId(img.getId());
+        dto.setContentType(img.getContentType());
+        dto.setData(img.getData());
+        return dto;
+    };
+
     private GeneratorDto toDto(Generator gen) {
         GeneratorDto dto = new GeneratorDto();
         dto.setId(gen.getId());
@@ -71,7 +79,8 @@ public class GeneratorController {
         }
         dto.setPowerOutput(gen.getPowerOutput());
         dto.setBurnTime(gen.getBurnTime());
-        dto.setIconKey(gen.getIconKey());
+        // now map the Image entity instead of iconKey
+        dto.setImage(mapImage.apply(gen.getImage()));
         dto.setFuelItems(
                 gen.getFuelItems().stream()
                         .map(this::toDto)
@@ -91,7 +100,8 @@ public class GeneratorController {
         ItemDto dto = new ItemDto();
         dto.setId(item.getId());
         dto.setName(item.getName());
-        dto.setIconKey(item.getIconKey());
+        // map the Image instead of iconKey
+        dto.setImage(mapImage.apply(item.getImage()));
         dto.setResource(item.isResource());
         return dto;
     }

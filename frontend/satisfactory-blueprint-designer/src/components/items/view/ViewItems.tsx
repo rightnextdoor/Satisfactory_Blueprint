@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // src/components/items/view/ViewItems.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import type { ItemDto } from '../../../types';
 import { itemService } from '../../../services/itemService';
 import { imageService } from '../../../services/imageService';
@@ -23,11 +24,10 @@ const ViewItems: React.FC<ViewItemsProps> = ({
   const [items, setItems] = useState<ItemDto[]>([]);
   const [filtered, setFiltered] = useState<ItemDto[]>([]);
   const [icons, setIcons] = useState<Record<number, string>>({});
+  const didAutoSelect = useRef(false);
 
-  // Fetch items & icons whenever refreshKey changes
   useEffect(() => {
     let cancelled = false;
-
     itemService
       .listAll()
       .then((data) => {
@@ -35,40 +35,37 @@ const ViewItems: React.FC<ViewItemsProps> = ({
         setItems(data);
         setFiltered(data);
         setIcons({});
-
         data.forEach((it) => {
-          const key = it.iconKey?.trim();
-          if (!key) return;
-
+          const imageId = it.image?.id;
+          if (!imageId) return;
           imageService
-            .get(key)
-            .then((blob) => {
+            .get(imageId)
+            .then((dto) => {
               if (cancelled) return;
-              const url = URL.createObjectURL(blob);
+              const url = `data:${dto.contentType};base64,${dto.data}`;
               setIcons((prev) => ({ ...prev, [it.id]: url }));
             })
-            .catch((err) => {
-              if (
-                err?.response?.status !== 404 &&
-                err?.response?.status !== 400
-              ) {
-                console.error(`Error loading icon for item ${it.id}`, err);
-              }
-            });
+            .catch(() => {});
         });
       })
-      .catch((err) => console.error('Failed to load items', err));
-
+      .catch(() => {});
     return () => {
       cancelled = true;
     };
   }, [refreshKey]);
 
-  // Sorting over filtered data
   const { sorted, sortField, sortOrder, toggleSort } = useSort<ItemDto>({
     items: filtered,
     initialField: 'id',
   });
+
+  // Auto-select first item only once on load
+  useEffect(() => {
+    if (!didAutoSelect.current && sorted.length > 0) {
+      onSelect(sorted[0].id);
+      didAutoSelect.current = true;
+    }
+  }, [sorted, onSelect]);
 
   return (
     <div className="item-page__card">

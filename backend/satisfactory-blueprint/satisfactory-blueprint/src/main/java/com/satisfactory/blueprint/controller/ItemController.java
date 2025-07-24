@@ -1,7 +1,9 @@
 package com.satisfactory.blueprint.controller;
 
 import com.satisfactory.blueprint.dto.IdRequest;
+import com.satisfactory.blueprint.dto.ImageDto;
 import com.satisfactory.blueprint.dto.ItemDto;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.Item;
 import com.satisfactory.blueprint.service.ItemService;
 import org.springframework.http.HttpStatus;
@@ -65,7 +67,17 @@ public class ItemController {
         ItemDto dto = new ItemDto();
         dto.setId(item.getId());
         dto.setName(item.getName());
-        dto.setIconKey(item.getIconKey());
+
+        // map Image entity to ImageDto
+        Image img = item.getImage();
+        if (img != null) {
+            ImageDto imageDto = new ImageDto();
+            imageDto.setId(img.getId());
+            imageDto.setContentType(img.getContentType());
+            imageDto.setData(img.getData());
+            dto.setImage(imageDto);
+        }
+
         dto.setResource(item.isResource());
         return dto;
     }

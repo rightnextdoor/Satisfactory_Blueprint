@@ -1,10 +1,7 @@
 package com.satisfactory.blueprint.controller;
 
-import com.satisfactory.blueprint.dto.IdRequest;
-import com.satisfactory.blueprint.dto.NameRequest;
-import com.satisfactory.blueprint.dto.RecipeDto;
-import com.satisfactory.blueprint.dto.ItemDataDto;
-import com.satisfactory.blueprint.dto.ItemDto;
+import com.satisfactory.blueprint.dto.*;
+import com.satisfactory.blueprint.entity.Image;
 import com.satisfactory.blueprint.entity.Recipe;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.service.RecipeService;
@@ -12,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RestController
@@ -87,6 +85,16 @@ public class RecipeController {
         dto.setTier(recipe.getTier());
         dto.setBuilding(recipe.getBuilding().getType());
 
+        // --- helper to map an Image entity to ImageDto ---
+        Function<Image, ImageDto> mapImage = img -> {
+            if (img == null) return null;
+            ImageDto idto = new ImageDto();
+            idto.setId(img.getId());
+            idto.setContentType(img.getContentType());
+            idto.setData(img.getData());
+            return idto;
+        };
+
         // itemToBuild
         ItemData out = recipe.getItemToBuild();
         ItemDataDto outDto = new ItemDataDto();
@@ -94,19 +102,19 @@ public class RecipeController {
         ItemDto outItem = new ItemDto();
         outItem.setId(out.getItem().getId());
         outItem.setName(out.getItem().getName());
-        outItem.setIconKey(out.getItem().getIconKey());
+        outItem.setImage(mapImage.apply(out.getItem().getImage()));
         outItem.setResource(out.getItem().isResource());
         outDto.setItem(outItem);
         dto.setItemToBuild(outDto);
 
-        // items
+        // ingredients
         List<ItemDataDto> ingredients = recipe.getItems().stream().map(i -> {
             ItemDataDto idto = new ItemDataDto();
             idto.setAmount(i.getAmount());
             ItemDto it = new ItemDto();
             it.setId(i.getItem().getId());
             it.setName(i.getItem().getName());
-            it.setIconKey(i.getItem().getIconKey());
+            it.setImage(mapImage.apply(i.getItem().getImage()));
             it.setResource(i.getItem().isResource());
             idto.setItem(it);
             return idto;
@@ -121,7 +129,7 @@ public class RecipeController {
             ItemDto bpItem = new ItemDto();
             bpItem.setId(bp.getItem().getId());
             bpItem.setName(bp.getItem().getName());
-            bpItem.setIconKey(bp.getItem().getIconKey());
+            bpItem.setImage(mapImage.apply(bp.getItem().getImage()));
             bpItem.setResource(bp.getItem().isResource());
             bpDto.setItem(bpItem);
             dto.setByProduct(bpDto);
@@ -129,4 +137,5 @@ public class RecipeController {
 
         return dto;
     }
+
 }
