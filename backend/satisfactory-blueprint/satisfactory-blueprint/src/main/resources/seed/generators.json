@@ -12,7 +12,7 @@
         "amount": 20.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Fuel_Generator.png"
   },
   {
     "name": "FUEL_GENERATOR",
@@ -27,7 +27,7 @@
         "amount": 20.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Fuel_Generator.png"
   },
   {
     "name": "FUEL_GENERATOR",
@@ -42,7 +42,7 @@
         "amount": 7.5
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Fuel_Generator.png"
   },
   {
     "name": "FUEL_GENERATOR",
@@ -57,7 +57,7 @@
         "amount": 4.17
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Fuel_Generator.png"
   },
   {
     "name": "FUEL_GENERATOR",
@@ -72,7 +72,7 @@
         "amount": 3.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Fuel_Generator.png"
   },
   {
     "name": "COAL_GENERATOR",
@@ -91,7 +91,7 @@
         "amount": 45.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Coal-Powered_Generator.webp"
   },
   {
     "name": "COAL_GENERATOR",
@@ -110,7 +110,7 @@
         "amount": 45.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Coal-Powered_Generator.webp"
   },
   {
     "name": "COAL_GENERATOR",
@@ -129,7 +129,7 @@
         "amount": 45.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Coal-Powered_Generator.webp"
   },
   {
     "name": "NUCLEAR_REACTOR",
@@ -151,7 +151,7 @@
         "amount": 240.0
       }
     ],
-    "iconKey": ""
+    "iconFile": ""
   },
   {
     "name": "NUCLEAR_REACTOR",
@@ -173,7 +173,7 @@
         "amount": 240.0
       }
     ],
-    "iconKey": ""
+    "iconFile": ""
   },
   {
     "name": "NUCLEAR_REACTOR",
@@ -192,7 +192,7 @@
         "amount": 240.0
       }
     ],
-    "iconKey": ""
+    "iconFile": ""
   },
   {
     "name": "BIOMASS_BURNER",
@@ -207,7 +207,7 @@
         "amount": 15.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Biomass_Burner.png"
   },
   {
     "name": "BIOMASS_BURNER",
@@ -222,7 +222,7 @@
         "amount": 15.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Biomass_Burner.png"
   },
   {
     "name": "BIOMASS_BURNER",
@@ -237,7 +237,7 @@
         "amount": 15.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Biomass_Burner.png"
   },
   {
     "name": "BIOMASS_BURNER",
@@ -252,7 +252,7 @@
         "amount": 15.0
       }
     ],
-    "iconKey": ""
+    "iconFile": "generator/Biomass_Burner.png"
   },
   {
     "name": "GEOTHERMAL_GENERATOR",
@@ -262,6 +262,6 @@
     "powerOutput": 600.0,
     "burnTime": 0.0,
     "fuelItems": [],
-    "iconKey": ""
+    "iconFile": "generator/Geothermal_Generator.png"
   }
 ]

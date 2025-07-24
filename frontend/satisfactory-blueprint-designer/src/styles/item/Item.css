@@ -46,14 +46,14 @@
 
 /* Table Styles */
 .item-page__table {
-  @apply w-full mt-4 text-base text-left text-gray-700;
+  @apply w-full mt-4 text-2xl text-left text-gray-700;
 }
 .item-page__thead {
   @apply text-gray-500 uppercase border-b;
 }
 .item-page__th,
 .item-page__td {
-  @apply text-base;
+  @apply text-2xl;
 }
 
 .item-page__th {
