@@ -1,0 +1,70 @@
+/* src/styles/recipe/RecipeForm.css */
+
+.recipe-form {
+  @apply max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md flex flex-col gap-6;
+}
+
+.recipe-form__section {
+  @apply mb-6;
+}
+
+.recipe-form__section-header {
+  @apply text-xl font-semibold mb-4;
+}
+
+.recipe-form__group {
+  @apply grid grid-cols-5 gap-4 items-end;
+}
+
+.recipe-form__group--building {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.recipe-form__group--item {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.recipe-form__label {
+  @apply block text-lg font-medium text-gray-700 mb-1;
+}
+
+.recipe-form__input,
+.recipe-form__select {
+  @apply block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.recipe-form__info-panel {
+  @apply bg-gray-100 border border-gray-300 rounded p-8 text-lg min-h-[12rem];
+}
+
+.recipe-form__info-panel img {
+  @apply w-32 h-32 object-cover rounded;
+}
+
+.recipe-form__actions {
+  @apply flex justify-end gap-4 mt-4;
+}
+
+.recipe-form__error-banner {
+  @apply bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded mb-4;
+}
+
+.recipe-form__add-button {
+  @apply text-blue-600 hover:text-blue-700 font-medium;
+}
+
+.recipe-form__remove-button {
+  @apply text-red-500 hover:text-red-700;
+}
+
+/* Hide number input arrows */
+.recipe-form__input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.recipe-form__input[type='number']::-webkit-outer-spin-button,
+.recipe-form__input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

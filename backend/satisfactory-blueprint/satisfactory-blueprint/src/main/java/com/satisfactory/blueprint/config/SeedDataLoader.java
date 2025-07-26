@@ -102,13 +102,14 @@ public class SeedDataLoader implements ApplicationRunner {
 
     private void seedBuildings() throws Exception {
         if (buildingRepo.count() > 0) return;
-        record RawBuilding(String type, double powerUsage, String iconFile) {}
+        record RawBuilding(String type, int sortOrder, double powerUsage, String iconFile) {}
 
         try (InputStream in = new ClassPathResource("seed/buildings.json").getInputStream()) {
             List<RawBuilding> raws = mapper.readValue(in, new TypeReference<>() {});
             for (RawBuilding raw : raws) {
                 Building b = new Building();
                 b.setType(BuildingType.valueOf(raw.type()));
+                b.setSortOrder(raw.sortOrder);
                 b.setPowerUsage(raw.powerUsage());
                 b = buildingRepo.save(b);
 

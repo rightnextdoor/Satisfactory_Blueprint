@@ -1,0 +1,130 @@
+/* src/styles/recipe/Recipe.css */
+
+/* Page wrapper */
+.recipe-page {
+  @apply flex h-screen bg-[#e3ecfd] overflow-x-auto;
+}
+
+/* Sidebar */
+.recipe-page__sidebar {
+  @apply w-64 bg-[#1c1f3b] text-white p-6 flex flex-col;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.recipe-page__sidebar-title {
+  @apply text-2xl font-bold mb-8;
+}
+.recipe-page__tab {
+  @apply text-left px-4 py-2 rounded transition;
+}
+.recipe-page__tab:hover {
+  @apply bg-[#2a2d4a];
+}
+.recipe-page__tab--active {
+  @apply bg-[#3b82f6] font-semibold;
+}
+
+/* Top Bar */
+.recipe-page__topbar {
+  @apply bg-white shadow px-6 py-4 flex justify-center items-center;
+}
+.recipe-page__title {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+/* Content Area */
+.recipe-page__content {
+  @apply relative flex-1 p-6 overflow-y-auto;
+}
+
+/* Card */
+.recipe-page__card {
+  @apply bg-white rounded-lg shadow p-6 overflow-visible w-full;
+}
+
+/* Scrollable table wrapper: show horizontal scrollbar */
+.recipe-page__table-wrapper {
+  @apply overflow-x-auto w-full;
+  position: relative;
+}
+
+/* Table styling */
+.recipe-page__table {
+  @apply inline-block;
+  width: max-content;
+}
+.recipe-page__thead {
+  @apply text-gray-500 uppercase border-b;
+}
+
+/* Sticky header row */
+.recipe-page__thead th {
+  position: sticky;
+  top: -1.5rem;
+  @apply z-20 bg-[#1c1f3b] text-white text-2xl px-6 py-3;
+}
+
+/* Header and cell */
+.recipe-page__th,
+.recipe-page__td {
+  @apply text-2xl px-6 py-4;
+}
+
+/* Row striping and hover */
+.recipe-page__row--odd {
+  @apply bg-white;
+}
+.recipe-page__row--even {
+  @apply bg-gray-50;
+}
+.recipe-page__row:hover {
+  @apply bg-blue-50;
+}
+
+/* Larger icons */
+.recipe-page__img {
+  @apply w-8 h-8 object-contain;
+}
+
+/* Make the viewport itself scroll horizontally */
+html,
+body {
+  overflow-x: auto;
+}
+
+.recipe-page__card {
+  @apply w-fit; /* make card width = table width */
+}
+
+/* 3. Allow the table to overflow its inner wrapper */
+.recipe-page__table-wrapper {
+  @apply overflow-visible;
+}
+
+/* 4. Make the table an inline-block so it can exceed its container */
+.recipe-page__table {
+  @apply block relative mb-4 w-1/6; /* remove any w-full here */
+}
+
+.recipe-page__section-title {
+  @apply text-left font-bold text-3xl mb-6;
+}
+
+.recipe-page__search {
+  @apply block relative mb-4 w-1/12; /* keep your chosen width here */
+}
+
+/* Ensure recipe search suggestions float above sticky header */
+.recipe-page__search {
+  position: relative; /* create a stacking context */
+  z-index: 30; /* above header (which is z-20) */
+}
+
+.recipe-page__search .autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 40; /* higher than the wrapper */
+}

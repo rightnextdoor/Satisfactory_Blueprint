@@ -7,3 +7,5 @@
 @import './item/ItemForm.css';
 @import './building/Building.css';
 @import './generator/Generator.css';
+@import './recipe/Recipe.css';
+@import './recipe/RecipeForm.css';
