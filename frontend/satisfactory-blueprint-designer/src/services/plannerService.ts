@@ -7,6 +7,7 @@ import type {
   ManualAllocationRequest,
   ManualAllocationDeleteRequest,
   EntryDeleteRequest,
+  PlannerRequestDto,
 } from '../types/planner';
 import type { IdRequest } from '../types';
 
@@ -26,13 +27,13 @@ export const plannerService = {
   },
 
   /** POST /api/planners/create */
-  async create(dto: PlannerDto): Promise<PlannerDto> {
+  async create(dto: PlannerRequestDto): Promise<PlannerDto> {
     const resp = await api.post<PlannerDto>(`${BASE}/create`, dto);
     return resp.data;
   },
 
   /** PUT /api/planners/settings */
-  async updateSettings(dto: PlannerDto): Promise<PlannerDto> {
+  async updateSettings(dto: PlannerRequestDto): Promise<PlannerDto> {
     const resp = await api.put<PlannerDto>(`${BASE}/settings`, dto);
     return resp.data;
   },

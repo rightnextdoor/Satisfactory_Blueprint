@@ -1,3 +1,5 @@
+// src/main/java/com/satisfactory/blueprint/mapper/PlannerMapper.java
+
 package com.satisfactory.blueprint.mapper;
 
 import com.satisfactory.blueprint.dto.*;
@@ -33,7 +35,7 @@ public class PlannerMapper {
 
         dto.setResources(
                 planner.getResources().stream()
-                        .map(this::mapResource)      // ← use ResourcesDto now
+                        .map(this::mapResource)
                         .collect(Collectors.toList())
         );
 
@@ -41,6 +43,16 @@ public class PlannerMapper {
                 .map(this::mapPlannerEntry)
                 .collect(Collectors.toList());
         dto.setEntries(entries);
+
+        // --- NEW: map targetItem if present ---
+        if (planner.getTargetItem() != null) {
+            dto.setTargetItem(mapItemData(planner.getTargetItem()));
+        }
+
+        // --- NEW: map generatorBuildingCount ---
+        if (planner.getGeneratorBuildingCount() != null) {
+            dto.setGeneratorBuildingCount(planner.getGeneratorBuildingCount());
+        }
 
         return dto;
     }
@@ -64,7 +76,6 @@ public class PlannerMapper {
         dto.setPowerOutput(generator.getPowerOutput());
         dto.setHasByProduct(generator.isHasByProduct());
 
-        // map the Image entity to ImageDto
         Image imgEnt = generator.getImage();
         if (imgEnt != null) {
             ImageDto imgDto = new ImageDto();
@@ -85,7 +96,6 @@ public class PlannerMapper {
 
         return dto;
     }
-
 
     private PlannerEntryDto mapPlannerEntry(PlannerEntry entry) {
         PlannerEntryDto dto = new PlannerEntryDto();
@@ -152,7 +162,6 @@ public class PlannerMapper {
         dto.setId(item.getId());
         dto.setName(item.getName());
 
-        // map Image entity to ImageDto
         Image imgEnt = item.getImage();
         if (imgEnt != null) {
             ImageDto imgDto = new ImageDto();
@@ -165,7 +174,6 @@ public class PlannerMapper {
         dto.setResource(item.isResource());
         return dto;
     }
-
 
     private ItemDataDto mapItemData(ItemData itemData) {
         ItemDataDto dto = new ItemDataDto();
@@ -180,7 +188,6 @@ public class PlannerMapper {
         dto.setAmount(allocation.getAmount());
         dto.setBuildingCount(allocation.getBuildingCount());
 
-        // guard against null item (e.g. generator fuel allocation)
         if (allocation.getItem() != null) {
             dto.setItem(mapItem(allocation.getItem()));
         } else {

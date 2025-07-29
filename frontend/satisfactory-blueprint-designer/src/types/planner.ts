@@ -3,6 +3,8 @@
 import type { GeneratorDto } from './generator';
 import type { ItemDto } from '../types/itemDto';
 import type { RecipeDto } from './recipe';
+import type { ItemDataDto } from './itemDataDto';
+import type { PlannerMode, PlannerTargetType } from './enums';
 
 /**
  * Mirrors com.satisfactory.blueprint.dto.PlannerDto
@@ -14,10 +16,21 @@ export interface PlannerDto {
   targetType: string; // PlannerTargetType enum as string :contentReference[oaicite:19]{index=19}
   generator: GeneratorDto;
   targetAmount: number; // serialized via CustomDoubleSerializer :contentReference[oaicite:20]{index=20}
+  targetItem: ItemDataDto;
+  generatorBuildingCount: number;
   createdAt: string; // ISO timestamp
   updatedAt: string; // ISO timestamp
   entries: PlannerEntryDto[]; // embedded tree of entries :contentReference[oaicite:21]{index=21}
   resources: ResourcesDto[]; // raw-resource totals :contentReference[oaicite:22]{index=22}
+}
+
+export interface PlannerRequestDto {
+  id?: number;
+  name: string;
+  mode: PlannerMode;
+  generator: GeneratorDto;
+  targetType: PlannerTargetType;
+  targetAmount: number;
 }
 
 /**
