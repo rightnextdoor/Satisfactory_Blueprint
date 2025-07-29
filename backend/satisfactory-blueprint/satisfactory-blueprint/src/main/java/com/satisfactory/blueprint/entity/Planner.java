@@ -50,6 +50,19 @@ public class Planner {
      */
     private Double targetAmount;
 
+    @Embedded
+    @AssociationOverride(
+            name = "item",
+            joinColumns = @JoinColumn(name = "target_item_id", nullable = true)
+    )
+    @AttributeOverride(
+            name = "amount",
+            column = @Column(name = "by_product_amount", nullable = true)
+    )
+    private ItemData targetItem;
+
+    private Double generatorBuildingCount;
+
     /** When this plan was first created */
     @CreationTimestamp
     @Column(nullable = false, updatable = false)

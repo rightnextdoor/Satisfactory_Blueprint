@@ -10,6 +10,7 @@ import com.satisfactory.blueprint.entity.Recipe;
 import com.satisfactory.blueprint.entity.embedded.ItemData;
 import com.satisfactory.blueprint.entity.embedded.PlannerAllocation;
 import com.satisfactory.blueprint.entity.PlannerEntry;
+import com.satisfactory.blueprint.entity.enums.FuelType;
 import com.satisfactory.blueprint.entity.enums.PlannerMode;
 import com.satisfactory.blueprint.entity.enums.PlannerTargetType;
 import com.satisfactory.blueprint.exception.ResourceNotFoundException;
@@ -81,25 +82,29 @@ public class PlannerService {
     public Planner updatePlannerSettings(PlannerDto dto) {
         Planner p = findById(dto.getId());
 
-        // capture old settings
-        Long   oldGen    = p.getGenerator() != null ? p.getGenerator().getId() : null;
-        Double oldTarget = p.getTargetAmount();
+
 
         // apply new name, mode, generator, and recalc targetAmount
         populatePlannerCore(p, dto);
 
-        boolean isFuel     = p.getMode() == PlannerMode.FUEL;
-        boolean genChanged = !Objects.equals(oldGen, dto.getGenerator().getId());
-        boolean targetChanged = isFuel
-                && !Objects.equals(oldTarget, dto.getTargetAmount());
+        if(p.getMode() == PlannerMode.FUEL){
+            // capture old settings
+            Long   oldGen    = p.getGenerator() != null ? p.getGenerator().getId() : null;
+            Double oldTarget = p.getTargetAmount();
 
-        if (isFuel && (genChanged || targetChanged)) {
-            // clear existing entries so Hibernate will orphan‐delete
-            p.getEntries().clear();
-            plannerRepo.flush();   // ensure the deletes hit the DB immediately
+            boolean isFuel     = p.getMode() == PlannerMode.FUEL;
+            boolean genChanged = !Objects.equals(oldGen, dto.getGenerator().getId());
+            boolean targetChanged = isFuel
+                    && !Objects.equals(oldTarget, dto.getTargetAmount());
 
-            // rebuild default chain against the new targetAmount
-            buildDefaultFuelEntries(p);
+            if (isFuel && (genChanged || targetChanged)) {
+                // clear existing entries so Hibernate will orphan‐delete
+                p.getEntries().clear();
+                plannerRepo.flush();   // ensure the deletes hit the DB immediately
+
+                // rebuild default chain against the new targetAmount
+                buildDefaultFuelEntries(p);
+            }
         }
 
         return plannerRepo.save(p);
@@ -307,7 +312,7 @@ public class PlannerService {
     private void populatePlannerCore(Planner p, PlannerDto dto) {
         p.setName(dto.getName());
 
-        if (dto.getMode() == PlannerMode.FUEL) {
+        if (p.getMode() == PlannerMode.FUEL) {
             Generator gen = generatorRepo.findById(dto.getGenerator().getId())
                     .orElseThrow(() ->
                             new ResourceNotFoundException(
@@ -320,10 +325,17 @@ public class PlannerService {
                     : dto.getTargetAmount();
             p.setTargetAmount(target);
 
+            ItemData addItem = findFuelItemData(gen.getFuelType(),gen.getFuelItems());
+            p.setTargetItem(addItem);
+            double builindCount = target / addItem.getAmount();
+            p.setGeneratorBuildingCount(builindCount);
+
         } else {
             p.setGenerator(null);
             p.setTargetType(null);
             p.setTargetAmount(null);
+            p.setTargetItem(null);
+            p.setGeneratorBuildingCount(null);
         }
     }
 
@@ -584,6 +596,20 @@ public class PlannerService {
         Planner planner = plannerRepo.findById(plannerId)
                 .orElseThrow(() -> new NoSuchElementException("Planner not found: " + plannerId));
         return planner.getResources();
+    }
+
+    private ItemData findFuelItemData(FuelType fuelType, List<ItemData> items) {
+        String lookup = fuelType.name()
+                .replace("_", " ")
+                .toUpperCase();
+        return items.stream()
+                .filter(idata -> idata.getItem()
+                        .getName()
+                        .toUpperCase()
+                        .equals(lookup))
+                .findFirst()
+                .orElseThrow(() -> new ResourceNotFoundException(
+                        "Fuel item not found for: " + lookup));
     }
 
 }

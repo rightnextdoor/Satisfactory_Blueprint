@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // src/components/common/SearchAutocomplete.tsx
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useRef, useEffect } from 'react';
 import '../../styles/common/SearchAutocomplete.css';
 import { formatDate } from '../../utils/dateUtils';
@@ -33,10 +33,11 @@ export function SearchAutocomplete<T extends Record<string, any>>({
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState<Suggestion<T>[]>([]);
   const [highlight, setHighlight] = useState(0);
+  const [isFocused, setIsFocused] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Build suggestions + emit full filtered list on query change
+  // Recompute suggestions when query changes
   useEffect(() => {
     const q = query.trim().toLowerCase();
     if (!q) {
@@ -45,7 +46,6 @@ export function SearchAutocomplete<T extends Record<string, any>>({
       onInputChange?.(query);
       return;
     }
-
     const matches: Suggestion<T>[] = [];
     const fullFiltered: T[] = [];
 
@@ -72,23 +72,9 @@ export function SearchAutocomplete<T extends Record<string, any>>({
     onInputChange?.(query);
   }, [query, items, onFilter, onInputChange]);
 
-  // Close dropdown on outside click
-  useEffect(() => {
-    const onClickOutside = (e: MouseEvent) => {
-      if (
-        wrapperRef.current &&
-        !wrapperRef.current.contains(e.target as Node)
-      ) {
-        setSuggestions([]);
-      }
-    };
-    window.addEventListener('mousedown', onClickOutside);
-    return () => window.removeEventListener('mousedown', onClickOutside);
-  }, []);
-
-  // Keyboard navigation and selection
+  // Close on Escape key
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (!suggestions.length) return;
+    if (!isFocused || !suggestions.length) return;
     if (e.key === 'ArrowDown') {
       e.preventDefault();
       setHighlight((h) => Math.min(h + 1, suggestions.length - 1));
@@ -106,6 +92,21 @@ export function SearchAutocomplete<T extends Record<string, any>>({
     }
   };
 
+  // Clicking outside will also hide, in case you need it
+  useEffect(() => {
+    const onClickOutside = (e: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(e.target as Node)
+      ) {
+        setIsFocused(false);
+        setSuggestions([]);
+      }
+    };
+    document.addEventListener('mousedown', onClickOutside);
+    return () => document.removeEventListener('mousedown', onClickOutside);
+  }, []);
+
   return (
     <div className={`autocomplete-wrapper ${className}`} ref={wrapperRef}>
       <input
@@ -116,8 +117,13 @@ export function SearchAutocomplete<T extends Record<string, any>>({
         placeholder={placeholder}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => {
+          setIsFocused(false);
+          setSuggestions([]);
+        }}
       />
-      {suggestions.length > 0 && (
+      {isFocused && suggestions.length > 0 && (
         <ul className="autocomplete-list">
           {suggestions.map((sug, idx) => (
             <li
@@ -128,6 +134,7 @@ export function SearchAutocomplete<T extends Record<string, any>>({
                   : 'autocomplete-item'
               }
               onMouseEnter={() => setHighlight(idx)}
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => {
                 onSelect(sug.item);
                 setQuery(sug.text);

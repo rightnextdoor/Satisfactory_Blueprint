@@ -9,3 +9,6 @@
 @import './generator/Generator.css';
 @import './recipe/Recipe.css';
 @import './recipe/RecipeForm.css';
+@import './planner/Planner.css';
+@import './planner/PlannerForm.css';
+@import './planner/ViewPlanner.css';

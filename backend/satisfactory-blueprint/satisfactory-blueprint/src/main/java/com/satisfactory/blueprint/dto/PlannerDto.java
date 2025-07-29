@@ -29,6 +29,10 @@ public class PlannerDto {
     @JsonSerialize(using = CustomDoubleSerializer.class)
     private Double targetAmount;
 
+    private ItemDataDto targetItem;
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double generatorBuildingCount;
+
     /** Audit fields */
     private Instant createdAt;
     private Instant updatedAt;

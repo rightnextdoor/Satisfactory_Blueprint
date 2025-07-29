@@ -1,0 +1,42 @@
+/* src/styles/planner/PlannerForm.css */
+
+.planner-form {
+  @apply bg-white rounded-lg shadow p-6 max-w-3xl mx-auto mb-8;
+}
+
+.planner-form__section {
+  @apply mb-6;
+}
+
+.planner-form__label {
+  @apply block text-lg font-semibold mb-2;
+}
+
+.planner-form__input,
+.planner-form__select {
+  @apply border border-gray-300 rounded px-4 py-2 w-full text-lg;
+}
+
+.planner-form__error {
+  @apply text-red-600 mt-1 text-sm;
+}
+
+.planner-form__info-panel {
+  @apply bg-gray-100 border border-gray-200 rounded p-4 mb-4 text-base;
+}
+
+.planner-form__actions {
+  @apply flex justify-end space-x-4;
+}
+
+.planner-form__submit-btn {
+  @apply px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
+}
+
+.planner-form__cancel-btn {
+  @apply px-6 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400;
+}
+
+.planner-form__error-summary {
+  @apply bg-red-50 border border-red-400 text-red-700 p-4 mb-4 rounded;
+}

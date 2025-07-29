@@ -1,0 +1,137 @@
+/* src/styles/planner/Planner.css */
+
+/* Page wrapper */
+.planner-page {
+  @apply flex h-screen bg-[#e3ecfd];
+}
+
+/* Sidebar */
+.planner-page__sidebar {
+  @apply w-64 bg-[#1c1f3b] text-white p-6 flex flex-col;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.planner-page__sidebar-title {
+  @apply text-2xl font-bold mb-8;
+}
+
+.planner-page__tab {
+  @apply text-left px-4 py-2 rounded transition;
+}
+.planner-page__tab:hover {
+  @apply bg-[#2a2d4a];
+}
+
+.planner-page__tab--active {
+  @apply bg-[#3b82f6] font-semibold;
+}
+
+.planner-page__view-actions {
+  @apply mt-4 flex flex-col space-y-2;
+}
+
+/* Top Bar */
+.planner-page__topbar {
+  @apply bg-white shadow px-6 py-4 flex justify-center items-center;
+}
+
+.planner-page__title {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+/* Content Area */
+.planner-page__content {
+  @apply relative flex-1 p-6;
+}
+
+/* Card */
+.planner-page__card {
+  @apply bg-white rounded-lg shadow p-6;
+}
+
+/* Section Title */
+.planner-page__section-title {
+  @apply text-left font-bold text-3xl mb-6;
+}
+
+/* Search */
+.planner-page__search {
+  @apply block mx-auto mb-4 w-1/3;
+  position: relative;
+  z-index: 30;
+}
+.planner-page__search .autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 40;
+}
+
+/* Table wrapper */
+.planner-page__table-wrapper {
+  @apply overflow-x-auto w-full;
+  position: relative;
+}
+
+/* Table Styles */
+.planner-page__table {
+  @apply w-full mt-4 text-xl text-left text-gray-700;
+}
+.planner-page__thead {
+  @apply text-gray-500 uppercase border-b;
+}
+.planner-page__th,
+.planner-page__td {
+  @apply text-xl;
+}
+.planner-page__th {
+  @apply px-6 py-3 sticky -top-6 z-10 bg-[#1c1f3b] text-white whitespace-nowrap;
+}
+.planner-page__td {
+  @apply px-6 py-4;
+}
+
+.planner-page__row--odd {
+  @apply bg-white;
+}
+.planner-page__row--even {
+  @apply bg-gray-50;
+}
+.planner-page__row:hover {
+  @apply bg-blue-50;
+}
+
+/* Sticky header */
+.planner-page__thead th {
+  @apply sticky -top-6 z-10 bg-[#1c1f3b] text-white;
+}
+
+/* Sort icon wrapper */
+.planner-page__th-content {
+  @apply inline-flex items-center space-x-1;
+}
+.planner-page__sort-icon {
+  @apply text-sm;
+}
+
+/* Modal Overlay (plain CSS) */
+.planner-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.planner-modal-content {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 33.3333%;
+}

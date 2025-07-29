@@ -1,0 +1,72 @@
+/* src/styles/planner/ViewPlanner.css */
+
+.planner-view {
+  @apply flex-1 flex flex-col overflow-y-auto bg-[#e3ecfd];
+}
+
+/* Header row: delete button + title */
+.planner-view__header-row {
+  @apply relative flex items-center bg-white shadow px-6 py-4 mb-6;
+}
+
+.planner-view__header-row .planner-view__toolbar {
+  @apply absolute left-6;
+}
+
+/* Center the editable header */
+.planner-view__header-row .planner-view__header {
+  @apply flex justify-center items-center mx-auto;
+}
+
+/* Style the input in the header */
+.planner-view__header-row .planner-view__header input {
+  @apply bg-transparent border-none text-3xl font-bold text-center w-auto max-w-lg;
+}
+
+/* If you still have an h1 fallback, hide it now that the input replaces it */
+.planner-view__header-row .planner-view__header h1 {
+  @apply hidden;
+}
+
+/* Base section card */
+.planner-view__section {
+  @apply bg-white rounded-lg shadow p-6 mb-6;
+}
+
+/* Section header */
+.planner-view__section h2 {
+  @apply text-2xl font-semibold mb-6;
+}
+
+/* Two-column grid inside sections */
+.planner-view__section .grid {
+  @apply grid grid-cols-2 gap-x-8 gap-y-2;
+}
+
+/* Read-only labels */
+.planner-view__section .font-medium {
+  @apply text-gray-700;
+}
+
+/* Inputs inside GeneratorSection */
+.planner-view__section input[type='number'] {
+  @apply border border-gray-300 rounded px-3 py-2 w-32 text-lg;
+}
+
+/* src/styles/planner/ViewPlanner.css */
+
+/* Highlight header input on focus */
+.planner-view__header-row .planner-view__header input:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
+
+/* Highlight any number/text input in sections on focus */
+.planner-view__section input:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
+
+/* If your search autocomplete uses a text input: */
+.planner-view__section .SearchAutocomplete__input:focus,
+.planner-view__header-row .SearchAutocomplete__input:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
