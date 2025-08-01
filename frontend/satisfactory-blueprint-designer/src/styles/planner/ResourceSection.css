@@ -1,0 +1,22 @@
+/* src/styles/planner/ResourceSection.css */
+
+.resource-section {
+  @apply bg-white rounded-lg shadow p-6 mb-6 text-3xl;
+}
+
+.resource-section__header {
+  @apply font-bold mb-4;
+  font-size: 3rem !important;
+}
+
+.resource-section__item {
+  @apply text-black font-semibold mb-8;
+}
+
+.resource-section__usage-list {
+  @apply ml-6 mb-4;
+}
+
+.resource-section__usage {
+  @apply text-blue-600 mb-1;
+}

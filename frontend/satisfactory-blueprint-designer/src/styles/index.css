@@ -12,3 +12,5 @@
 @import './planner/Planner.css';
 @import './planner/PlannerForm.css';
 @import './planner/ViewPlanner.css';
+@import './planner/ResourceSection.css';
+@import './planner/SummarySection.css';

@@ -1,0 +1,21 @@
+/* src/styles/planner/SummarySection.css */
+
+.summary-section {
+  @apply bg-white rounded-lg shadow p-6 mb-6;
+}
+
+.summary-section__header {
+  @apply text-4xl font-semibold mb-9;
+}
+
+.summary-section__grid {
+  @apply grid grid-cols-2 gap-x-8 gap-y-2 text-xl;
+}
+
+.summary-section__label {
+  @apply font-medium;
+}
+
+.summary-section__value {
+  @apply text-gray-800;
+}

@@ -4,7 +4,7 @@ import type { GeneratorDto } from './generator';
 import type { ItemDto } from '../types/itemDto';
 import type { RecipeDto } from './recipe';
 import type { ItemDataDto } from './itemDataDto';
-import type { PlannerTargetType } from './enums';
+import type { PlannerMode, PlannerTargetType } from './enums';
 
 /**
  * Mirrors com.satisfactory.blueprint.dto.PlannerDto
@@ -31,6 +31,7 @@ export interface PlannerDto {
 export interface PlannerRequestDto {
   id?: number;
   name: string;
+  mode: PlannerMode;
   generator: GeneratorDto;
   targetType: PlannerTargetType;
   targetAmount: number;

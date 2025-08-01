@@ -1,6 +1,6 @@
 // src/components/planner/list/ListPlanner.tsx
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import type { PlannerDto } from '../../../types';
 import { plannerService } from '../../../services/plannerService';
 import { SearchAutocomplete } from '../../common/SearchAutocomplete';
@@ -27,6 +27,7 @@ const ListPlanner: React.FC<ListPlannerProps> = ({ onSelect, active }) => {
 
   useEffect(() => {
     if (!active) return;
+
     plannerService
       .listAll()
       .then((data) => {
@@ -36,14 +37,32 @@ const ListPlanner: React.FC<ListPlannerProps> = ({ onSelect, active }) => {
         }));
         setAllPlanners(mapped);
         setFilteredPlanners(mapped);
+
+        // default select stored or first planner
+        const storedId = localStorage.getItem('plannerId');
+        let defaultPlan = storedId
+          ? mapped.find((p) => p.id === Number(storedId))
+          : undefined;
+        if (!defaultPlan && mapped.length > 0) {
+          defaultPlan = mapped[0];
+        }
+        if (defaultPlan) {
+          setSelectedId(defaultPlan.id!);
+          localStorage.setItem('plannerId', defaultPlan.id!.toString());
+          onSelect(defaultPlan);
+        }
       })
       .catch(console.error);
-  }, [active]);
+  }, [active, onSelect]);
 
-  const handleSelect = (plan: SearchPlanner) => {
-    setSelectedId(plan.id!);
-    onSelect(plan);
-  };
+  const handleSelect = useCallback(
+    (plan: SearchPlanner) => {
+      setSelectedId(plan.id!);
+      localStorage.setItem('plannerId', plan.id!.toString());
+      onSelect(plan);
+    },
+    [onSelect]
+  );
 
   return (
     <div className="planner-page__card">
