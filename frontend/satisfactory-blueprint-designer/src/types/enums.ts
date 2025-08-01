@@ -94,7 +94,7 @@ export const PlannerModes: PlannerMode[] = ['FUEL', 'FACTORY'];
 
 /** Planner target types */
 export type PlannerTargetType = 'GENERATOR' | 'FUEL';
-export const PlannerTargetTypes: PlannerTargetType[] = ['GENERATOR', 'FUEL'];
+export const PlannerTargetTypes: PlannerTargetType[] = ['FUEL', 'GENERATOR'];
 
 /** Vehicle types */
 export type VehicleType = 'TRAIN' | 'TRUCK' | 'PLANE';

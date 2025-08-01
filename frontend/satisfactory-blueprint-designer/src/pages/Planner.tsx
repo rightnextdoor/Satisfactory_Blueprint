@@ -1,6 +1,6 @@
 // src/pages/Planner.tsx
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import PlannerSidebar, {
   type PlannerTab,
 } from '../components/planner/PlannerSidebar';
@@ -13,8 +13,29 @@ import type { PlannerDto } from '../types';
 import '../styles/planner/Planner.css';
 
 const Planner: React.FC = () => {
-  const [selectedTab, setSelectedTab] = useState<PlannerTab>('list');
-  const [currentPlan, setCurrentPlan] = useState<PlannerDto | null>(null);
+  const [selectedTab, setSelectedTab] = useState<PlannerTab>(() => {
+    return (localStorage.getItem('plannerMode') as PlannerTab) ?? 'list';
+  });
+
+  const [plannerId, setPlannerId] = useState<number | null>(() => {
+    const stored = localStorage.getItem('plannerId');
+    return stored ? Number(stored) : null;
+  });
+
+  // Persist tab mode
+  useEffect(() => {
+    localStorage.setItem('plannerMode', selectedTab);
+  }, [selectedTab]);
+
+  // Persist planner ID
+  useEffect(() => {
+    if (plannerId != null) {
+      localStorage.setItem('plannerId', plannerId.toString());
+    } else {
+      localStorage.removeItem('plannerId');
+    }
+  }, [plannerId]);
+
   const [isAddModalOpen, setAddModalOpen] = useState(false);
   const [isRemoveModalOpen, setRemoveModalOpen] = useState(false);
 
@@ -23,29 +44,29 @@ const Planner: React.FC = () => {
   const closeAdd = useCallback(() => setAddModalOpen(false), []);
   const closeRemove = useCallback(() => setRemoveModalOpen(false), []);
 
+  // Only set plannerId—do NOT switch tabs here
+  const handleListSelect = useCallback((plan: PlannerDto) => {
+    setPlannerId(plan.id!);
+  }, []);
+
+  const handleCreateDone = useCallback((plan: PlannerDto) => {
+    setPlannerId(plan.id!);
+    setSelectedTab('view');
+  }, []);
+
+  const handleCreateCancel = useCallback(() => {
+    setSelectedTab('list');
+  }, []);
+
+  const handleDeletePlanner = useCallback(() => {
+    setPlannerId(null);
+    setSelectedTab('list');
+  }, []);
+
   const paneClasses = (tab: PlannerTab) =>
     `absolute inset-0 overflow-y-auto p-6 ${
       selectedTab === tab ? 'visible' : 'invisible pointer-events-none'
     }`;
-
-  const handleListSelect = (plan: PlannerDto) => {
-    setCurrentPlan(plan);
-  };
-
-  const handleCreateDone = (plan: PlannerDto) => {
-    setCurrentPlan(plan);
-    setSelectedTab('view');
-  };
-
-  const handleCreateCancel = () => {
-    setSelectedTab('list');
-  };
-
-  // newly added: clear selection & switch back to list on delete
-  const handleDeletePlanner = useCallback(() => {
-    setSelectedTab('list');
-    setCurrentPlan(null);
-  }, []);
 
   return (
     <div className="planner-page">
@@ -77,7 +98,7 @@ const Planner: React.FC = () => {
           </div>
 
           <div className={paneClasses('view')}>
-            <ViewPlanner planner={currentPlan} onDelete={handleDeletePlanner} />
+            <ViewPlanner plannerId={plannerId} onDelete={handleDeletePlanner} />
           </div>
         </main>
       </div>

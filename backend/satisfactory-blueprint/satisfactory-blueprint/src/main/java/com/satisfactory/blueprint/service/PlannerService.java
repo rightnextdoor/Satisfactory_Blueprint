@@ -22,6 +22,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -30,6 +32,7 @@ import java.util.stream.Stream;
 @Service
 @Transactional
 public class PlannerService {
+    private static final Logger log = LoggerFactory.getLogger(PlannerService.class);
     private final PlannerRepository   plannerRepo;
     private final PlannerEntryRepository entryRepo;
     private final GeneratorRepository generatorRepo;
@@ -77,6 +80,7 @@ public class PlannerService {
             p.setEntries(new ArrayList<>());
             p.setResources(Collections.emptyList());
             p.setTotalPowerConsumption(BigDecimal.ZERO);
+            p.setTotalGeneratorPower(BigDecimal.ZERO);
         }
 
         return plannerRepo.save(p);
@@ -86,34 +90,50 @@ public class PlannerService {
 
     public Planner updatePlannerSettings(PlannerDto dto) {
         Planner p = findById(dto.getId());
+        Long oldGen = null;
+        Double oldTarget = 0.0;
+        // capture old settings
+        if(p.getMode() == PlannerMode.FUEL){
+            oldGen    = p.getGenerator() != null ? p.getGenerator().getId() : null;
+            oldTarget = p.getTargetAmount();
+        }
 
         // apply new name, mode, generator, and recalc targetAmount
         populatePlannerCore(p, dto);
 
         if(p.getMode() == PlannerMode.FUEL){
-            // capture old settings
-            Long   oldGen    = p.getGenerator() != null ? p.getGenerator().getId() : null;
-            Double oldTarget = p.getTargetAmount();
 
-            boolean isFuel     = p.getMode() == PlannerMode.FUEL;
             boolean genChanged = !Objects.equals(oldGen, dto.getGenerator().getId());
-            boolean targetChanged = isFuel
-                    && !Objects.equals(oldTarget, dto.getTargetAmount());
+            boolean targetChanged = !Objects.equals(oldTarget, dto.getTargetAmount());
 
-            if (isFuel) {
-                applyGeneratorOverclock(p, dto.getOverclockGenerator());
+            log.info(
+                    "Planner[id={}] oldGen={} newGen={} genChanged={} | oldTarget={} newTarget={} targetChanged={}",
+                    p.getId(),
+                    oldGen,
+                    dto.getGenerator().getId(),
+                    genChanged,
+                    oldTarget,
+                    dto.getTargetAmount(),
+                    targetChanged
+            );
 
-                if(genChanged || targetChanged){
-                    // clear existing entries so Hibernate will orphan‐delete
-                    p.getEntries().clear();
-                    plannerRepo.flush();   // ensure the deletes hit the DB immediately
+            applyGeneratorOverclock(p, dto.getOverclockGenerator());
 
-                    // rebuild default chain against the new targetAmount
-                    buildDefaultFuelEntries(p);
-                    applyEntriesOverclock(p);
-                }
+            if(genChanged || targetChanged){
+                log.info(
+                        "Planner[id={}] regen fuel entries because genChanged={} or targetChanged={}",
+                        p.getId(), genChanged, targetChanged
+                );
 
+                // clear existing entries so Hibernate will orphan‐delete
+                p.getEntries().clear();
+                plannerRepo.flush();   // ensure the deletes hit the DB immediately
+
+                // rebuild default chain against the new targetAmount
+                buildDefaultFuelEntries(p);
+                applyEntriesOverclock(p);
             }
+
         }
 
         return plannerRepo.save(p);
@@ -450,11 +470,6 @@ public class PlannerService {
         Map<String, Recipe>     cache = new HashMap<>();
         Queue<Item>             queue = new ArrayDeque<>();
 
-        Set<Item> explicitResources = planner.getEntries().stream()
-                            .map(PlannerEntry::getTargetItem)
-                            .filter(Item::isResource)
-                            .collect(Collectors.toSet());
-
         for (PlannerEntry e : planner.getEntries()) {
             if (e != null && e.getTargetItem() != null) {
                 e.setPlanner(planner);
@@ -473,15 +488,11 @@ public class PlannerService {
             if (inputs == null) continue;
 
             for (ItemData id : inputs) {
-                if (id == null || id.getItem() == null) {
-                    continue;
+                if (id == null || id.getItem() == null || id.getItem().isResource()) {
+                    continue; // skip resources entirely
                 }
-                Item childItem = id.getItem();
-                // skip auto‐creating resource entries UNLESS the user already added one
-                 if (childItem.isResource() && !explicitResources.contains(childItem)) {
-                     continue;
-                }
-                Item child = childItem;
+
+                Item child = id.getItem();
                 double amt = id.getAmount();
 
                 // find or create the child entry
