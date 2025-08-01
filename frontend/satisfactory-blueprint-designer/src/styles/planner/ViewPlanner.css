@@ -18,12 +18,11 @@
   @apply flex justify-center items-center mx-auto;
 }
 
-/* Style the input in the header */
 .planner-view__header-row .planner-view__header input {
   @apply bg-transparent border-none text-3xl font-bold text-center w-auto max-w-lg;
 }
 
-/* If you still have an h1 fallback, hide it now that the input replaces it */
+/* Hide fallback h1 now that the input replaces it */
 .planner-view__header-row .planner-view__header h1 {
   @apply hidden;
 }
@@ -48,12 +47,10 @@
   @apply text-gray-700;
 }
 
-/* Inputs inside GeneratorSection */
+/* Number inputs inside GeneratorSection */
 .planner-view__section input[type='number'] {
   @apply border border-gray-300 rounded px-3 py-2 w-32 text-lg;
 }
-
-/* src/styles/planner/ViewPlanner.css */
 
 /* Highlight header input on focus */
 .planner-view__header-row .planner-view__header input:focus {
@@ -65,8 +62,63 @@
   @apply outline-none ring-2 ring-blue-500;
 }
 
-/* If your search autocomplete uses a text input: */
+/* Highlight search autocomplete inputs */
 .planner-view__section .SearchAutocomplete__input:focus,
 .planner-view__header-row .SearchAutocomplete__input:focus {
   @apply outline-none ring-2 ring-blue-500;
+}
+
+/* Base container for overclock control */
+.overclock-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Always-visible display area */
+.overclock-control__display {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Input box styling */
+.overclock-control__input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Horizontal variant layout */
+.overclock-control--horizontal {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Input in horizontal variant */
+.overclock-control--horizontal .overclock-control__input {
+  width: 6rem;
+  margin: 0 1.5rem 0 0;
+  order: 2;
+}
+
+/* Display in horizontal variant */
+.overclock-control--horizontal .overclock-control__display {
+  margin-right: 4rem;
+  order: 1;
+}
+
+/* Hide the slider entirely */
+.overclock-control__slider,
+.overclock-control--horizontal .overclock-control__slider {
+  display: none !important;
+}
+
+/* Hide the optional label if needed */
+.overclock-control--no-label .overclock-control__label {
+  display: none;
 }

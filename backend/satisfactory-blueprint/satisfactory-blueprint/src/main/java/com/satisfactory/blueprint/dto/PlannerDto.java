@@ -6,6 +6,7 @@ import com.satisfactory.blueprint.entity.enums.PlannerMode;
 import com.satisfactory.blueprint.entity.enums.PlannerTargetType;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
 
@@ -29,9 +30,21 @@ public class PlannerDto {
     @JsonSerialize(using = CustomDoubleSerializer.class)
     private Double targetAmount;
 
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double burnTime;
+
     private ItemDataDto targetItem;
     @JsonSerialize(using = CustomDoubleSerializer.class)
     private Double generatorBuildingCount;
+
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double overclockGenerator;
+
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double totalPowerConsumption;
+
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double totalGeneratorPower;
 
     /** Audit fields */
     private Instant createdAt;

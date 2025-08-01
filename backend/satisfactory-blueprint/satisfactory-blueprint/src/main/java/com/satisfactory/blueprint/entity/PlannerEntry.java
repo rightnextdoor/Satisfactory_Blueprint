@@ -10,6 +10,7 @@ import com.satisfactory.blueprint.entity.embedded.PlannerAllocation;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,6 +49,12 @@ public class PlannerEntry {
     /** outgoing per-minute = recipe.getItemToBuild().getAmount() * buildingCount */
     @Column(name = "outgoing_amount", nullable = false)
     private double outgoingAmount;
+
+    @Column(name="overclock_building", precision=7, scale=4, nullable=true)
+    private BigDecimal overclockBuilding;
+
+    @Column(name = "power_consumption", precision = 12, scale = 4, nullable = true)
+    private BigDecimal powerConsumption;
 
     /** per-building ingredients snapshot */
     @ElementCollection

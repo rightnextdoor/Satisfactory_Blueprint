@@ -27,6 +27,12 @@ public class PlannerEntryDto {
     private Double buildingCount;
     private Boolean buildingOverride;
 
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double overclockBuilding;
+
+    @JsonSerialize(using = CustomDoubleSerializer.class)
+    private Double powerConsumption;
+
     /**
      * The outgoing rate (items/min) for this entry. Changing this will
      * re-calculate buildingCount.

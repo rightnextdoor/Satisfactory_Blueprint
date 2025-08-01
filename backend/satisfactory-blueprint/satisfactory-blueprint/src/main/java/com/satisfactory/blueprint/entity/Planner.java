@@ -9,6 +9,7 @@ import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +62,18 @@ public class Planner {
     )
     private ItemData targetItem;
 
+    private Double burnTime;
+
     private Double generatorBuildingCount;
+
+    @Column(name="overclock_generator", precision=7, scale=4, nullable=true)
+    private BigDecimal overclockGenerator;
+
+    @Column(name = "total_power_consumption", precision = 12, scale = 4, nullable = true)
+    private BigDecimal totalPowerConsumption;
+
+    @Column(name = "total_generator_power", precision=12, scale=4, nullable=true)
+    private BigDecimal totalGeneratorPower;
 
     /** When this plan was first created */
     @CreationTimestamp

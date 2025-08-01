@@ -3,10 +3,10 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import type { PlannerDto, PlannerRequestDto } from '../../../types/planner';
-import type { PlannerMode, PlannerTargetType } from '../../../types/enums';
+import type { PlannerTargetType } from '../../../types/enums';
 import { plannerService } from '../../../services/plannerService';
 import ViewHeader from './ViewHeader';
-import GeneratorSection from '../view/GeneratorSection';
+import GeneratorSection from './GeneratorSection';
 import Button from '../../common/Button';
 import '../../../styles/planner/ViewPlanner.css';
 
@@ -39,22 +39,25 @@ const PlannerSettingsPanel: React.FC<PlannerSettingsPanelProps> = ({
     // Compute final values for all required fields
     const finalId = planner.id!;
     const finalName = patch.name ?? planner.name;
-    const finalMode = planner.mode as PlannerMode;
     const finalGenerator = patch.generator ?? planner.generator!;
     const finalTargetType =
       patch.targetType ?? (planner.targetType as PlannerTargetType);
     const finalTargetAmount = patch.targetAmount ?? planner.targetAmount!;
+    const finalOverclock =
+      patch.overclockGenerator ?? planner.overclockGenerator!;
 
+    // Payload always includes id, name, generator, targetType, targetAmount, and overclock
     const payload: PlannerRequestDto = {
       id: finalId,
       name: finalName,
-      mode: finalMode,
       generator: finalGenerator,
       targetType: finalTargetType,
       targetAmount: finalTargetAmount,
+      overclockGenerator: finalOverclock,
     };
 
     try {
+      console.log('PlannerSettingsPanel payload:', payload);
       const updated = await plannerService.updateSettings(payload);
       setPlanner(updated);
     } catch (err: any) {
