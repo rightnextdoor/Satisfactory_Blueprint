@@ -1,11 +1,10 @@
-// src/components/planner/view/GeneratorSection.tsx
-
 import React, { useState, useEffect, type KeyboardEvent } from 'react';
 import type { PlannerDto } from '../../../types';
 import type { PlannerRequestDto } from '../../../types/planner';
 import { generatorService } from '../../../services/generatorService';
 import { SearchAutocomplete } from '../../common/SearchAutocomplete';
 import type { GeneratorDto } from '../../../types/generator';
+import { OverclockControl } from '../OverclockControl';
 import '../../../styles/planner/ViewPlanner.css';
 
 interface GeneratorSectionProps {
@@ -23,19 +22,33 @@ const GeneratorSection: React.FC<GeneratorSectionProps> = ({
   const [tempFuelRate, setTempFuelRate] = useState(
     planner.targetAmount?.toString() ?? ''
   );
-  const [tempOverclock, setTempOverclock] = useState('');
   const [tempGenCount, setTempGenCount] = useState(
     planner.generatorBuildingCount?.toString() ?? ''
   );
+  const [tempOverclock, setTempOverclock] = useState(
+    planner.overclockGenerator?.toString() ?? '100'
+  );
 
+  // fetch generators once
   useEffect(() => {
     generatorService.listAll().then(setAllGens).catch(console.error);
   }, []);
 
+  // log whenever backend planner data arrives
+  useEffect(() => {
+    console.log('GeneratorSection: planner updated from backend:', planner);
+  }, [planner]);
+
+  // sync temps when planner changes
   useEffect(() => {
     setTempFuelRate(planner.targetAmount?.toString() ?? '');
     setTempGenCount(planner.generatorBuildingCount?.toString() ?? '');
-  }, [planner.targetAmount, planner.generatorBuildingCount]);
+    setTempOverclock(planner.overclockGenerator?.toString() ?? '100');
+  }, [
+    planner.targetAmount,
+    planner.generatorBuildingCount,
+    planner.overclockGenerator,
+  ]);
 
   const handleEnter = (e: KeyboardEvent<HTMLInputElement>, fn: () => void) => {
     if (e.key === 'Enter') {
@@ -44,12 +57,14 @@ const GeneratorSection: React.FC<GeneratorSectionProps> = ({
     }
   };
 
-  const fmt = (n: number) => (Number.isInteger(n) ? n : n.toFixed(2));
+  // Overclock handlers
+  const handleOverclockCommit = (pct: number) => {
+    onUpdate({ overclockGenerator: pct });
+  };
 
-  const fuelRate = planner.targetAmount;
+  const fmt = (n: number) => (Number.isInteger(n) ? n : n.toFixed(2));
   const genCount = planner.generatorBuildingCount;
-  const totalPower =
-    Math.round(genCount * planner.generator.powerOutput * 100) / 100;
+
   const waterPerMin =
     Math.round(
       planner.generator.fuelItems
@@ -70,9 +85,11 @@ const GeneratorSection: React.FC<GeneratorSectionProps> = ({
       )}
 
       <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-lg">
+        {/* Generator Type */}
         <div className="font-medium">Generator Type:</div>
         <div>{planner.generator.name}</div>
 
+        {/* Fuel Type */}
         <div className="font-medium">Fuel Type:</div>
         <div>
           <SearchAutocomplete<GeneratorDto>
@@ -80,98 +97,95 @@ const GeneratorSection: React.FC<GeneratorSectionProps> = ({
             fields={['fuelType']}
             renderItem={(g) => g.fuelType}
             placeholder="Search by fuel type…"
-            onSelect={(gen) => onUpdate({ generator: gen })}
+            onSelect={(gen) => {
+              if (gen.id !== planner.generator.id) {
+                onUpdate({ generator: gen });
+              }
+            }}
             onFilter={() => {}}
             className={fieldErrors.generator ? 'border-red-500' : ''}
           />
         </div>
 
+        {/* Target Item */}
         <div className="font-medium">Target Item:</div>
         <div>{planner.targetItem.item.name}</div>
 
+        {/* Burn Rate */}
         <div className="font-medium">Burn Rate (per unit):</div>
-        <div>{fmt(planner.generator.burnTime)}</div>
+        <div>{fmt(planner.burnTime)}</div>
 
+        {/* Total Fuel Rate */}
         <div className="font-medium">Total Fuel Rate /min:</div>
         <div>
           <input
             type="number"
             value={tempFuelRate}
             onChange={(e) => setTempFuelRate(e.target.value)}
-            onBlur={() =>
-              onUpdate({
-                targetType: 'FUEL',
-                targetAmount: Number(tempFuelRate),
+            onBlur={() => {
+              const v = Number(tempFuelRate);
+              if (v !== planner.targetAmount) {
+                onUpdate({ targetType: 'FUEL', targetAmount: v });
+              }
+            }}
+            onKeyDown={(e) =>
+              handleEnter(e, () => {
+                const v = Number(tempFuelRate);
+                if (v !== planner.targetAmount) {
+                  onUpdate({ targetType: 'FUEL', targetAmount: v });
+                }
               })
             }
-            onKeyDown={(e) =>
-              handleEnter(e, () =>
-                onUpdate({
-                  targetType: 'FUEL',
-                  targetAmount: Number(tempFuelRate),
-                })
-              )
-            }
-            onFocus={(e) => (e.currentTarget as HTMLInputElement).select()}
+            onFocus={(e) => e.currentTarget.select()}
             className={fieldErrors.targetAmount ? 'border-red-500' : ''}
           />
         </div>
 
+        {/* Overclock */}
         <div className="font-medium">Overclock %:</div>
-        <div>
-          <input
-            type="number"
-            value={tempOverclock}
-            onChange={(e) => setTempOverclock(e.target.value)}
-            onBlur={() => {
-              const pct = Number(tempOverclock);
-              const newRate = Math.round(fuelRate * (pct / 100) * 100) / 100;
-              onUpdate({ targetType: 'FUEL', targetAmount: newRate });
-            }}
-            onKeyDown={(e) =>
-              handleEnter(e, () => {
-                const pct = Number(tempOverclock);
-                const newRate = Math.round(fuelRate * (pct / 100) * 100) / 100;
-                onUpdate({ targetType: 'FUEL', targetAmount: newRate });
-              })
-            }
-            className={fieldErrors.overclock ? 'border-red-500' : ''}
+        <div className="flex items-center">
+          <OverclockControl
+            className="overclock-control--horizontal overclock-control--no-label"
+            key={planner.overclockGenerator ?? 100}
+            value={Number(tempOverclock)}
+            onCommit={handleOverclockCommit}
+            disabled={false}
           />
         </div>
 
+        {/* Generator Count */}
         <div className="font-medium">Generator Count:</div>
         <div>
           <input
             type="number"
             value={tempGenCount}
             onChange={(e) => setTempGenCount(e.target.value)}
-            onBlur={() =>
-              onUpdate({
-                targetType: 'GENERATOR',
-                targetAmount: Number(tempGenCount),
+            onBlur={() => {
+              const v = Number(tempGenCount);
+              if (v !== planner.generatorBuildingCount) {
+                onUpdate({ targetType: 'GENERATOR', targetAmount: v });
+              }
+            }}
+            onKeyDown={(e) =>
+              handleEnter(e, () => {
+                const v = Number(tempGenCount);
+                if (v !== planner.generatorBuildingCount) {
+                  onUpdate({ targetType: 'GENERATOR', targetAmount: v });
+                }
               })
             }
-            onKeyDown={(e) =>
-              handleEnter(e, () =>
-                onUpdate({
-                  targetType: 'GENERATOR',
-                  targetAmount: Number(tempGenCount),
-                })
-              )
-            }
-            onFocus={(e) => (e.currentTarget as HTMLInputElement).select()}
+            onFocus={(e) => e.currentTarget.select()}
             className={
               fieldErrors.generatorBuildingCount ? 'border-red-500' : ''
             }
           />
         </div>
 
+        {/* Calculated Outputs */}
         <div className="font-medium">Total Power Output (MW):</div>
-        <div>{fmt(totalPower)}</div>
-
+        <div>{planner.totalGeneratorPower}</div>
         <div className="font-medium">Water / min (m³):</div>
         <div>{fmt(waterPerMin)}</div>
-
         <div className="font-medium">Waste / min:</div>
         <div>{fmt(wastePerMin)}</div>
       </div>

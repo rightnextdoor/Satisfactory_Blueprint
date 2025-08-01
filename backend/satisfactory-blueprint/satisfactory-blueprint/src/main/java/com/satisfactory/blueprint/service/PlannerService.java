@@ -17,10 +17,12 @@ import com.satisfactory.blueprint.exception.ResourceNotFoundException;
 import com.satisfactory.blueprint.repository.GeneratorRepository;
 import com.satisfactory.blueprint.repository.PlannerEntryRepository;
 import com.satisfactory.blueprint.repository.PlannerRepository;
+import com.satisfactory.blueprint.util.OverclockCalculator;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -69,9 +71,12 @@ public class PlannerService {
 
         if (p.getMode() == PlannerMode.FUEL) {
             buildDefaultFuelEntries(p);
+            applyGeneratorOverclock(p, dto.getOverclockGenerator());
+            applyEntriesOverclock(p);
         } else {
             p.setEntries(new ArrayList<>());
             p.setResources(Collections.emptyList());
+            p.setTotalPowerConsumption(BigDecimal.ZERO);
         }
 
         return plannerRepo.save(p);
@@ -81,8 +86,6 @@ public class PlannerService {
 
     public Planner updatePlannerSettings(PlannerDto dto) {
         Planner p = findById(dto.getId());
-
-
 
         // apply new name, mode, generator, and recalc targetAmount
         populatePlannerCore(p, dto);
@@ -97,13 +100,19 @@ public class PlannerService {
             boolean targetChanged = isFuel
                     && !Objects.equals(oldTarget, dto.getTargetAmount());
 
-            if (isFuel && (genChanged || targetChanged)) {
-                // clear existing entries so Hibernate will orphan‐delete
-                p.getEntries().clear();
-                plannerRepo.flush();   // ensure the deletes hit the DB immediately
+            if (isFuel) {
+                applyGeneratorOverclock(p, dto.getOverclockGenerator());
 
-                // rebuild default chain against the new targetAmount
-                buildDefaultFuelEntries(p);
+                if(genChanged || targetChanged){
+                    // clear existing entries so Hibernate will orphan‐delete
+                    p.getEntries().clear();
+                    plannerRepo.flush();   // ensure the deletes hit the DB immediately
+
+                    // rebuild default chain against the new targetAmount
+                    buildDefaultFuelEntries(p);
+                    applyEntriesOverclock(p);
+                }
+
             }
         }
 
@@ -130,8 +139,12 @@ public class PlannerService {
 
         // 3) ripple the rest of the graph (children will recalc, but this one is “frozen”)
         rippleAndSave(planner);
+
+        applyEntryOverclock(planner, dto);
+
         return plannerRepo.save(planner);
     }
+
     private void applyBuildingCountOverride(PlannerEntry entry,
                                             PlannerEntryDto dto) {
         // 1) bail out if no override requested
@@ -306,7 +319,18 @@ public class PlannerService {
 
     private void rippleAndSave(Planner planner) {
         expandPlannerEntries(planner);
-        planner.setResources(calculateResources(planner));
+
+        List<ItemData> resources = calculateResources(planner);
+
+        ItemData target = planner.getTargetItem();
+        if (target != null && target.getItem().isResource()) {
+            ItemData rootDemand = new ItemData();
+            rootDemand.setItem(target.getItem());
+            rootDemand.setAmount(planner.getTargetAmount());
+            resources.add(0, rootDemand);
+        }
+
+        planner.setResources(resources);
     }
 
     private void populatePlannerCore(Planner p, PlannerDto dto) {
@@ -358,17 +382,27 @@ public class PlannerService {
     }
 
     private void buildDefaultFuelEntries(Planner planner) {
-        // find the “root” recipe for this fuel
-        Recipe rootRecipe = recipeService.getDefaultByItemName(
-                findFuelItemData(planner).getItem().getName()
-        );
+        // 1) Fetch the root fuel item data
+        ItemData rootData = findFuelItemData(planner);
 
-        // create the new root entry
+        // 2) If it’s a raw resource, skip entry creation entirely
+        if (rootData.getItem().isResource()) {
+            // Ensure no dummy entries
+            planner.setEntries(new ArrayList<>());
+            // Recompute resources (will now include just the root resource demand)
+            rippleAndSave(planner);
+            return;
+        }
+
+        // 3) Otherwise, build the recipe entry as before
+        Recipe rootRecipe = recipeService.getDefaultByItemName(
+                rootData.getItem().getName()
+        );
         PlannerEntry root = buildPlannerEntry(rootRecipe, planner.getTargetAmount());
         root.setPlanner(planner);
 
         double targetAmt = planner.getTargetAmount();
-        double perOut     = root.getRecipe().getItemToBuild().getAmount();
+        double perOut    = rootRecipe.getItemToBuild().getAmount();
 
         PlannerAllocation genAlloc = new PlannerAllocation();
         genAlloc.setLabel("Generator fuel");
@@ -377,10 +411,10 @@ public class PlannerService {
         genAlloc.setBuildingCount(targetAmt / perOut);
         root.getManualAllocations().add(genAlloc);
 
-        // add into the *same* list Hibernate is tracking
+        // Add into the same list Hibernate is tracking
         planner.getEntries().add(root);
 
-        // propagate all downstream entries + recalc resources
+        // 4) Propagate downstream and recalc resources
         rippleAndSave(planner);
     }
 
@@ -416,6 +450,11 @@ public class PlannerService {
         Map<String, Recipe>     cache = new HashMap<>();
         Queue<Item>             queue = new ArrayDeque<>();
 
+        Set<Item> explicitResources = planner.getEntries().stream()
+                            .map(PlannerEntry::getTargetItem)
+                            .filter(Item::isResource)
+                            .collect(Collectors.toSet());
+
         for (PlannerEntry e : planner.getEntries()) {
             if (e != null && e.getTargetItem() != null) {
                 e.setPlanner(planner);
@@ -434,11 +473,15 @@ public class PlannerService {
             if (inputs == null) continue;
 
             for (ItemData id : inputs) {
-                if (id == null || id.getItem() == null || id.getItem().isResource()) {
-                    continue; // skip resources entirely
+                if (id == null || id.getItem() == null) {
+                    continue;
                 }
-
-                Item child = id.getItem();
+                Item childItem = id.getItem();
+                // skip auto‐creating resource entries UNLESS the user already added one
+                 if (childItem.isResource() && !explicitResources.contains(childItem)) {
+                     continue;
+                }
+                Item child = childItem;
                 double amt = id.getAmount();
 
                 // find or create the child entry
@@ -611,5 +654,84 @@ public class PlannerService {
                 .orElseThrow(() -> new ResourceNotFoundException(
                         "Fuel item not found for: " + lookup));
     }
+
+    public void applyGeneratorOverclock(Planner planner, Double overclockPercent) {
+        // Normalize percent
+        double oc = (overclockPercent != null ? overclockPercent : 100.0);
+        oc = Math.max(1.0, Math.min(250.0, oc));
+        planner.setOverclockGenerator(BigDecimal.valueOf(oc));
+
+        // Recalculate count
+        double rawGen = planner.getGeneratorBuildingCount();
+        double newGen = OverclockCalculator.calculateBuildingCount(rawGen, oc);
+        planner.setGeneratorBuildingCount(newGen);
+
+        double basePower = planner.getGenerator().getPowerOutput();
+        double totalPower = OverclockCalculator.calculatePowerPerGenerator(basePower, oc);
+        planner.setTotalGeneratorPower(BigDecimal.valueOf(totalPower));
+
+        double baseBurnTime = planner.getGenerator().getBurnTime();
+        double burnTime = OverclockCalculator.calculateBurnTime(baseBurnTime, oc);
+        planner.setBurnTime(burnTime);
+    }
+
+    /**
+     * 2) Initializes or updates all entries to default (100%) or existing overclock, recalculates
+     *    buildingCount & powerConsumption, and sums totalPowerConsumption.
+     */
+    public void applyEntriesOverclock(Planner planner) {
+        BigDecimal totalPower = BigDecimal.ZERO;
+        if (planner.getEntries() != null) {
+            for (PlannerEntry entry : planner.getEntries()) {
+                // Force overclock to 100%
+                double oc = 100.0;
+                entry.setOverclockBuilding(BigDecimal.valueOf(oc));
+
+                // Use existing buildingCount without recalculation
+                double count = entry.getBuildingCount();
+
+                // Recalculate power consumption at 100% clock speed
+                double basePW = entry.getRecipe().getBuilding().getPowerUsage();
+                double pwr    = OverclockCalculator.calculateTotalPower(count, basePW, oc);
+                entry.setPowerConsumption(BigDecimal.valueOf(pwr));
+
+                totalPower = totalPower.add(BigDecimal.valueOf(pwr));
+            }
+        }
+        // Set total planner power consumption (0 if no entries)
+        planner.setTotalPowerConsumption(totalPower);
+    }
+
+    public void applyEntryOverclock(Planner planner, PlannerEntryDto dto) {
+        // Find the matching entry
+        PlannerEntry entry = planner.getEntries().stream()
+                .filter(e -> Objects.equals(e.getId(), dto.getId()))
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException(
+                        "Entry not found in planner: " + dto.getId()));
+
+        // Determine overclock percent (default 100%)
+        double oc = dto.getOverclockBuilding() != null
+                ? dto.getOverclockBuilding()
+                : 100.0;
+        entry.setOverclockBuilding(BigDecimal.valueOf(oc));
+
+        // Recalculate building count based on existing buildingCount
+        double rawCount      = entry.getBuildingCount();
+        double adjustedCount = OverclockCalculator.calculateBuildingCount(rawCount, oc);
+        entry.setBuildingCount(adjustedCount);
+
+        // Recalculate power consumption at this clock speed
+        double basePW   = entry.getRecipe().getBuilding().getPowerUsage();
+        double powerVal = OverclockCalculator.calculateTotalPower(adjustedCount, basePW, oc);
+        entry.setPowerConsumption(BigDecimal.valueOf(powerVal));
+
+        // Update planner total power consumption
+        BigDecimal total = planner.getEntries().stream()
+                .map(PlannerEntry::getPowerConsumption)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        planner.setTotalPowerConsumption(total);
+    }
+
 
 }

@@ -23,6 +23,8 @@ public class PlannerMapper {
         dto.setMode(planner.getMode());
         dto.setTargetType(planner.getTargetType());
         dto.setTargetAmount(planner.getTargetAmount());
+        dto.setTotalGeneratorPower(planner.getTotalGeneratorPower().doubleValue());
+        dto.setBurnTime(planner.getBurnTime());
 
         dto.setCreatedAt(planner.getCreatedAt()
                 .atZone(ZoneOffset.UTC)
@@ -32,6 +34,11 @@ public class PlannerMapper {
                 .toInstant());
 
         dto.setGenerator(mapGenerator(planner.getGenerator()));
+
+        dto.setOverclockGenerator(planner.getOverclockGenerator() != null
+                ? planner.getOverclockGenerator().doubleValue() : 100.0);
+        dto.setTotalPowerConsumption(planner.getTotalPowerConsumption() != null
+                ? planner.getTotalPowerConsumption().doubleValue() : 0.0);
 
         dto.setResources(
                 planner.getResources().stream()
@@ -44,12 +51,10 @@ public class PlannerMapper {
                 .collect(Collectors.toList());
         dto.setEntries(entries);
 
-        // --- NEW: map targetItem if present ---
         if (planner.getTargetItem() != null) {
             dto.setTargetItem(mapItemData(planner.getTargetItem()));
         }
 
-        // --- NEW: map generatorBuildingCount ---
         if (planner.getGeneratorBuildingCount() != null) {
             dto.setGeneratorBuildingCount(planner.getGeneratorBuildingCount());
         }
@@ -122,6 +127,11 @@ public class PlannerMapper {
                         .map(this::mapPlannerAllocation)
                         .collect(Collectors.toList())
         );
+
+        dto.setOverclockBuilding(entry.getOverclockBuilding() != null
+                ? entry.getOverclockBuilding().doubleValue() : 100.0);
+        dto.setPowerConsumption(entry.getPowerConsumption() != null
+                ? entry.getPowerConsumption().doubleValue() : 0.0);
 
         return dto;
     }

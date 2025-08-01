@@ -4,7 +4,7 @@ import type { GeneratorDto } from './generator';
 import type { ItemDto } from '../types/itemDto';
 import type { RecipeDto } from './recipe';
 import type { ItemDataDto } from './itemDataDto';
-import type { PlannerMode, PlannerTargetType } from './enums';
+import type { PlannerTargetType } from './enums';
 
 /**
  * Mirrors com.satisfactory.blueprint.dto.PlannerDto
@@ -17,7 +17,11 @@ export interface PlannerDto {
   generator: GeneratorDto;
   targetAmount: number; // serialized via CustomDoubleSerializer :contentReference[oaicite:20]{index=20}
   targetItem: ItemDataDto;
+  burnTime: number;
   generatorBuildingCount: number;
+  overclockGenerator: number;
+  totalPowerConsumption: number;
+  totalGeneratorPower: number;
   createdAt: string; // ISO timestamp
   updatedAt: string; // ISO timestamp
   entries: PlannerEntryDto[]; // embedded tree of entries :contentReference[oaicite:21]{index=21}
@@ -27,10 +31,10 @@ export interface PlannerDto {
 export interface PlannerRequestDto {
   id?: number;
   name: string;
-  mode: PlannerMode;
   generator: GeneratorDto;
   targetType: PlannerTargetType;
   targetAmount: number;
+  overclockGenerator?: number;
 }
 
 /**
@@ -42,6 +46,8 @@ export interface PlannerEntryDto {
   targetItem: ItemDto;
   buildingCount: number; // CustomDoubleSerializer :contentReference[oaicite:23]{index=23}
   buildingOverride: boolean;
+  overclockBuilding: number;
+  powerConsumption: number;
   outgoingAmount: number; // CustomDoubleSerializer :contentReference[oaicite:24]{index=24}
   recipeAllocations: PlannerAllocationDto[];
   manualAllocations: PlannerAllocationDto[];
